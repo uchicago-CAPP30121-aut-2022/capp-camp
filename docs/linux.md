@@ -1,10 +1,10 @@
-## Introduction to Linux
+# Introduction to Linux
 
 Linux is an operating system much like OS X or Windows. It has windows, programs, web browsers, and so on. Files are stored in directories (folders) that, in turn, are stored in other directories. Although you can access Linux’s features using your mouse, as you perform more and more complex tasks, you will find that using the mouse is ineffective. Linux allows us to interact with the computer entirely through text using a program called the terminal. (Macs provide a similar terminal application, and there are ways to use text-based commands on Windows too. But, Linux provides the lowest barrier to entry.) In this lab you will learn how to use the terminal to perform some basic operations in Linux. You will need these skills for the rest of your time at UChicago.  
 
 We show many examples of sample output below. The output you see when you run the commands may vary a bit. For example, it is unlikely that your name is “Gustav Martin Larsson”.
 
-### Objectives
+## Objectives
 
 1. Learn basic terminal commands and how to work with a text editor.
 
@@ -14,7 +14,7 @@ We show many examples of sample output below. The output you see when you run th
 
 4. Learn to run a Python program from the command-line.
 
-### Terminal/Shell
+## Terminal/Shell
 
 On your personal computer, you probably navigate your hard drive by double clicking on icons. While convenient for simple tasks, this approach is limited. For example, imagine that you want to delete all of the music files over 5 MB that you haven’t listened to in over a year. This task is very hard to do with the standard double-click interface but is relatively simple using the terminal.
 
@@ -30,7 +30,7 @@ The program that runs within a terminal window and processes the commands that y
 
 The procedure for completing this lab is as follows. For each section, read through the explanatory text and the examples. Then, try these ideas by doing the exercises listed at the bottom of the section.
 
-### The Linux File System
+## The Linux File System
 
 Files in Linux are stored in directories/folders, just like in OS X/Windows. Directories can hold files or other subdirectories and there are special directories for your personal files, your Desktop, etc.
 
@@ -43,7 +43,7 @@ The figure above illustrates how Linux organizes the file system. Your own compu
 
 For the above and from this point forward, consider that the text “username” is replaced with your own actual username, which is just your CNetID.
 
-#### Show Files
+### Show Files
 
 The terminal will start in your home directory, `/home/username/`, which is a special directory assigned to your user account. Any CS machine that you use (either in CSIL or remotely) will automatically connect to your home directory and all files that you created or changed in previous work sessions will be available to you.
 
@@ -68,7 +68,7 @@ Try these commands yourself to verify that everything looks similar.
 
 Notice that the directory path and list of files that you see if you open your home folder graphically are identical to those provided by `pwd` and `ls`, respectively. The only difference is how you get the information, how the information is displayed, and how easy it is to write a script that, say, processes all the Python files in a directory.
 
-#### Change Directory
+### Change Directory
 
 |   |   |
 |---|---|
@@ -156,7 +156,7 @@ username@computer:~$ pwd
 
 To improve the readability of our examples, we will use `$` as the prompt rather than the full text `username@computer:~$` in the rest of this lab and, more generally, in the course going forward. Keep in mind, though, that the prompt shows your current working directory.
 
-#### Pick Up the Lab Materials
+### Pick Up the Lab Materials
 
 Run the following commands to pick up the materials that you will use for this lab:
 
@@ -167,11 +167,11 @@ cp -r ~amr/capp_camp .
 
 This directory contains a subdirectory, `lab1`, that has some files for us to play with. You will learn how to manipulate these files in the next section.
 
-##### Exercises
+#### Exercises
 
 Use `pwd`, `ls`, and `cd` to navigate to the `lab1` subdirectory.
 
-#### Copy (`cp`), Move (`mv`), Remove (`rm`), and Make Directory (`mkdir`)
+### Copy (`cp`), Move (`mv`), Remove (`rm`), and Make Directory (`mkdir`)
 
 |   |   |
 |---|---|
@@ -204,7 +204,7 @@ Some useful terminology: the `-r` argument in `cp -r` or `rm -r` is known as a f
 
 You can make a new directory with `mkdir < <directory name>`, where `<directory name>` is the desired name for the new directory.
 
-##### Exercises
+#### Exercises
 
 Try the following tasks to practice and check your understanding of these terminal commands.
 
@@ -224,7 +224,7 @@ It can be tedious (and, when you are tired, challenging) to spell directory or f
 
 Training yourself to use auto-completion (aka tab completion) will save you time and reduce the inevitable frustration that arises from mistyping file names when you are tired or distracted.
 
-### Man Pages
+## Man Pages
 
 A man page (short for manual page) documents or describes topics applicable to Linux programming. These topics include Linux programs, certain programming functions, standards, and conventions, and abstract concepts.
 
@@ -250,15 +250,15 @@ This searches all the descriptions for the keyword `printf` and prints the names
 
 Learning how to ready man pages is an important skill.
 
-##### Exercises
+#### Exercises
 
 1. By default, the `ls` command does not include files with names that shart with a dot (`.`). The `lab1` directory contains a file that starts with a dot. Use `man` to identify the flag to use with `ls` to include this file when listing the contents of `lab1`.
 
-### Editing and Running a Python Program
+## Editing and Running a Python Program
 
 In this section, you will walk through the steps to edit and run a Python program. We’ll start with editing a text file.
 
-#### Using an Editor
+### Using an Editor
 
 List the files in the `lab1` directory. You should see the following:
 
@@ -291,7 +291,7 @@ For now, we will use Visual Studio Code (`code`) in a very basic way. You can na
 
 As an aside, you can also launch code from the application launcher: simply click the Application button (at the top left of your screen), type “code” in the input box, and then click on the Visual Studio Code icon. You can then use the `file` menu to navigate the correct file. As with the terminal application, you might want to pin the icon for launching Visual Studio Code to your launch bar (right click your mouse and choose the “Lock to Launcher” menu item.)
 
-##### Exercises
+#### Exercises
 
 1. Add your name after `Author:` in this file.
 
@@ -301,7 +301,7 @@ As an aside, you can also launch code from the application launcher: simply clic
 
 4. Finally, close `code`.
 
-### Run a Python Program
+## Run a Python Program
 
 |   |   |
 |---|---|
@@ -317,7 +317,7 @@ python3 hello_world.py
 
 This program is a very simple. It just prints “Hello, World!” to the screen.
 
-##### Exercises
+#### Exercises
 
 In this section you will modify and rerun the program in `hello_world.py`. This change is very simple but goes through all the mechanical steps needed to program.
 
@@ -357,7 +357,7 @@ Forgetting to save the file (step 2) is a very common mistake!
 
 In addition to the command-line version of Python, programmers often use Jupyter notebooks and other interactive versions of Python. We will be using `ipython3`, an interactive version of the Python interpreter, in this course. We’ll introduce it during the first week of the quarter.
 
-### Wild Cards (Using an Asterisk)
+## Wild Cards (Using an Asterisk)
 
 Sometimes when we enter a string, we want part of it to be variable, or a wildcard. A common task is to list all files that end with a given extension, such as `.txt`. The wildcard functionality, through an asterisk, allows us to simply say:
 
@@ -377,7 +377,7 @@ will delete **all** of the files in your working directory!
 
 FYI, the text that follows a # on the Linux command-line is assumed to be a comment and is ignored.
 
-##### Exercises
+#### Exercises
 
 Navigate to your `camp_camp` directory. What do you see when you run `ls pa*`? What about `ls pa*/*`?
 
@@ -434,7 +434,7 @@ First, `pwd` is executed and run to completion, and then ls is executed and run 
 
 When you run a program (at the command-line or by clicking), the Linux operating system creates a new process for running the program. Every Linux process has an input stream (known as standard in) for providing input to a program and two output streams, one for regular output (known as standard out) and one for providing information about errors (known as standard error). In this section, you will learn how to use these streams to provide input to a program and to capture the output.
 
-#### Redirection
+### Redirection
 
 The examples in this section will use commands that we’ve not yet discussed. Refer to the man pages for information about unfamiliar commands.
 
@@ -483,7 +483,7 @@ $ python3 my_echo.py < my-input.txt
 
 In general, all Linux processes can perform input/output operations through, at least, the keyboard and the screen. More specifically, there are three "input/output streams": standard input (or `stdin`), standard output (or `stdout`), and standard error (or `stderr`). The code in `my_echo.py` simply reads information from `stdin` and writes it back out to `stdout`. The redirection operators change the bindings of these streams from the keyboard and/or screen to files. We’ll discuss `stderr` later in the term.
 
-##### Exercises
+#### Exercises
 
 1. Run `my_echo.py` as shown above.
 
@@ -495,7 +495,7 @@ In general, all Linux processes can perform input/output operations through, at 
 
 By the way, if you run `python3 my_echo.py` without redirecting the input, it will patiently wait for you to type some input for it to echo. Once you type some input and hit return, the program will echo your input, and then resume waiting for input. It will continue to do so until you exit by typing `Ctrl-d`. Give it a try!
 
-#### Piping
+### Piping
 
 In addition to the ability to direct output to and receive input from files, Linux provides a very powerful capability called piping. Piping allows one program to receive as input the output of another program, like so:
 
@@ -531,15 +531,15 @@ vgmknodes (8)        - recreate volume group directory and logical volume specia
 
 Nice.
 
-##### Exercises
+#### Exercises
 
 1. Use piping to chain together the `printenv` and `tail` commands to display the last 10 lines of output from `printenv`.
 
 2. Replicate the above functionality without using the `|` operator. (Hint: Use a temporary file.)
 
-### Advanced (Optional)
+## Advanced (Optional)
 
-#### File Permissions
+### File Permissions
 
 Sometimes we want to restrict who can access certain resources on the file system.
 
@@ -590,7 +590,7 @@ The permissions are `-rwxr-xr-x`. The initial dash (`-`) indicates that `/usr/bi
 
 By default, any files or directories that you create will have your username as both the user and the group. (If you run `groups`, you’ll notice that there is a group with the same name as your username. You are the only member of this group.) On our Linux machines, by default, new files are given read and write permissions to user and group and no permissions to other. New directories will be set to have read, write and execute permissions for user and group.
 
-##### Exercises
+#### Exercises
 
 1. Verify this claim by running `ls -l backups/copy2.txt` and `ls -ld backups` in your `lab1` directory.
 
@@ -598,7 +598,7 @@ The `-d` flag tells `ls` to list the directory, instead of its contents. Notice 
 
 Once you have verified the claim, go ahead and remove the `backups` directory.
 
-#### Changing Permissions, Owner, and Group
+### Changing Permissions, Owner, and Group
 
 |   |   |
 |---|---|
@@ -648,7 +648,7 @@ chgrp <new group> <path to file>
 
 It is unlikely that you will need to use these two commands for this course.
 
-##### Exercises
+#### Exercises
 
 1. Run `echo "Hello!" > testfile` to construct `testfile`. Look at the permissions using `ls -l`.
 
@@ -658,6 +658,6 @@ It is unlikely that you will need to use these two commands for this course.
 
 4. Remove `testfile`.
 
-### Final Notes
+## Final Notes
 
 Sometimes, a program will run indefinitely or misbehave. When this happens, you can type `Ctrl-C` to send an interrupt signal to the running program, which usually causes it to terminate. On occasion, you may need to type `Ctrl-C` a few times. As noted earlier, typing `Ctrl-D` sends an end of input signal, which tells the program that no more information is coming.
