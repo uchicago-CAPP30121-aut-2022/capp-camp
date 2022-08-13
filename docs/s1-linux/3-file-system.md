@@ -198,3 +198,29 @@ Try the following tasks to practice and check your understanding of these termin
 It can be tedious (and, when you are tired, challenging) to spell directory or file names exactly, so the terminal provides an auto-complete mechanism to guide you through your folder explorations. To access this functionality, simply start typing whatever name you are interested in the context of a command and then hit tab. If there is only one way to finish that term hitting tab will fill in the rest of the term, for instance, if we typed `ls b` and then hit tab it would automatically finish the word `ls backups` and then await our hitting enter. If there is MORE than one way to finish a term, like if we had another folder called `backups-old`, then hitting tab twice will cause the terminal to display all of the options available.
 
 Training yourself to use auto-completion (aka tab completion) will save you time and reduce the inevitable frustration that arises from mistyping file names when you are tired or distracted.
+
+# Wild Cards (Using an Asterisk)
+
+Sometimes when we enter a string, we want part of it to be variable, or a wildcard. A common task is to list all files that end with a given extension, such as `.txt`. The wildcard functionality, through an asterisk, allows us to simply say:
+
+```bash
+$ ls *.txt
+```
+
+The wildcard can represent a string of any length consisting of any characters - including the empty string.
+
+It is important to be **careful** using wildcards, especially for commands like `rm` that cannot be undone. A command like:
+
+```bash
+$ rm *   ### DO NOT RUN THIS COMMAND!
+```
+
+will delete **all** of the files in your working directory!
+
+FYI, the text that follows a # on the Linux command-line is assumed to be a comment and is ignored.
+
+### Exercises
+
+Navigate to your `camp_camp` directory. What do you see when you run `ls pa*`? What about `ls pa*/*`?
+
+What do you expect to see when you run the command `ls ../pa*` from within your `camp_camp/lab1 directory`?

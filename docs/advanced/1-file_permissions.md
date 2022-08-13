@@ -1,8 +1,8 @@
 ---
 layout: default
-title: File Permissions (Optional)
-nav_order: 9
-parent: Introduction to Linux
+title: File Permissions
+nav_order: 1
+parent: Advanced
 ---
 
 # File Permissions

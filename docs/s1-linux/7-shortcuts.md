@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Shortcuts
-nav_order: 8
+nav_order: 7
 parent: Introduction to Linux
 ---
 
