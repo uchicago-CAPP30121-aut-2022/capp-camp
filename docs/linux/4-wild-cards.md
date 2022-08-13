@@ -2,7 +2,7 @@
 layout: default
 title: Wild Cards
 nav_order: 4
-has_children: false
+parent: Introduction to Linux
 ---
 
 # Wild Cards (Using an Asterisk)

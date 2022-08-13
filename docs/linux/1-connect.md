@@ -2,7 +2,7 @@
 layout: default
 title: Connecting to the Remote Server
 nav_order: 1
-has_children: false
+parent: Introduction to Linux
 ---
 
 # Connect to the Remote Server

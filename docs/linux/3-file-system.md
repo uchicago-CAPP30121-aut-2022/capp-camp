@@ -2,7 +2,7 @@
 layout: default
 title: Navigating the File System
 nav_order: 3
-has_children: false
+parent: Introduction to Linux
 ---
 
 # Navigating the File System

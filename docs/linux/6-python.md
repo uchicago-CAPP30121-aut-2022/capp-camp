@@ -2,7 +2,7 @@
 layout: default
 title: Running Python Programs
 nav_order: 6
-has_children: false
+parent: Introduction to Linux
 ---
 
 # Editing and Running a Python Program

@@ -2,7 +2,7 @@
 layout: default
 title: Working with I/O Streams
 nav_order: 7
-has_children: false
+parent: Introduction to Linux
 ---
 
 # Working with Input/Output Streams

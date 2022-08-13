@@ -2,7 +2,7 @@
 layout: default
 title: Man Pages
 nav_order: 5
-has_children: false
+parent: Introduction to Linux
 ---
 
 # Man Pages

@@ -2,7 +2,7 @@
 layout: default
 title: File Permissions (Optional)
 nav_order: 9
-has_children: false
+parent: Introduction to Linux
 ---
 
 # File Permissions

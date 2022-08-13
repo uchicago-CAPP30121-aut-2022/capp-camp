@@ -2,7 +2,7 @@
 layout: default
 title: Shortcuts
 nav_order: 8
-has_children: false
+parent: Introduction to Linux
 ---
 
 # Shortcuts

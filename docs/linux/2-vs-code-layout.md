@@ -2,7 +2,7 @@
 layout: default
 title: Visual Studio Code Layout
 nav_order: 2
-has_children: false
+parent: Introduction to Linux
 ---
 
 # Visual Studio Code Layout
