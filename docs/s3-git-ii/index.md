@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Git Practice
+title: Git II
 nav_order: 4
 has_children: true
 ---

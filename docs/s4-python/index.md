@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Python Programming in VS Code
+title: Python Programming
 nav_order: 5
 has_children: true
 ---
 
-# Python Programming in VS Code
+# Python Programming

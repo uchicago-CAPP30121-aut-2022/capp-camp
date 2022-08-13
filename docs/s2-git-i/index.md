@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Introduction to Git
+title: Git I
 nav_order: 3
 has_children: true
 ---
