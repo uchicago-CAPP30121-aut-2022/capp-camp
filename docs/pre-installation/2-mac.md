@@ -7,7 +7,7 @@ parent: Pre-Installation
 
 # MacOS
 
-Follow the instructions below to install Visual Studio Code (VS Code) and an SSH (Secure Shell) client.
+Follow the instructions below to install Visual Studio Code (VS Code), an SSH (Secure Shell) client, and the Remote-SSH and Python VS Code extensions.
 
 ## VS Code
 
@@ -15,6 +15,7 @@ Follow the instructions below to install Visual Studio Code (VS Code) and an SSH
 
 ![VS Code homepage screenshot - MacOS](../assets/img/install-code-mac-1.png)
 
+{:start="2"}
 2. When the download is complete, you will have a new application file called "Visual Studio Code". (You might instead have zip file, with a name like VSCode-darwin-stable.zip; in this case, open the file to unzip it, and the Visual Studio Code application file should appear.) Open a Finder window and navigate to Downloads. (It will likely be listed under "Favorites" in the left sidebar). Locate the file named "Visual Studio Code", and drag it on top of Applications in the left side bar. Now, you can find VSCode in your Applications folder, and can open it with a click.
 
 ![VS Code installer screenshot - MacOS](../assets/img/install-code-mac-2.png)
@@ -25,6 +26,7 @@ Follow the instructions below to install Visual Studio Code (VS Code) and an SSH
 
 ![VS Code installer screenshot - MacOS](../assets/img/install-ssh-mac-1.png)
 
+{:start="2"}
 2. When the terminal opens, type `ssh` and confirm that a list of available options for the command is displayed.
 
 ## Remote-SSH and Python Extensions
@@ -33,12 +35,12 @@ Follow the instructions below to install Visual Studio Code (VS Code) and an SSH
 
 ![Click extensions icon screenshot](../assets/img/install-ext-1.png)
 
+{:start="2"}
 2. Search for and install the extensions "Python (Microsoft)" and "Remote - SSH (Microsoft)". To do this, click in the search bar ("Search Extensions in Marketplace") and start typing the name of the extension. When it appears, make sure the name and publisher matches exactly, and click "Install".
 
 ![Python extension selected screenshot](../assets/img/install-ext-2.png)
 
-![Remtoe SSH extension selected screenshot](../assets/img/install-ext-3.png)
-
+![Remote SSH extension selected screenshot](../assets/img/install-ext-3.png)
 
 ## Next Steps
 

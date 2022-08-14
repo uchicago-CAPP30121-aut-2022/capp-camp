@@ -7,7 +7,7 @@ parent: Pre-Installation
 
 # Linux
 
-Follow the instructions below to install Visual Studio Code (VS Code) and an SSH (Secure Shell) client.
+Follow the instructions below to install Visual Studio Code (VS Code), an SSH (Secure Shell) client, and the Remote-SSH and Python VS Code extensions.
 
 ## VS Code
 
@@ -35,11 +35,12 @@ After the step has completed, verify installation by typing `ssh` and pressing "
 
 ![Click extensions icon screenshot](../assets/img/install-ext-1.png)
 
+{:start="2"}
 2. Search for and install the extensions "Python (Microsoft)" and "Remote - SSH (Microsoft)". To do this, click in the search bar ("Search Extensions in Marketplace") and start typing the name of the extension. When it appears, make sure the name and publisher matches exactly, and click "Install".
 
 ![Python extension selected screenshot](../assets/img/install-ext-2.png)
 
-![Remtoe SSH extension selected screenshot](../assets/img/install-ext-3.png)
+![Remote SSH extension selected screenshot](../assets/img/install-ext-3.png)
 
 ## Next Steps
 

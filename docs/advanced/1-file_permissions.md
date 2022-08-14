@@ -1,6 +1,6 @@
 ---
 layout: default
-title: File Permissions
+title: Linux File Permissions
 nav_order: 1
 parent: Advanced
 ---
