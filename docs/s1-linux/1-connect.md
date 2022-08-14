@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Connecting to the Remote Linux Server
+title: Connect to the Remote Server
 nav_order: 1
 parent: Introduction to Linux
 ---
@@ -43,7 +43,7 @@ The main Linux server (linux.cs.uchicago.edu) acts as a frontend for specific Li
 
 However, VS Code works best when connected with a specific machine rather than to the front end. To avoid having everyone use the same server (e.g., linux1.cs.uchicago.edu) and concentrate too much traffic in one network location, we have assigned you a server to use based on the first letter of your CNetID (i.e., the part of your UChicago email address that comes before the @ sign). For example, my CNetID is `launagreer`, so I would be assigned to linux5.cs.uchicago.edu.
 
-|Starts With|Assigned To|
+|First Letter of CNetID|Assigned Server|
 |---|---|
 |A, B|linux1.cs.uchicago.edu|
 |C, D, E|linux2.cs.uchicago.edu|

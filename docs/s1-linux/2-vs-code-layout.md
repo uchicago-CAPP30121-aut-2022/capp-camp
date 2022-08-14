@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Getting Started in VS Code
+title: Get Started with VS Code
 nav_order: 2
 parent: Introduction to Linux
 ---
 
-# Getting Started in VS Code
+# Get Started with VS Code
 
 Now that we've connected to the remote server, let's take a moment to familiarize ourselves with the default layout of VS Code and open a new terminal.
 

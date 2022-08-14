@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Working with I/O Streams
+title: Work with I/O Streams
 nav_order: 6
 parent: Introduction to Linux
 ---
 
-# Working with I/O Streams
+# Work with I/O Streams
 
 When you run a program (using the command line or by clicking), the Linux operating system creates a new _process_ for running the program. Every Linux process has an input stream (known as standard in) for providing input to a program and two output streams, one for regular output (known as standard out) and one for providing information about errors (known as standard error). In this section, you will learn how to use these input/output, or "I/O", streams to redirect a program's output to a file or to another program as an input.
 

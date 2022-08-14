@@ -9,7 +9,7 @@ parent: Introduction to Linux
 
 Great work! At this point, you should be comfortable:
 
-- Remotely connecting to your assigned university Linux server
+- Remotely connecting to your assigned server
 - Browsing the Linux file system using list (`ls`) and change directory (`cd`)
 - Viewing file contents with concatenate (`cat`)
 - Looking up unknown commands with `man`
@@ -27,7 +27,7 @@ As a final note, sometimes a program will run indefinitely or misbehave. When th
 
 Safely close your remote connection by clicking the button in the bottom lefthand corner of the screen and then selecting the option "Close Remote Connection" in the menu that appears.  VS Code will then direct you to an empty window with no folder open, which you can close.
 
-![VS Code Remote SSH config option screenshot](../assets/img/connect-remote-vs-code-1.png)
+![VS Code Remote SSH close option screenshot](../assets/img/linux-conclusion-1.png)
 
 ## Next Steps
 
@@ -37,10 +37,16 @@ Our next two labs will focus on Git, the most commmonly used software for tracki
 
 _Linux File System_
 
-- **"Course overview + the shell."_The Missing Semester of Your CS Education_. MIT, 2020. [[Link](https://missing.csail.mit.edu/2020/course-shell/)] - This lecture provides a great overview of the difference between terminals and shells, how to navigate Unix-like file systems like Linux, and how to redirect output between programs. Other subjects in the course are advanced and beyond the scope of 30121.
+**"Course overview + the shell."** _The Missing Semester of Your CS Education_. MIT, 2020. [[Link](https://missing.csail.mit.edu/2020/course-shell/)]
 
-- **"The Linux command line for beginners." _Ubuntu_. [[Link](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)] - This official tutorial from Ubuntu, a [distribution of Linux](https://en.wikipedia.org/wiki/Linux_distribution), covers how to create, move, and manipulate files and directories while addressing additional topics like user permissions and hidden files.
+This lecture provides a great overview of the difference between terminals and shells, how to navigate Unix-like file systems like Linux, and how to redirect output between programs. Other subjects in the course are advanced and beyond the scope of 30121.
+
+**"The Linux command line for beginners."** _Ubuntu_. [[Link](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)]
+
+This official tutorial from Ubuntu, a [distribution of Linux](https://en.wikipedia.org/wiki/Linux_distribution), covers how to create, move, and manipulate files and directories while addressing additional topics like user permissions and hidden files.
 
 _Visual Studio Code_
 
-- **"Introductory Videos." _Visual Studio Code_. Microsoft. [[Link]()] - This short video series walks through the basics of VS Code, including how to edit and run code, use keyboard shortcuts, download extensions, and more.  Some of these topics will be covered in future CAPP camp sessions.
+**"Introductory Videos."** _Visual Studio Code_. Microsoft. [[Link]()]
+
+This short video series walks through the basics of VS Code, including how to edit and run code, use keyboard shortcuts, download extensions, and more.  Some of these topics will be covered in future CAPP camp sessions.

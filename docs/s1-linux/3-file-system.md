@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Navigating the File System
+title: The Linux File System
 nav_order: 3
 parent: Introduction to Linux
 ---

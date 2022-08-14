@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Running Python Programs
+title: Run Python Programs
 nav_order: 5
 parent: Introduction to Linux
 ---

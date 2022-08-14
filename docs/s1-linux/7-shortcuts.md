@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Shortcuts
+title: Terminal Shortcuts
 nav_order: 7
 parent: Introduction to Linux
 ---
 
-# Shortcuts
+# Terminal Shortcuts
 
 In this section, you will learn how to speed up terminal operations by chaining and auto-completing commands; iterating through previous commands; and erasing and jumping to different sections of command text.
 
