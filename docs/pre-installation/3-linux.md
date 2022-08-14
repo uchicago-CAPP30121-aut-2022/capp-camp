@@ -33,13 +33,13 @@ After the step has completed, verify installation by typing `ssh` and pressing "
 
 1. At this point, VS Code should be among your installed applications. Open it. In the left sidebar, there is an icon consisting of four squares, with one square separated off from the other three. This is the icon for VSCode extensions. Click it to open the Extensions Panel.
 
-![Click extensions icon screenshot](/docs/assets/img/install-ext-1.png)
+![Click extensions icon screenshot](../assets/img/install-ext-1.png)
 
 2. Search for and install the extensions "Python (Microsoft)" and "Remote - SSH (Microsoft)". To do this, click in the search bar ("Search Extensions in Marketplace") and start typing the name of the extension. When it appears, make sure the name and publisher matches exactly, and click "Install".
 
-![Python extension selected screenshot](/docs/assets/img/install-ext-2.png)
+![Python extension selected screenshot](../assets/img/install-ext-2.png)
 
-![Remtoe SSH extension selected screenshot](/docs/assets/img/install-ext-3.png)
+![Remtoe SSH extension selected screenshot](../assets/img/install-ext-3.png)
 
 ## Next Steps
 
