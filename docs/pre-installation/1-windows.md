@@ -13,7 +13,7 @@ Follow the instructions below to install Visual Studio Code (VS Code), Windows O
 
 1. Go to Visual Studio Code's [home page](https://code.visualstudio.com/). You should see a blue button labeled "Download for Windows: Stable Build". Click this button to download.
 
-![VS Code homepage screenshot - Windows](/docs/assets/img/install-code-win-1.png)
+![VS Code homepage screenshot - Windows]({{site.url}}/docs/assets/img/install-code-win-1.png)
 
 2. Once it is downloaded, run the installer (VSCodeUserSetup-<version>.exe). After you accept the licence agreement, click "Next >". On the page titled "Select Additional Tasks," we recommend you check all the boxes (but it is up to you).
 
