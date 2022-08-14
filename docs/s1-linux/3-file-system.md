@@ -5,22 +5,28 @@ nav_order: 3
 parent: Introduction to Linux
 ---
 
-# Navigating the File System
+# The Linux File System
 
-Files in Linux are stored in directories/folders, just like in OS X/Windows. Directories can hold files or other subdirectories and there are special directories for your personal files, your Desktop, etc.
+In this section, you will learn how to browse the Linux file system using a terminal and make changes to files and directories using the copy (`cp`), move (`mv`), remove (`rm`), and make directory (`mkdir`) commands. You will also learn how to use the wildcard character (`*`) to filter files and directories by name before running commands.
+
+## Browse Directories
+
+Files in Linux are stored in directories/folders, just like in macOS or Windows. Directories can hold files or other subdirectories, and there are special directories for your personal files, your Desktop, etc.
 
 |Name|Linux|Mac|Windows| 
 |-|-|-|-|   
 |Root directory|/|/|C:\\ |  
 |Home directory|/home/username|/Users/username|C:\Documents and Settings\username | 
 
+![Linux file system diagram](../assets/img/file-system-1.svg)
+
 The figure above illustrates how Linux organizes the file system. Your own computer might have a slightly different organization (e.g., you might replace `/` with `C:`), but the idea is the same.
 
-For the above and from this point forward, consider that the text “username” is replaced with your own actual username, which is just your CNetID.
+For the above and from this point forward, consider that the text "username" is replaced with your own actual username, which is just your CNetID.
 
 ### Show Files
 
-The terminal will start in your home directory, `/home/username/`, which is a special directory assigned to your user account. Any CS machine that you use (either in CSIL or remotely) will automatically connect to your home directory and all files that you created or changed in previous work sessions will be available to you.
+The terminal will start in your home directory, `/home/username/`, which is a special directory assigned to your user account. Any CS machine that you use (either in CSIL or remotely) will automatically connect to your home directory, and all files that you created or changed in previous work sessions will be available to you.
 
 Two very useful commands are `pwd` and `ls`:
 
@@ -51,13 +57,13 @@ Notice that the directory path and list of files that you see if you open your h
 |`cd ..`|Move up/back one directory.|  
 |`cd`| Move to your home directory.| 
 
-How can we move around in the file system? If we were using a graphical system, we would double click on folders and occasionally click the “back” arrow. In order to change directories in the terminal, we use `cd` (change directory) followed by the name of the destination directory. (A note about notation: we will use text inside angle brackets, such as `<path-name>` as a place holder. The text informally describes the type of value that should be supplied. In the case of `<path-name>`, the desired value is the path-name for a file. More about path-names later.) For example if we want to change to the `Desktop` directory, we type the following in the terminal:
+How can we move around in the file system? If we were using a graphical system, we would double click on folders and occasionally click the "back" arrow. In order to change directories in the terminal, we use `cd` (change directory) followed by the name of the destination directory. (A note about notation: we will use text inside angle brackets, such as `<path-name>` as a place holder. The text informally describes the type of value that should be supplied. In the case of `<path-name>`, the desired value is the path-name for a file. More about path-names later.) For example, if we want to change to the `Desktop` directory, we type the following in the terminal:
 
 ```bash
 cd Desktop
 ```
 
-Here is an example of changing to the desktop directory in the terminal. We use `pwd` and `ls` to verify where we are and where we can go:
+Here is an example of changing to the `Desktop` directory in the terminal. We use `pwd` and `ls` to verify where we are and where we can go:
 
 ```bash
 username@computer:~$ pwd
@@ -86,7 +92,7 @@ rather than:
 
 In the beginning, there are no files in the `Desktop` directory, which is why the output of `ls` in this directory is empty.
 
-We can move up one step in the directory tree (e.g., from `/home/username/Desktop` to `/home/username` or from `/home/username` to `/home`) by typing `cd ..`. Here “up” is represented by `..` In this context, this command will move us up one level back to our home directory:
+We can move up one step in the directory tree (e.g., from `/home/username/Desktop` to `/home/username` or from `/home/username` to `/home`) by typing `cd ..`. Here "up" is represented by `..` In this context, this command will move us up one level back to our home directory:
 
 ```bash
 username@computer:~/Desktop$ pwd
@@ -104,9 +110,9 @@ Notice that the current working directory is also shown in the prompt string.
 |`.`|Shortcut for the current working directory.|  
 |`..`|Shortcut for one level up from your current working directory.| 
 
-The tilde (`~`) directory is the same as your home directory: that is, `~` is shorthand for `/home/` username. Here’s another useful shorthand: a single dot (`.`) refers to the current directory.
+The tilde (`~`) directory is the same as your home directory: that is, `~` is shorthand for `/home/<username>`. Here’s another useful shorthand: a single dot (`.`) refers to the current directory.
 
-Usually when you use `cd`, you will specify what is called a relative path, that is, you are telling the computer to take you to a directory where the location of the directory is described relative to the current directory. The only reason that the computer knows that we can `cd` to `Desktop` is because `Desktop` is a folder within the `/home/` username directory. But, if we use a `/` at the beginning of our path, we are specifying an absolute path or one that is relative to the the “root” or top of the file system. For example:
+Usually when you use `cd`, you will specify what is called a _relative path_, that is, you are telling the computer to take you to a directory where the location of the directory is described relative to the current directory. The only reason that the computer knows that we can `cd` to `Desktop` is because `Desktop` is a folder within the `/home/` username directory. But, if we use a `/` at the beginning of our path, we are specifying an absolute path or one that is relative to the the “root” or top of the file system. For example:
 
 ```bash
 username@computer:~$ pwd
@@ -140,13 +146,14 @@ cd
 cp -r ~amr/capp_camp .
 ```
 
-This directory contains a subdirectory, `lab1`, that has some files for us to play with. You will learn how to manipulate these files in the next section.
+{: .note }
+In Windows (macOS) you usually copy-paste with `Ctrl-C` (`Command-C`) and `Ctrl-V` (`Command-V`). On our Linux systems, you can use `Ctrl-Shift-C` and `Ctrl-Shift-V`, but you may find that this method does not reliably work on all Linux systems.
 
-#### Exercises
+This directory contains a subdirectory, `lab1`, that has some files for us to play with. You will learn how to manipulate these files in the next section. For now, use `pwd`, `ls`, and `cd` to navigate to the `lab1` subdirectory.
 
-Use `pwd`, `ls`, and `cd` to navigate to the `lab1` subdirectory.
+## Alter Files and Directories
 
-### Copy (`cp`), Move (`mv`), Remove (`rm`), and Make Directory (`mkdir`)
+Syntax for the copy (`cp`), move (`mv`), remove (`rm`), and make directory (`mkdir`) commands is summarized below:
 
 |   |   |
 |---|---|
@@ -179,27 +186,7 @@ Some useful terminology: the `-r` argument in `cp -r` or `rm -r` is known as a f
 
 You can make a new directory with `mkdir < <directory name>`, where `<directory name>` is the desired name for the new directory.
 
-#### Exercises
-
-Try the following tasks to practice and check your understanding of these terminal commands.
-
-1. Copy `test.txt` to `copy.txt` and use `ls` to ensure that both files exist.
-
-2. Move the file `copy.txt` to the name `copy2.txt`. Use `ls` to verify that this command worked.
-
-3. Make a new directory named `backups` using the `mkdir` command.
-
-4. Copy the file `copy2.txt` to the `backups` directory.
-
-5. Verify that step (4) was successful by listing the files in the `backups` directory.
-
-6. Now that we have a copy of `test.txt` in the backups directory we no longer need `copy2.txt`. Remove the file `copy2.txt` in this directory.
-
-It can be tedious (and, when you are tired, challenging) to spell directory or file names exactly, so the terminal provides an auto-complete mechanism to guide you through your folder explorations. To access this functionality, simply start typing whatever name you are interested in the context of a command and then hit tab. If there is only one way to finish that term hitting tab will fill in the rest of the term, for instance, if we typed `ls b` and then hit tab it would automatically finish the word `ls backups` and then await our hitting enter. If there is MORE than one way to finish a term, like if we had another folder called `backups-old`, then hitting tab twice will cause the terminal to display all of the options available.
-
-Training yourself to use auto-completion (aka tab completion) will save you time and reduce the inevitable frustration that arises from mistyping file names when you are tired or distracted.
-
-# Wild Cards (Using an Asterisk)
+## Use Wildcards
 
 Sometimes when we enter a string, we want part of it to be variable, or a wildcard. A common task is to list all files that end with a given extension, such as `.txt`. The wildcard functionality, through an asterisk, allows us to simply say:
 
@@ -219,8 +206,22 @@ will delete **all** of the files in your working directory!
 
 FYI, the text that follows a # on the Linux command-line is assumed to be a comment and is ignored.
 
-### Exercises
+## Exercises
 
-Navigate to your `camp_camp` directory. What do you see when you run `ls pa*`? What about `ls pa*/*`?
+Try the following tasks to practice and check your understanding of these terminal commands.
 
-What do you expect to see when you run the command `ls ../pa*` from within your `camp_camp/lab1 directory`?
+1. Copy `test.txt` to `copy.txt` and use `ls` to ensure that both files exist.
+
+2. Move the file `copy.txt` to the name `copy2.txt`. Use `ls` to verify that this command worked.
+
+3. Make a new directory named `backups` using the `mkdir` command.
+
+4. Copy the file `copy2.txt` to the `backups` directory.
+
+5. Verify that step (4) was successful by listing the files in the `backups` directory.
+
+6. Now that we have a copy of `test.txt` in the backups directory we no longer need `copy2.txt`. Remove the file `copy2.txt` in this directory.
+
+7. Navigate to your `camp_camp` directory. What do you see when you run `ls pa*`? What about `ls pa*/*`?
+
+8. What do you expect to see when you run the command `ls ../pa*` from within your `camp_camp/lab1 directory`?

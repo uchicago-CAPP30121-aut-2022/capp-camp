@@ -5,13 +5,13 @@ nav_order: 6
 parent: Introduction to Linux
 ---
 
-# Working with Input/Output Streams
+# Working with I/O Streams
 
-When you run a program (at the command-line or by clicking), the Linux operating system creates a new process for running the program. Every Linux process has an input stream (known as standard in) for providing input to a program and two output streams, one for regular output (known as standard out) and one for providing information about errors (known as standard error). In this section, you will learn how to use these streams to provide input to a program and to capture the output.
+When you run a program (using the command line or by clicking), the Linux operating system creates a new _process_ for running the program. Every Linux process has an input stream (known as standard in) for providing input to a program and two output streams, one for regular output (known as standard out) and one for providing information about errors (known as standard error). In this section, you will learn how to use these input/output, or "I/O", streams to redirect a program's output to a file or to another program as an input.
 
-### Redirection
+## Redirection
 
-The examples in this section will use commands that we’ve not yet discussed. Refer to the man pages for information about unfamiliar commands.
+The examples in this section will use commands that we've not yet discussed. Refer to the man pages for information about unfamiliar commands.
 
 As we already know, commands like `pwd` and `ls` will print output to screen by default. Sometimes, however, we may prefer to write the output of these commands to a file. In Linux, we can redirect the output of a program to a file of our choosing. This operation is done with the `>` operator.
 
@@ -44,7 +44,7 @@ Two important things to note:
 
 1. If you redirect to a file that does not exist, that file will be created.
 
-2. If you redirect to a file that already exists, the contents of that file will be overwritten.
+2. If you redirect to a file that already exists, the contents of that file will be **overwritten**.
 
 You can use the append operator (`>>`) to append the output of command to the end of an existing file rather than overwrite the contents of that file.
 
@@ -57,18 +57,6 @@ $ python3 my_echo.py < my-input.txt
 (Change back to your `lab1` directory before you try this command.)
 
 In general, all Linux processes can perform input/output operations through, at least, the keyboard and the screen. More specifically, there are three "input/output streams": standard input (or `stdin`), standard output (or `stdout`), and standard error (or `stderr`). The code in `my_echo.py` simply reads information from `stdin` and writes it back out to `stdout`. The redirection operators change the bindings of these streams from the keyboard and/or screen to files. We’ll discuss `stderr` later in the term.
-
-#### Exercises
-
-1. Run `my_echo.py` as shown above.
-
-2. Run `my_echo.py` again, but this time redirect the output to a file named `output.txt`. Check the contents of `output.txt` using an editor or by using the cat or more commands.
-
-3. Run `my_echo.py` redirecting the input from test.txt and the output to `output2.txt`. Check the contents of `output2.txt`.
-
-4. When you are done, remove `output.txt` and `output2.txt`.
-
-By the way, if you run `python3 my_echo.py` without redirecting the input, it will patiently wait for you to type some input for it to echo. Once you type some input and hit return, the program will echo your input, and then resume waiting for input. It will continue to do so until you exit by typing `Ctrl-d`. Give it a try!
 
 ### Piping
 
@@ -106,8 +94,16 @@ vgmknodes (8)        - recreate volume group directory and logical volume specia
 
 Nice.
 
-#### Exercises
+## Exercises
 
-1. Use piping to chain together the `printenv` and `tail` commands to display the last 10 lines of output from `printenv`.
+1. Run `my_echo.py` as shown above. (By the way, if you run `python3 my_echo.py` without redirecting the input, it will patiently wait for you to type some input for it to echo. Once you type some input and hit `enter` or `return`, the program will echo your input, and then resume waiting for input. It will continue to do so until you exit by typing `Ctrl-d`. Give it a try!)
 
-2. Replicate the above functionality without using the `|` operator. (Hint: Use a temporary file.)
+2. Run `my_echo.py` again, but this time redirect the output to a file named `output.txt`. Check the contents of `output.txt` using an editor or by using the cat or more commands.
+
+3. Run `my_echo.py` redirecting the input from test.txt and the output to `output2.txt`. Check the contents of `output2.txt`.
+
+4. When you are done, remove `output.txt` and `output2.txt`.
+
+5. Use piping to chain together the `printenv` and `tail` commands to display the last 10 lines of output from `printenv`.
+
+6. Replicate the above functionality without using the `|` operator. (Hint: Use a temporary file.)
