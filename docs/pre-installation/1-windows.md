@@ -13,11 +13,11 @@ Follow the instructions below to install Visual Studio Code (VS Code), Windows O
 
 1. Go to Visual Studio Code's [home page](https://code.visualstudio.com/). You should see a blue button labeled "Download for Windows: Stable Build". Click this button to download.
 
-![VS Code homepage screenshot - Windows]({{site.url}}/docs/assets/img/install-code-win-1.png)
+![VS Code homepage screenshot - Windows]({{site.url}}/capp-camp/docs/assets/img/install-code-win-1.png)
 
 2. Once it is downloaded, run the installer (VSCodeUserSetup-<version>.exe). After you accept the licence agreement, click "Next >". On the page titled "Select Additional Tasks," we recommend you check all the boxes (but it is up to you).
 
-![VS Code installer screenshot - Windows](/docs/assets/img/install-code-win-2.png)
+![VS Code installer screenshot - Windows](/assets/img/install-code-win-2.png)
 
 3. Click "Next >", then click "Install". When the progress bar fills, click "Finish".
 
@@ -32,7 +32,7 @@ Are you using an older PC with Windows 7 or 8? If so, please reach out to the in
 
 1. Open the Start menu by clicking on the Windows logo in the bottom lefthand corner of your screen. Begin typing "About your PC", and click on the option when it appears.
 
-![About Your PC screenshot - Windows](/docs/assets/img/install-ssh-win10-1.png)
+![About Your PC screenshot - Windows](../assets/img/install-ssh-win10-1.png)
 
 2. Scroll down to the heading "Windows specifications". Next to Edition, you should see Windows 10 Home, Windows 10 Pro, Windows 11 Home, Windows 11 Pro, or similar. Below that you should see Version and a number like "2004". If you have Windows 10 and that number is less than 1803, then you need to perform an update.
 
