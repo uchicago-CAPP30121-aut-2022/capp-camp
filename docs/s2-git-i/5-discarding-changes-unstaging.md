@@ -37,7 +37,7 @@ index bf87536..e69de29 100644
 
 Lines that begin with `-` indicate content that has been removed from `test.txt`, while lines that begin with `+` indicate content that has been added to `test.txt`. We only deleted lines from the file, so there should be no lines beginning with `+` in the output.
 
-{: .tip}
+{: .tip-title}
 > VSCode Tip
 > 
 > To view the changes that you have made to `test.txt` in the VSCode window, you can click on the Source Code icon and then click on the file in the dropdown. VSCode will display in a new file tab two versions of the file, the previous version last committed and the new version with color-coded highlights to identify modifications.

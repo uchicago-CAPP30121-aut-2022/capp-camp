@@ -45,12 +45,12 @@ Notice that there are two types of files listed here:
 {: .warning}
 > You may see some automatically generated files in your Untracked files section. Files that start with a pound sign (#) or end with a tilde should _not_ be added to your repository. Files that end with a tilde are backup files created by some editors that are intended to help you restore your files if your computer crashes. In general, files that are automatically generated should not be committed to your repository. Other people should be able to generate their own versions, if necessary.
 
-{: .tip}
+{: .tip-title}
 > VSCode Tip
 > 
 > VSCode also tells you whether a file with pending changes belongs to the tracked-but-unstaged group or the untracked group. Notice in your VSCode window that the `README.md` file tab is light yellow with the character "M" next to it. VSCode is telling you that Git knows about this file and that it has been modified since your last commit. Conversely, the file tab for `test.txt` is bright green with the character "U" next to it, which indicates that this file is completely new to Git and is not currently being tracked.
 
-So, let’s go ahead and add `README.md`:
+Let’s go ahead and add `README.md`:
 
 ```
 git add README.md
@@ -121,7 +121,7 @@ CAPP Camp Lab 2 updates:
 - Updated README.md file
 ```
 
-In nano, you can save the file and exit by pressing Control-X, entering “Y” when prompted to “save modified buffer” (i.e., whether to save the file before exiting), and then pressing Enter (you may be presented with a new set of menu options; just press Enter).
+In nano, you can save the file and exit by pressing `Ctrl-X`, entering “Y” when prompted to “save modified buffer” (i.e., whether to save the file before exiting), and then pressing Enter (you may be presented with a new set of menu options; just press Enter).
 
 This will complete the commit, and you will see a message like this:
 
