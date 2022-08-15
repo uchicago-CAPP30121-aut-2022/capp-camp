@@ -64,7 +64,11 @@ This means your key was created correctly.
 
 Now, we need to instruct GitHub to accept our SSH key. To do this, log into [https://github.com/](https://github.com/) and go to your Settings page (by clicking on the top-right account icon, and then selecting “Settings” in the drop-down menu). Then, click on “SSH and GPG keys” in the sidebar menu.
 
+![The Settings Tab on GitHub](../assets/img/git-hub-settings-image.png)
+
 Now, click on the green “New SSH key” button. This will take you to a page where you can upload your SSH key. You will be asked for two values: a “Title” and the key itself. The title can be anything you want, but we suggest something like “CS Server SSH Key”.
+
+![SSH Key Settings Page on GitHub](../assets/img/git-hub-ssh-key-image.png)
 
 The value of the key is contained in the `.ssh/id_rsa.pub` file in your home directory. To print out the contents of that file, we can just use the `cat` command, which we covered in the Linux tutorial:
 
@@ -75,6 +79,8 @@ $ cat ~/.ssh/id_rsa.pub
 This will print a few lines of output starting with `ssh-rsa` and ending in something like `username@machine`. Copy the whole output to the clipboard; you can do this by clicking and dragging the mouse from the first character to the last character, and then pressing `Ctrl-Shift-C` (for PCs) or `Cmd-Shift-C` (for Macs). If neither of these commands work, try using your machine’s standard text copy and paste mechanism.
 
 Then, paste the key into the “Key” field on the GitHub page. Then click on the green “Add SSH Key” button.
+
+![Add SSH Key Page on GitHub](../assets/img/git-hub-add-ssh-key-image.png)
 
 To verify that you correctly uploaded the key, try running the following command from your terminal:
 
