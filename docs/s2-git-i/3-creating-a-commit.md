@@ -13,16 +13,18 @@ If you make changes to your repository, the way to store those changes (and the 
     
 - Create a new file called `test.txt` that contains a single line with the text `Hello, world!`.
 
-> {: .tip-title} 
->> VSCode Tip
->>
->> VSCode includes Git integrations that can be useful for various Git-related tasks. These integrations are automatically included when working in a directory that has a Git repository initialized. They can be helpful for seeing what Git is doing without needing to run Git commands from the terminal.
->>
->> **It is nonetheless important to understand how to use Git from the terminal**, as you will not always have VSCode available to assist you in all contexts and you will be a much stronger developer if you know how to work with Git without the aid of an Integrated Developer Environment (IDE).
->>
->> If you look at your VSCode window, you will see on the left-hand sidebar an icon for Source Control, which looks like a small tree with three circles connected by two lines (the third icon from the top below the seach icon). It should have a blue notification with the number 2 next to it. This notification tells us that we have two pending changes in our Git repository, because we just added changes to `README.md` and created a new file `test.txt`. If you click on the icon, you will see those two files listed below the directory `camp-1-GITHUB_USER` under a grouping called "Changes." This interface of VSCode can be useful for seeing which files you have modified or created since your last "checkpoint" in your Git repository.
+{: .tip-title} 
+> VSCode Tip
+>
+> VSCode includes Git integrations which can be helpful for seeing what Git is doing without running Git commands from the terminal. While these integrations are convenient, **it is nonetheless important to understand how to use Git from the terminal**, as you will be a much stronger developer if you know how to work with Git without the aid of an Integrated Developer Environment (IDE).
+>
+> ![VSCode Source Control Icon](../assets/img/vscode-source-code-icon.png)
+>
+> If you look at your VSCode window, you will see on the left-hand sidebar an icon for Source Control. It should have a blue notification next to it. This notification tells us that we have two pending changes in our Git repository, because we modified `README.md` and created `test.txt`. If you click on the icon, you will see those two files listed under a grouping called "Changes." The Source Control window can be useful for seeing which files you have modified or created since your last "checkpoint" in your Git repository.
 
-Creating a commit is a two-step process. First, you have to indicate what files you want to include in your commit. Let’s say we want to create a commit that only includes the updated `README.md` file. We can specify this operation explicitly using the `git add` command from the terminal:
+## `git add` and `git commit`
+
+**Creating a commit is a two-step process**. **First**, you have to indicate what files you want to include in your commit. Let’s say we want to create a commit that only includes the updated `README.md` file. We can specify this operation explicitly using the `git add` command from the terminal:
 
 ```
 git add README.md
@@ -35,7 +37,7 @@ This command will not print any output if it is successful.
 > 
 > Now, if you click on the Source Control icon in VSCode, you will see that the `README.md` file has moved from the "Changes" grouping to a new grouping called "Staged Changes." VSCode is telling us that we have added the pending changes in `README.md` to a commit.
 
-To create the commit, use the `git commit` command. This command will take all the files you added with `git add` and will bundle them into a commit:
+**Second**, you must create a commit from the files that you have added. To create the commit, use the `git commit` command. This command will take all the files you added with `git add` and will bundle them into a commit:
 
 ```
 git commit -m "Updated README.md"
@@ -43,18 +45,23 @@ git commit -m "Updated README.md"
 
 The text after the `-m` is a short message that describes the changes you have made since your last commit. Common examples of commit messages might be “Finished homework 1” or “Implemented insert function for data struct”.
 
-{: .warning}
-> If you forget the `-m` parameter, Git will think that you forgot to specify a commit message. It will graciously open up a default editor so that you can enter such a message. This can be useful if you want to enter a longer commit message (including multi-line messages). We will experiment with this later.
 
 Once you run the above command, you will see something like the following output:
 
-    [main 3e39c15] Updated README.md
-     1 file changed, 1 insertion(+), 1 deletion(-)
+```
+[main 3e39c15] Updated README.md
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+{: .warning}
+> If you forget the `-m` parameter, Git will think that you forgot to specify a commit message. It will graciously open up a default editor so that you can enter such a message. This can be useful if you want to enter a longer commit message (including multi-line messages). We will experiment with this later.
 
 {: .tip-title}
 > VSCode Tip
 > 
-> Notice, now that we have created a commit with the pending changes to `README.md`, this file has disappeared from the Source Control interface and the blue notification next to the icon has decreased to 1. The only pending change in our Git repository is the addition of the new file `test.txt`. Note that this does not mean your changes have been added to GitHub, as we explain below.
+> Notice, now that we have created a commit with the pending changes to `README.md`, this file has disappeared from the Source Control interface and the blue notification next to the icon has decreased to 1. The only pending change in our Git repository is the addition of the new file `test.txt`.
+
+## Publishing commits with `git push`
 
 You’ve created a commit, but you’re not done yet: you haven’t uploaded it to GitHub yet. Forgetting this step is actually a very common pitfall, so don’t forget to upload your changes. You must use the `git push` command for your changes to be uploaded to the Git server. _If you don’t, the course staff will not be able to see your work_. Simply run the following command from the Linux command-line:
 
