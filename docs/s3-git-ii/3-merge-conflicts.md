@@ -100,7 +100,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 Git recorded the conflicts in `balloons.py` and it is now our responsibility to resolve them before we proceed.
 
-### Resolving a Merge Conflict
+## Resolving a Merge Conflict
 
 `balloons.py` is a small file, so we can use `cat` to look at the contents:
 
