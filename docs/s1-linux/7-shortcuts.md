@@ -30,6 +30,16 @@ Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
 
 First, `pwd` is executed and run to completion, and then `ls` is executed and run to completion. The two examples above are thus equivalent, but the ability to run multiple commands together is a small convenience that could save you some time if there is a group of commands that you want to execute sequentially.
 
+{: .node}
+> The shell doesn’t care about white space, so it will run any of the following as well:
+> 
+> ```
+> $ pwd;ls
+> $ pwd ;ls
+> $ pwd; ls
+> $ pwd       ;        ls
+> ```
+
 ## Auto-complete Commands with `tab`
 
 It can be tedious (and, when you are tired, challenging) to spell directory or file names exactly, so the terminal provides an auto-complete mechanism to guide you through your folder explorations. To access this functionality, simply start typing whatever name you are interested in the context of a command and then hit tab. If there is only one way to finish that term hitting tab will fill in the rest of the term, for instance, if we typed `ls b` and then hit tab it would automatically finish the word `ls backups` and then await our hitting enter. If there is MORE than one way to finish a term, like if we had another folder called `backups-old`, then hitting tab twice will cause the terminal to display all of the options available.

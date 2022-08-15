@@ -13,7 +13,7 @@ Now that we've connected to the remote server, let's take a moment to familiariz
 
 ### The Editor
 
-The _editor_ is the main section of the application. It opens to a "Getting Started" file when you first launch the application if you haven't opened any files for editing yet.
+The _editor_ is the main section of the application, where files are edited. It defaults to a "Getting Started" file when you first launch the application if you haven't opened any files for editing yet.
 
 ### The Menu Bar
 
@@ -39,7 +39,7 @@ The vertical bar on the lefthand side of the application is known as the _activi
 
 ### The Status Bar
 
-The _status bar_ shows the number of current code warnings and errors as well as the line number and file type of the file that is currently displayed in the Editor.
+The _status bar_, located at the very bottom of the application, shows the number of current code warnings and errors as well as the line number and file type of the file that is currently active in the Editor.
 
 ### Panels
 
@@ -49,7 +49,7 @@ Additional panels like terminals can be displayed below or to the side of the Ed
 
 On your personal computer, you probably navigate your hard drive by double clicking on icons. While convenient for simple tasks, this approach is limited. For example, imagine that you want to delete all of the music files over 5 MB that you haven’t listened to in over a year. This task is very hard to do with the standard double-click interface but is relatively simple using the terminal.
 
-To open a terminal in VS Code, go to the Menu Bar and select "Terminal > New Terminal" (or `Ctrl` followed by backtick ``` as a shortcut). A terminal window will open at the bottom of the screen in the default Panels location, and you will see text of the form:
+To open a terminal in VS Code, go to the Menu Bar and select "Terminal > New Terminal" (or `Ctrl` followed by backtick `\`` as a shortcut). A terminal window will open at the bottom of the screen in the default Panels location, and you will see text of the form:
 
 ```bash
 username@computer:~$
