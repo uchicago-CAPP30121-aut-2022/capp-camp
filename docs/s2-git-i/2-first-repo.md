@@ -36,13 +36,13 @@ Log into [https://github.com/](https://github.com/). Your homework repository, `
  - Navigate to the folder you just created, create a file called `README.md`, and add your full name to the file using an editor. You can create a new file using VSCode by running `code <filename>` in a terminal window that is the opened in appropriate directory. (Recall that the notation `<filename>` is a placeholder that should be replaced with an acutal filename.) For this specific task, you can use the command `code README.md`.
  
     {: .note}
-    You must run the `code` command in a terminal window open in your VSCode application. If you run the `code` command from a standalone terminal window on your computer, you will get the following response:
-
-    ```   
-    -bash: code: command not found
-    ```
-
-    If you see this output when attempting to run `code README.md`, you are in the wrong terminal and need to switch to a terminal in the VSCode application.
+    > You must run the `code` command in a terminal window open in your VSCode application. If you run the `code` command from a standalone terminal window on your computer, you will get the following response:
+    >
+    > ```   
+    > -bash: code: command not found
+    > ```
+    > 
+    > If you see this output when attempting to run `code README.md`, you are in the wrong terminal and need to switch to a terminal in the VSCode application.
 
  - Run the commands below replacing `GITHUB_USERNAME` in the fifth command with your GitHub username. We encourage you to run these commands one at a time and to only move on to the next command when you are sure the first one succeeded.
 
