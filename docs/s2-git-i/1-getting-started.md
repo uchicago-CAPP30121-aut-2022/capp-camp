@@ -25,32 +25,38 @@ In the Linux lab, you should have generated an SSH key on your personal machine 
 
 We will generate a *new* SSH key to access GitHub servers from the CS Linux servers. Once you have logged onto the Linux server, make sure you are in your home directory.
 
-    $ cd
-    $ pwd
-    /home/CNET_ID
+```
+$ cd
+$ pwd
+/home/CNET_ID
+```
 
 As you did previously, to create an SSH key, run the following command from the Linux command-line:
 
-    $ ssh-keygen
+```
+$ ssh-keygen
+```
 
 You can use all the defaults for this process (e.g., for the naming of the identification file and location). Be sure to skip setting a passphrase for the key. If all goes well, you should see something like this:
 
-    Your identification has been saved in /home/username/.ssh/id_rsa
-    Your public key has been saved in /home/username/.ssh/id_rsa.pub
-    The key fingerprint is:
-    SHA256:cBUUs2FeMCIrBlTyv/PGpBtNz0v235zvLykpoWIOS9I username@machine
-    The key's randomart image is:
-    +---[RSA 3072]----+
-    | .+.. . ..@+.    |
-    |   +   o = *     |
-    |    + o . o      |
-    |   . o o         |
-    |      . S        |
-    |   .   +.o.      |
-    |  . E ++..=. . . |
-    |   o o+++o.oo oo.|
-    |    .oo+. ...o.+O|
-    +----[SHA256]-----+
+```
+Your identification has been saved in /home/username/.ssh/id_rsa
+Your public key has been saved in /home/username/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:cBUUs2FeMCIrBlTyv/PGpBtNz0v235zvLykpoWIOS9I username@machine
+The key's randomart image is:
++---[RSA 3072]----+
+| .+.. . ..@+.    |
+|   +   o = *     |
+|    + o . o      |
+|   . o o         |
+|      . S        |
+|   .   +.o.      |
+|  . E ++..=. . . |
+|   o o+++o.oo oo.|
+|    .oo+. ...o.+O|
++----[SHA256]-----+
+```
 
 This means your key was created correctly.
 
@@ -62,26 +68,34 @@ Now, click on the green “New SSH key” button. This will take you to a page w
 
 The value of the key is contained in the `.ssh/id_rsa.pub` file in your home directory. To print out the contents of that file, we can just use the `cat` command, which we covered in the Linux tutorial:
 
-    $ cat ~/.ssh/id_rsa.pub
+```
+$ cat ~/.ssh/id_rsa.pub
+```
 
-This will print a few lines of output starting with `ssh-rsa` and ending in something like `username@machine`. Copy the whole output to the clipboard; you can do this by clicking and dragging the mouse from the first character to the last character, and then pressing Ctrl-Shift-C (for PCs) or Cmd-Shift-C (for Macs). If neither of these commands work, try using your machine’s standard text copy and paste mechanism.
+This will print a few lines of output starting with `ssh-rsa` and ending in something like `username@machine`. Copy the whole output to the clipboard; you can do this by clicking and dragging the mouse from the first character to the last character, and then pressing `Ctrl-Shift-C` (for PCs) or `Cmd-Shift-C` (for Macs). If neither of these commands work, try using your machine’s standard text copy and paste mechanism.
 
 Then, paste the key into the “Key” field on the GitHub page. Then click on the green “Add SSH Key” button.
 
 To verify that you correctly uploaded the key, try running the following command from your terminal:
 
-    ssh -T git@github.com
+```
+ssh -T git@github.com
+```
 
 You may see a message like this:
 
-    The authenticity of host 'github.com (...)' can't be established.
-    RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
-    Are you sure you want to continue connecting (yes/no[fingerprint])?
+```
+The authenticity of host 'github.com (...)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no[fingerprint])?
+```
 
 You can safely enter “yes” here. You should then see a message like this:
 
-    Hi username! You've successfully authenticated, but GitHub does
-    not provide shell access.
+```
+Hi username! You've successfully authenticated, but GitHub does
+not provide shell access.
+```
 
 This means your SSH key is properly set up (don’t worry about the “does not provide shell access”; that is normal).
 
