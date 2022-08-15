@@ -1,3 +1,10 @@
+---
+layout: default
+title: Merge Conflicts
+nav_order: 3
+parent: Git II
+---
+
 # Merge conflicts
 
 If you have multiple copies of the same repository, it is easy for them to get out of sync. In this section, we will purposely create a merge conflict using the home and temp repositories that you have created to allow you to see how to fix conflicts. As in the section on working from multiple locations, you’ll want to have two windows open for this section: one where you’ll work with your home repository (that is, the copy of the repository in your home directory) and the other where you’ll work with your temp repository (the one in `/tmp`).
@@ -41,7 +48,7 @@ print("99 green balloons!")
 print("All done.")
 ```
 
-{: .tip}
+{: .tip-title}
 > **VSCode Tip**
 > 
 > In VSCode, there is a simple keyboard shortcut that allows you to edit multiples lines of text simultaneously. This shortcut is useful when you need to make a repetitive change to multiples lines in a file, as we are doing here.
@@ -112,7 +119,7 @@ print("All done.")
 
 The long number `f4a73bedf23e07daf75baa048defbca0d9ae72cb` is the SHA for the commit that you pushed from the temp repository which Git just tried to merge automatically with the home repository's version of `balloons.py`. You’ll see a different SHA there. The code that appears between the line `>>>>>>> f4a73bed...` and the line `=======` is the code that you tried to pull from the remote repository (changing the balloon color from red to green). The code that appears between the line `<<<<<<< HEAD` and the line `=======` is the code that you just changed locally in your home repository (changing the balloon color from red to blue).
 
-{: .tip}
+{: .tip-title}
 > **VSCode Tip**
 > 
 > The Git integration with VSCode will also show you visual information when there is a merge conflict with one of your files. If you look at `balloons.py` file in your home directory in your VSCode editor, you will see the same content that you see when you `cat` the file, along with some additional information that VSCode provides.
@@ -238,7 +245,7 @@ nothing to commit, working tree clean
 
 Before continuing with the rest of the lab, make sure to `git push` your work. You should also run `git pull` in your temp repository to bring it up to date with the server.
 
-### Wrapping Up Merge Conflicts
+## Wrapping Up Merge Conflicts
 
 To sum up this section of the lab, let's reflect on what we did.
 
