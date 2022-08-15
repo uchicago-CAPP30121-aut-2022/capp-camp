@@ -5,7 +5,7 @@ nav_order: 5
 parent: Git I
 ---
 
-## Discarding changes and unstaging
+# Discarding changes and unstaging
 
 One of the benefits of using a version control system is that it is very easy to inspect the history of changes to a given file, as well as to undo changes we did not intend to make. For example, edit `test.txt` to remove all its contents. `git status` will tell us this:
 

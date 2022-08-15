@@ -5,7 +5,7 @@ nav_order: 3
 parent: Git I
 ---
 
-## `git add` revisited and `git status`
+# `git add` revisited and `git status`
 
 Let’s make a further change to `README.md`: Add a line with the text `CAPP 30121 - Computer Science with Applications 1`.
 

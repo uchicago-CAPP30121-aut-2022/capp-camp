@@ -5,7 +5,7 @@ nav_order: 2
 parent: Git I
 ---
 
-## Creating your first repository
+# Creating your first repository
 
 For each assignment in CAPP 30121, we will provide you with an _invitation URL_ that will allow you to sign up for the assignment on GitHub and which will result in the creation of a repository called `XX-GITHUB_USERNAME` inside our `uchicago-CAPP30121-aut-2022` organization on GitHub. For example, if your GitHub username is `jrandom` and XX is `camp-1`, your repository will be called `camp-1-jrandom`. This repository will be private, and can be viewed only by you and the CAPP 30121 course staff.
 
@@ -17,7 +17,7 @@ For this lab, use the camp-1 URL that we supplied on Ed. When you open the invit
 
 If you run into any issues, please ask for help.
 
-### Initializing your repository
+## Initializing your repository
 
 You will start by initializing your repository. Your repository is hosted on GitHub, but you can create a local copy in your home directory (we will refer to this as your _local repository_).
 

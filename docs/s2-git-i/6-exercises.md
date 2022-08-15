@@ -5,7 +5,7 @@ nav_order: 6
 parent: Git I
 ---
 
-## Exercises
+# Exercises
 
  1. In the `test.txt` file, add a new line with the text `Definitely the
     last change!`. Add and create a commit with the change to `test.txt`

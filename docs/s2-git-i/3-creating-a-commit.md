@@ -5,7 +5,7 @@ nav_order: 3
 parent: Git I
 ---
 
-## Creating a commit
+# Creating a commit
 
 If you make changes to your repository, the way to store those changes (and the updated versions of the modified files) is by creating a _commit_. So, let’s start by making some changes:
 
@@ -13,13 +13,10 @@ If you make changes to your repository, the way to store those changes (and the 
     
 -   Create a new file called `test.txt` that contains a single line with the text `Hello, world!`.
 
-> **VSCode Tip**
-> 
-> VSCode includes Git integrations that can be useful for various Git-related tasks. These integrations are automatically included when working in a directory that has a Git repository initialized. Throughout the Git labs, we'll provide some useful tips for understanding and using some of these integrations. They can be helpful for seeing what Git is doing without needing to run Git commands from the terminal.
-> 
-> **It is still nonetheless important to understand how to use Git from the terminal**, as you will not always have VSCode available to assist you in all contexts and you will be a much stronger developer if you know how to work with Git without the aid of a Integrated Developer Environment (IDE), such as VSCode.
-> 
-> If you look at your VSCode window, you will see on the left-hand sidebar an icon for Source Control, which looks like a small tree with three circles connected by two lines (the third icon from the top below the seach icon). It should have a blue notification with the number 2 next to it. This notification tells us that we have two pending changes in our Git repository, because we just added changes to `README.md` and created a new file `test.txt`. If you click on the icon, you will see those two files with pending changes listed below the directory `camp-1-GITHUB_USER` under a grouping called "Changes." This interface of VSCode can be useful for seeing which files you have made changes to since your last "checkpoint" in your Git repository. We'll cover more of the details of this integration throughout the remainder of the Git labs.
+{: .note} 
+VSCode includes Git integrations that can be useful for various Git-related tasks. These integrations are automatically included when working in a directory that has a Git repository initialized. Throughout the Git labs, we'll provide some useful tips for understanding and using some of these integrations. They can be helpful for seeing what Git is doing without needing to run Git commands from the terminal.
+**It is still nonetheless important to understand how to use Git from the terminal**, as you will not always have VSCode available to assist you in all contexts and you will be a much stronger developer if you know how to work with Git without the aid of a Integrated Developer Environment (IDE), such as VSCode. 
+If you look at your VSCode window, you will see on the left-hand sidebar an icon for Source Control, which looks like a small tree with three circles connected by two lines (the third icon from the top below the seach icon). It should have a blue notification with the number 2 next to it. This notification tells us that we have two pending changes in our Git repository, because we just added changes to `README.md` and created a new file `test.txt`. If you click on the icon, you will see those two files with pending changes listed below the directory `camp-1-GITHUB_USER` under a grouping called "Changes." This interface of VSCode can be useful for seeing which files you have made changes to since your last "checkpoint" in your Git repository. We'll cover more of the details of this integration throughout the remainder of the Git labs.
 
 Creating a commit is a two-step process. First, you have to indicate what files you want to include in your commit. Let’s say we want to create a commit that only includes the updated `README.md` file. We can specify this operation explicitly using the `git add` command from the terminal:
 
