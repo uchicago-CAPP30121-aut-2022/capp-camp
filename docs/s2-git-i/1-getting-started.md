@@ -7,13 +7,13 @@ parent: Git I
 
 # Getting started
 
-In the ["Pre-Camp Technical Setup" announcement](https://edstem.org/us/courses/24735/discussion/1675294) on Ed, we have supplied a few URLs that you will need as you work through this lab. Please open a browser and log into the Ed site to have access to these links.
+We have supplied [a few URLs on Ed](https://edstem.org/us/courses/24735/discussion/1679656) that you will need as you work through this lab. Please open a browser and log into the Ed site to have access to these links.
 
 For each assignment, a Git repository will be created for you on [GitHub](https://github.com/), a web-based hosting service for Git repositories. However, before that repository can be created for you, you need to have a GitHub account. If you do not yet have one, you can get an account here: [https://github.com/join](https://github.com/join). Once you create your account, you may want to get the [Student Developer Pack](https://education.github.com/pack), which will give you access to a lot of other features (Please note that having the Student Developer Pack is not necessary for CAPP 30121; it’s just a nice benefit you get as a student.)
 
 ## Joining the uchicago-CAPP30121-aut-2022 organization
 
-We will be using GitHub Classroom and have created a GitHub organization (`uchicago-CAPP30121-aut-2022`) for the course (a GitHub “organization” is basically a way to group together related repositories). You should have received an email to your UChicago email account with an invitation to join the organization. If you have already accepted the invitation, then you can move on to the next section. If you have not already accepted the invitation, please locate the invitation email in your UChicago email account and follow the instructions to accept invite.
+We will be using GitHub Classroom and have created a GitHub organization (`uchicago-CAPP30121-aut-2022`) for the course (a GitHub “organization” is basically a way to group together related repositories). You should have received an email to your UChicago email account with an invitation to join the organization. If you have already accepted the invitation, then you can move on to the next section. If you have not already accepted the invitation, please locate the invitation email in your UChicago email account and follow the instructions to accept the invite.
 
 ## Using Git with SSH
 
@@ -21,9 +21,9 @@ When you log into the GitHub website, you will use the username and password ass
 
 ### Creating an SSH Key
 
-In the Linux lab, you should have generated an SSH key on your personal machine to access the Linux servers hosted by the Computer Science department. We will skip the details of what an SSH key is here. You can go back and review the [Linux lab](../s1-linux/1-connect.html) if you need to review the concepts again. Here, we will be using the same general process.
+In the Linux lab, you should have generated an SSH key on your personal machine to access the Linux servers hosted by the Computer Science department. We will skip the details of what an SSH key is here. You can go back and review the [Linux lab](../s1-linux/1-connect.html) if you need to refresh the concepts again. Here, we will be using the same general process.
 
-We will generate a *new* SSH key to access GitHub servers from the CS Linux servers. Once you have logged onto the Linux server, make sure you are in your home directory.
+We will generate a *new* SSH key to access GitHub servers from the CS Linux servers. Once you have logged onto your assigned Linux server, make sure you are in your home directory.
 
 ```
 $ cd
@@ -62,7 +62,7 @@ This means your key was created correctly.
 
 ### Uploading your SSH key to GitHub
 
-Now, we need to instruct GitHub to accept our SSH key. To do this, log into [https://github.com/](https://github.com/) and go to your Settings page (by clicking on the top-right account icon, and then selecting “Settings” in the drop-down menu). Then, click on “SSH and GPG keys” in the sidebar menu.
+Now, we need to instruct GitHub to accept our SSH key. To do this, log into [GitHub](https://github.com/) and go to your Settings page (by clicking on the top-right account icon, and then selecting “Settings” in the drop-down menu). Then, click on “SSH and GPG keys” in the sidebar menu.
 
 ![The Settings Tab on GitHub](../assets/img/git-hub-settings-image.png)
 

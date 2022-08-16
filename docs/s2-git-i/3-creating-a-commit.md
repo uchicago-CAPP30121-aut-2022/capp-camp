@@ -11,7 +11,7 @@ If you make changes to your repository, the way to store those changes (and the 
 
 - Edit `README.md` in VSCode to also include your CNetID on the same line as your name.
     
-- Create a new file called `test.txt` that contains a single line with the text `Hello, world!`.
+- Create a new file called `test.txt` (`code test.txt`) that contains a single line with the text `Hello, world!`.
 
 {: .tip-title} 
 > VSCode Tip

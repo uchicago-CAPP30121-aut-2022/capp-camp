@@ -11,7 +11,7 @@ For each assignment in CAPP 30121, we provide some initial code that you must up
 
 To gain practice with this process, follow the steps below. These steps are similar to what you did at the beginning of the first Git lab with a couple of extra commands thrown in.
 
- 1. Using a browser, accept the invitation at the CAMP-2 URL that we supplied on [Ed](https://edstem.org/us/courses/24735/discussion/1679656).
+ 1. Using a browser, accept the invitation at the [CAMP-2 URL](https://edstem.org/us/courses/24735/discussion/1679656) that we supplied on Ed.
 
  2. Navigate to your `/home/USER/capp30121` directory and creating a new directory named `camp-2-GITHUB-USERNAME` (where, as usual, GITHUB-USERNAME is replaced with your GITHUB-USERNAME).
 
