@@ -53,7 +53,9 @@ Once you run the above command, you will see something like the following output
 ```
 
 {: .warning}
-> If you forget the `-m` parameter, Git will think that you forgot to specify a commit message. It will graciously open up a default editor so that you can enter such a message. This can be useful if you want to enter a longer commit message (including multi-line messages). We will experiment with this later.
+> If you forget the `-m` parameter, Git will think that you forgot to specify a commit message. It will graciously open up a default editor (nano) so that you can enter such a message. This can be useful if you want to enter a longer commit message (including multi-line messages).
+>
+> If you forgot the `-m` parameter in the above commit command, simply type `Updated README.md` at the top of the editor above the lines that begin with `#`. In nano, you can save the file and exit by pressing `Ctrl-X`, entering “Y” when prompted to “save modified buffer” (i.e., whether to save the file before exiting), and then pressing Enter (you may be presented with a new set of menu options; just press Enter). We will experiment with this default editor again in the next section.
 
 {: .tip-title}
 > VSCode Tip
