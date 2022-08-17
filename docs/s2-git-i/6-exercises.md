@@ -22,6 +22,6 @@ parent: Git I
 
     Use Git to restore `favorite-things.txt` to include only your favorite things. Use `git status` to confirm that you have not made any new changes to `favorite-things.txt` since your last commit. *Hint*: You should **not** need to edit `favorite-things.txt` in VSCode to restore the original text.
 
- 4. Add your full name and CnetID to the top of `favorite-things.txt`. Add these changes to a new commit but **do not** commit and push them just yet. After adding your name and CnetID to `favorite-things.txt`, you realized that you forgot to include an additional favorite thing to the file.
+ 4. Add your full name and CnetID to the top of `favorite-things.txt`. Add these changes to a new commit but **do not** commit and push them just yet. After staging this last change to a commit, you realize that you forgot to include an additional update to `favorite-things.txt`.
  
-    Unstage `favorite-things.txt`, add one more favorite thing to the list in the file, and then commit and push your changes to the remote repository. Use `git status` to confirm that there are no pending changes to commit and push in your repository. Check GitHub to make sure that `favorite-things.txt` includes all of your recent changes.
+    Unstage `favorite-things.txt`, add one more favorite thing to the list in the file, and then commit and push your changes to the remote repository. Use `git status` to confirm that there are no pending changes in your repository. Check GitHub to make sure that `favorite-things.txt` includes all of your recent changes.

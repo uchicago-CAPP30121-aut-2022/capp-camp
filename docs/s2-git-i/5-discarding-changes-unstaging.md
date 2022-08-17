@@ -35,14 +35,14 @@ index bf87536..e69de29 100644
 \ No newline at end of file
 ```
 
-Lines that begin with `-` indicate content that has been removed from `test.txt`, while lines that begin with `+` indicate content that has been added to `test.txt`. We only deleted lines from the file, so there should be no lines beginning with `+` in the output.
+In the output above, lines that begin with `-` indicate content that has been removed from `test.txt`, while lines that begin with `+` indicate content that has been added to `test.txt`. We only deleted lines from the file, so there should be no lines beginning with `+` in the output.
 
 {: .tip-title}
 > VSCode Tip
 > 
-> To view the changes that you have made to `test.txt` in the VSCode window, you can click on the Source Code icon and then click on the file in the dropdown. VSCode will display in a new file tab two versions of the file, the previous version last committed and the new version with color-coded highlights to identify modifications.
+> To view the changes that you have made to `test.txt` in the VSCode window, you can click on the Source Code icon and then click on the file in the dropdown. VSCode will display a new file tab with two versions of the file, the previous version last committed and the new version with color-coded highlights to identify modifications.
 
-If we want to discard the changes we made to `test.txt`, all we have to do is follow the helpful advice provided by the above output:
+If we want to discard the changes we made to `test.txt`, all we have to do is follow the helpful advice provided by `git status`:
 
 ```
 git restore test.txt
@@ -53,7 +53,7 @@ git restore test.txt
 > 
 > `git checkout -- test.txt`
 
-If you open `test.txt`, you’ll see that its contents have been magically restored!
+If you open `test.txt` after running `git restore`, you’ll see that its contents have been magically restored!
 
 Now, edit `test.txt` and `README.md` to add an additional line with the text `Hopefully our last change...`. Run `git add -u` but don’t commit it just yet. `git status` will show this:
 

@@ -9,6 +9,8 @@ parent: Git I
 
 Let’s make a further change to `README.md`: Add a line with the text `CAPP 30121 - Computer Science with Applications 1`.
 
+## Tracking vs untracked files
+
 At this point, we have a file we have already committed (`README.md`) but where the _local_ version is now out of sync with the version on GitHub. Furthermore, earlier we created a `test.txt` file. Is it a part of our repository? You can use the following command to ask Git for a summary of the files it is tracking:
 
 ```
@@ -49,6 +51,8 @@ Notice that there are two types of files listed here:
 > VSCode Tip
 > 
 > VSCode also tells you whether a file with pending changes belongs to the tracked-but-unstaged group or the untracked group. Notice in your VSCode window that the `README.md` file tab is light yellow with the character "M" next to it. VSCode is telling you that Git knows about this file and that it has been modified since your last commit. Conversely, the file tab for `test.txt` is bright green with the character "U" next to it, which indicates that this file is completely new to Git and is not currently being tracked.
+
+## Staging changes with `git add`
 
 Let’s go ahead and add `README.md`:
 
@@ -91,6 +95,8 @@ The output of `git status` should now look like this:
       (use "git restore --staged <file>..." to unstage)
             modified:   README.md
             new file:   test.txt
+
+## Creating a commit with `git commit`
 
 Now, we are going to create a commit with these changes. Notice how we are not going to use the `-m` parameter to `git commit`:
 
@@ -138,6 +144,8 @@ This will complete the commit, and you will see a message like this:
 > 
 > at the end of the `.bashrc` file in your home directory (make sure you replace `myfavoriteeditor` with the command for your favorite command-line editor: `vi`, `emacs`, `nano`, `mcedit`, etc.).
 
+## `git add` shortcuts
+
 Now, edit `README.md` and `test.txt` to add an extra line to each of them with the text `Git is pretty cool`. Running `git status` should now show the following:
 
 ```
@@ -178,6 +186,8 @@ Your branch is ahead of 'origin/main' by 2 commits.
 nothing to commit, working tree clean
 ```
 
+## Syncing commits with GitHub using `git push`
+
 The message `Your branch is ahead of 'origin/main' by 2 commits.` is telling you that your local repository contains two commits that have not yet been uploaded to GitHub. In fact, if you go to your repository on the GitHub website, you’ll see that the two commits we just created are nowhere to be seen. As helpfully pointed out by the above output, all we need to do is run `git push`, which should show something like this:
 
 ```
@@ -193,6 +203,8 @@ To github.com:uchicago-CAPP30121-aut-2022/camp-1-GITHUB_USERNAME.git
 ```
 
 Now go to GitHub. Do you see the updates in your repository? Click on “Commits” (above the file listing in your repository). If you click on the individual commits, you will be able to see the exact changes that were included in each commit.
+
+![Screenshot of "Commits" history on GitHub](../assets/img/git-hub-commit-history-image.png)
 
 Now, `git status` will look like this:
 
