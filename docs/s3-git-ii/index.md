@@ -23,7 +23,7 @@ In this lab, we will explore some important features of Git that enable this col
 
 ## Where should you do this lab?
 
-You can work on this lab on your own computer from anywhere, but you will need to have access to the Linux servers hosted by the CS department at UChicago. This lab is meant to be completed on these servers, so you will need to connect to a server using your CS account and SSH key (which you should have done in the first lab of CAPP Camp) before starting. Please connect to your assigned Linux server now through VS Code and open a terminal in VSCode. Let either the instructor or the TA know if you need assistance connecting.
+You can work on this lab on your own computer from anywhere, but you will need to have access to the Linux servers hosted by the CS department at UChicago. This lab is meant to be completed on these servers, so you will need to connect to a server using your CS account and SSH key (which you should have done in the first lab of CAPP Camp) before starting. Please connect to your assigned Linux server now through VSCode and open a terminal in VSCode. Let either the instructor or the TA know if you need assistance connecting.
 
 ## Acknowledgments
 

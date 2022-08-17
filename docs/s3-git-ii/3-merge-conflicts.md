@@ -7,9 +7,7 @@ parent: Git II
 
 # Merge conflicts
 
-If you have multiple copies of the same repository, it is easy for them to get out of sync. In this section, we will purposely create a merge conflict using the home and temp repositories that you have created to allow you to see how to fix conflicts. As in the section on working from multiple locations, you’ll want to have two windows open for this section: one where you’ll work with your home repository (that is, the copy of the repository in your home directory) and the other where you’ll work with your temp repository (the one in `/tmp`).
-
-## Generating a Merge Conflict
+If you have multiple copies of the same repository, it is easy for them to get out of sync. In this section, we will purposely create a merge conflict using the home and temp repositories that you have created to allow you to see how to fix conflicts. As in the section on working from multiple locations, you’ll want to have two terminal windows open for this section: one where you’ll work with your home repository (that is, the copy of the repository in your home directory) and the other where you’ll work with your temp repository (the one in `/tmp`).
 
 First, let’s add a file to your home repository. Use `pwd` to make sure you are in the right local copy the repository:
 
@@ -39,7 +37,9 @@ git pull
 
 to get it back in sync.
 
-To create a merge conflict, we need to edit files in different and conflicting ways. In the temp copy of the repository, replace both occurrences of `red` with `green` in `balloons.py`:
+## Generating a Merge Conflict
+
+To create a merge conflict, we need to edit files in different and conflicting ways. In the temp copy of the repository, open `balloons.py` in the VSCode editor and replace both occurrences of `red` with `green` in `balloons.py`:
 
 ```
 print("Let's get started.")
@@ -57,7 +57,7 @@ print("All done.")
 > 
 > You can use this command to add as many selections as there are in the file and edit them all in one go. If we had three instances of `red` in our file, then pressing the command twice would create three cursors and edit all three instances at the same time.
 
-Now commit and push this code to the repository.
+Now commit and push this code to GitHub.
 
 Switch back to the home copy of your repository (`/home/USER/capp30121/camp-1-GITHUB-USERNAME`). The home copy is out of sync with the server and the temp copy, but do **not** pull from the server to sync them up just yet. Instead, change `red` to `blue` in `balloons.py`:
 
@@ -68,7 +68,7 @@ print("99 blue balloons!")
 print("All done.")
 ```
 
-and then add and commit the file to this copy of your repository. If you try to push at this point, you’ll see a message like this:
+and then add and commit the file to this copy of your repository. If you try to push to GitHub at this point, you’ll see a message like this:
 
 ```
 $ git push
@@ -117,7 +117,7 @@ print("99 green balloons!")
 print("All done.")
 ```
 
-The long number `f4a73bedf23e07daf75baa048defbca0d9ae72cb` is the SHA for the commit that you pushed from the temp repository which Git just tried to merge automatically with the home repository's version of `balloons.py`. You’ll see a different SHA there. The code that appears between the line `>>>>>>> f4a73bed...` and the line `=======` is the code that you tried to pull from the remote repository (changing the balloon color from red to green). The code that appears between the line `<<<<<<< HEAD` and the line `=======` is the code that you just changed locally in your home repository (changing the balloon color from red to blue).
+The long number `f4a73bedf23e07daf75baa048defbca0d9ae72cb` is the SHA for the commit that you pushed from the temp repository which Git just tried to merge automatically with the home repository's version of `balloons.py`. You’ll see a different SHA there. The code that appears between the line `>>>>>>> f4a73bed...` and the line `=======` is the last commit that you pulled from GitHub (changing the balloon color from red to green). The code that appears between the line `<<<<<<< HEAD` and the line `=======` is the code that you just committed locally in your home repository (changing the balloon color from red to blue).
 
 {: .tip-title}
 > **VSCode Tip**
@@ -154,7 +154,7 @@ print("How many red balloons were released?")
 print("99 red balloons!")
 ```
 
-Make this change in the VSCode editor; remove/update the relevant lines and save your changes. When you are done, the file `balloons.py` should contain the following:
+Make this change to `balloons.py` in the VSCode editor; remove/update the relevant lines and save your changes. When you are done, the file `balloons.py` should contain the following:
 
 ```
 print("Let's get started.")

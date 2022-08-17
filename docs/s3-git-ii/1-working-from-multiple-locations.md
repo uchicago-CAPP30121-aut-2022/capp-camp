@@ -7,7 +7,7 @@ parent: Git II
 
 # Working from multiple locations
 
-In the first Git lab, you created a local repository in your CS home directory, which you have been uploading to GitHub using the `git push` command. However, if you work from multiple locations (e.g., on a CS machine but also from your laptop), you will need to be able to create a local repository in other locations too.
+In the first Git lab, you created a local repository in your CS home directory on the Linux servers, which you have been uploading to GitHub using the `git push` command. However, if you work from multiple locations (e.g., on a CS machine but also from your laptop), you will need to be able to create a local repository in other locations too.
 
 ## Using `git clone`
 
@@ -40,15 +40,15 @@ Take into account that, when you run `git clone`, the repository is not cloned _
 > git@github.com:uchicago-CAPP30121-aut-2022/camp-1-GITHUB_USERNAME.git
 > ```
 >
-> We use this specific URL because we have connected to GitHub using an SSH key (covered in the first Git lab). However, there are other methods (i.e., HTTPS) that use slightly different URLs that you can reference to clone a repository. If you go a repository on GitHub's website, you can find other URLs and the clone methods that they are used with by clicking on the green `Code` button at the top of the repository's main webpage.
+> We use this specific URL because we have connected to GitHub using an SSH key (covered in the first Git lab). However, there are other methods (i.e., HTTPS) that use slightly different URLs that you can reference to clone a repository. If you go to a repository on GitHub's website, you can find other URLs and the clone methods that they are used with by clicking on the green `Code` button at the top of the repository's home page.
 
 ## Syncing Multiple Repositories with `git pull`
 
 You now have two local copies of the repository: one in your home directory (`/home/USER/capp30121/camp-1-GITHUB-USERNAME`), which we will refer to as your _home_ repository for now and one in `/tmp` (`/tmp/USER/capp30121/camp-1-GITHUB_USERNAME`) which we will refer to as your _temp_ repository.
 
-Now, switch to the window that is open to your home repository, add a line to `test.txt` with the text `One more change!`. Create a commit for that change and push it to GitHub (you should know how to do this by now, but make sure to ask for help if you’re unsure of how to proceed). Also, you don’t have to use any specific commit message (unlike previous steps where we gave you the exact message), but make sure your commit message is descriptive and to the point.
+Now, switch to the terminal that is open to your home repository, add a line to `test.txt` with the text `One more change!`. Create a commit for that change and push it to GitHub (you should know how to do this by now, but make sure to ask for help if you’re unsure of how to proceed). Also, you don’t have to use any specific commit message (unlike previous steps where we gave you the exact message), but make sure your commit message is descriptive and to the point.
 
-Next, switch to the window that is open to your temp repository, check if that change appears in the `test.txt` file using the `cat` command. It will not, because you have not yet downloaded the latest commits from the repository. You can do this by running this command:
+Next, switch to the terminal that is open to your temp repository, check if that change appears in the `test.txt` file using the `cat` command. It will not, because you have not yet downloaded the latest commits from the repository. You can do this by running this command:
 
 ```
 git pull

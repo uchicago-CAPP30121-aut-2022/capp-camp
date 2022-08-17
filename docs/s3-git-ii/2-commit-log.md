@@ -45,7 +45,7 @@ git show COMMIT_SHA
 
 Make sure to replace `COMMIT_SHA` with a commit SHA that appears in your commit log.
 
-This will show you the changes that were included in that commit. The output of `git show` can be a bit hard to parse at first but the most important thing to take into account is that any line starting with a `+` denotes a line that was added, and any line starting with a `-` denotes a line that was removed. (Recall that this is the same formatting we saw when using `git diff` to show the pending changes to a file in the first Git lab.)
+This will show you the changes that were included in that commit. The output of `git show` can be a bit hard to parse at first but the most important thing to take into account is that any line starting with a `+` denotes a line that was added, and any line starting with a `-` denotes a line that was removed. (Recall that this is the same formatting we saw when [using `git diff`](../s2-git-i/5-discarding-changes-unstaging.html) to show the pending changes to a file in the first Git lab.)
 
 {: .tip}
 > In any place where you have to refer to a commit SHA, you can just write the first few characters of the commit SHA. For example, for commit `9119c6ffcebc2e3540d587180236aaf1222ee63c` we could write just this:
