@@ -1,23 +1,23 @@
 ---
 layout: default
-title: Python Overview
-nav_order: 2
+title: A Brief Teaser
+nav_order: 1
 parent: Python Programming
 ---
 
-# Python Overview
+# A Brief Teaser
 
-Python, named after the 1970s BBC comedy show "Monty Python's Flying Circus", has its origins in the Netherlands. In 1987, Dutch scientist Guido van Rossum began developing Python as a side project at the national research institute CWI and then released it to the public in 1991. Since then, the language has gone through several versions (the latest stable version being 3.10.6) and exploded in popularity. The latest [Stack Overflow Developer Survey](https://survey.stackoverflow.co/2022/#most-popular-technologies-language), conducted in May 2022 with over 70,000 respondents, indicated that Python was the fourth most popular technology behind JavaScript, HTML/CSS, and SQL. The TIOBE Index, a monthly indicator of programming popularity, reported in [August 2022](https://www.tiobe.com/tiobe-index/) that Python was the top language.
+Python, named after the 1970s BBC comedy show "Monty Python's Flying Circus", has its origins in the Netherlands. In 1987, Dutch scientist Guido van Rossum began developing the programming language as a side project at the national research institute CWI, eventually releasing it to the public in 1991. Since then, the language has gone through several versions (the latest stable version being 3.10.6) and exploded in popularity. The latest [Stack Overflow Developer Survey](https://survey.stackoverflow.co/2022/#most-popular-technologies-language), conducted in May 2022 with over 70,000 respondents, reported that Python was the fourth most popular technology behind JavaScript, HTML/CSS, and SQL. The TIOBE Index, a monthly indicator of programming popularity, reported in [August 2022](https://www.tiobe.com/tiobe-index/) that Python was _the_ top language.
 
 Your instructors for CAPP 30121 have chosen to use Python rather than another common language like Java, C, or C++ because it offers several advantages, such as greater readability. In addition, it is free, open-source, and general purpose; offers a rich and growing collection of libraries for data science and machine learning; and is currently used extensively within both academia and industry.
 
-In this section, we will not attempt to teach Python. Rather, we will introduce some of its basic symbols and syntax to (a) give you a better understanding of the Python-specific features offered by VS Code and (b) allow you to practice writing Python expressions in the next exercise. Let's get started!
+In this section, we will not attempt to teach Python. Rather, we will introduce some of its basic symbols and syntax to (a) give you a better understanding of the Python-specific features offered by VS Code and (b) allow you to practice writing Python expressions in the final exercise. Let's get started!
 
 ## Anatomy of a Python File
 
 Your programming assignments will require you to edit Python files, which end in `.py`. These files will have a similar structure:
 
-**Docstring**.  At the very top of the file, you will find a doc string that starts and ends with a series of three quotation marks. When you run your Python program, the contents of the doc string will be ignored. Doc strings are used for informational purposes, such as conveying the name of the program, its author, and a brief description.
+**Docstring**.  At the very top of the file, you will find a docstring that starts and ends with a series of three quotation marks. When you run your Python program, the contents of the docstring will be ignored. Docstrings are used for informational purposes, such as conveying the name of the program, its author, and a brief description.
 
 '''
 \'''
@@ -287,4 +287,4 @@ Copy and paste the function into the terminal. Press Enter (Return) until `ipyth
 
 ## Next Steps
 
-Even with this small sample of Python's available data types and control flow mechanisms, we can compose complex programs! You will learn more about how VS Code helps with Python programming and gain practice writing Python expressions in the next section.
+Even with this small sample of Python's available data types and control flow mechanisms, we can compose complex programs! You will learn more about how VS Code helps with Python programming and gain practice writing Python expressions in the next two sections.

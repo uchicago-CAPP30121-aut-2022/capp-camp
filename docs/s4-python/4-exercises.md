@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Conclusion
+title: Exercises
 nav_order: 4
 parent: Python Programming
 ---
 
-# Conclusion
+# Exercises
+
+TBD
