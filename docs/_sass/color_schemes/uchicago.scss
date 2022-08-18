@@ -1,0 +1,9 @@
+// Colors
+
+$uchicago-red: #800000;
+$uchicago-light-grey: #D6D6CE;
+$uchicago-blue: #155F83;
+$sidebar-color: $uchicago-red;
+$feedback-color: darken($sidebar-color, 3%) !default;
+$nav-child-link-color: $uchicago-light-grey;
+$link-color: $uchicago-blue;
