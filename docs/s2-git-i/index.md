@@ -29,6 +29,8 @@ This lab provides a tutorial-style introduction to various aspects of Git. All y
 
 You can work on this lab on your own computer from anywhere with an internet connection, but you will need to have access to the Linux servers hosted by the CS department at UChicago. This lab is meant to be completed on these servers, so you will need to connect to a server using your CS account and SSH key (which you should have done in the first lab of CAPP Camp) before starting. Please connect to your assigned Linux server now through VSCode and open a terminal in VSCode. Let either the instructor or the TA know if you need assistance connecting.
 
+To open a new terminal in VSCode, select “Terminal > New Terminal” on the Menu Bar. The terminal that appears will use the default shell (i.e., bash for Linux). You can see the terminal listed according to its shell name on the righthand side of the terminal panel.
+
 ## Acknowledgments
 
 Many CS 121 instructors and TAs have worked on this lab over the years. Gustav Larsson (PhD ‘17) and Isha Mehrotra (SB’19) deserve special mention. Gustav wrote the original version of this lab and Isha wrote the original material on branches and merge conflicts.
