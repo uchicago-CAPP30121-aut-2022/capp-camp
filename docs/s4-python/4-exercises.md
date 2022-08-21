@@ -8,3 +8,6 @@ parent: Python Programming
 # Exercises
 
 TBD
+
+{:style="text-align:center"}
+[Advanced Resources](../advanced/index.html){: .btn }

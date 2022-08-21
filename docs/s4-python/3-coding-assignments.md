@@ -278,3 +278,6 @@ As a courtesy to the course staff, if you've found the answer to your own questi
 ## Next Steps
 
 In the next section, we will practice the programming assignment workflow by completing a mock assignment and then submitting it for grading.
+
+{:style="text-align:center"}
+[Previous](./2-vs-code-for-python.html){: .btn } [Next](./4-exercises.html){: .btn }

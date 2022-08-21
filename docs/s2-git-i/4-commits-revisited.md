@@ -216,3 +216,6 @@ nothing to commit, working tree clean
 ```
 
 If you see `nothing to commit, working tree clean`, that means that there are no changes in your local repository since the last commit you created (and, additionally, the above output also tells us that all our commits have also been uploaded to GitHub).
+
+{:style="text-align:center"}
+[Previous](./3-creating-a-commit.html){: .btn } [Next](./5-discarding-changes-unstaging.html){: .btn }

@@ -225,3 +225,6 @@ Try the following tasks to practice and check your understanding of these termin
 7. Navigate to your `camp_camp` directory. What do you see when you run `ls pa*`? What about `ls pa*/*`?
 
 8. What do you expect to see when you run the command `ls ../pa*` from within your `camp_camp/lab1 directory`?
+
+{:style="text-align:center"}
+[Previous](./2-vs-code-layout.html){: .btn } [Next](./4-man-pages.html){: .btn }

@@ -98,3 +98,6 @@ Click the bottom lefthand button again, but this time, select "Remote-SSH: Conne
 If the connection succeeds, the button should display the text: "SSH: uchicago".
 
 ![Remote server logged in screenshot](../assets/img/connect-remote-vs-code-3.png)
+
+{:style="text-align:center"}
+[Previous](./index.html){: .btn } [Next](./2-vs-code-layout.html){: .btn }

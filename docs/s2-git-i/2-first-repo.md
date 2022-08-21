@@ -77,3 +77,6 @@ Clicking on the repository's name will take you to a page where you can browse y
     Don’t worry about what each individual command does; we will be seeing what most of these commands do in this lab. If you encounter any error messages, please do make sure to let us know.
 
 You can verify that your repository was correctly set up by going back to your repository’s page on GitHub, you should now see it contains a `README.md` file. If you click on it, you can see its contents.
+
+{:style="text-align:center"}
+[Previous](./1-getting-started.html){: .btn } [Next](./3-creating-a-commit.html){: .btn }

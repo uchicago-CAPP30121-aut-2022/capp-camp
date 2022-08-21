@@ -77,3 +77,6 @@ As a caveat, Visual Studio Code's own preconfigured keyboard shortcuts frequentl
 ![VS Code allowChords option screenshot](../assets/img/linux-shortcuts-3.png)
 
 After you're done with the configuration changes, play around with these commands. Being able to scroll back to, edit, and then re-run previously used commands saves time and typing! And like auto-completion, getting in the habit of using keyboard shortcuts will reduce frustration as well save time.
+
+{:style="text-align:center"}
+[Previous](./6-io-streams.html){: .btn } [Next](./8-conclusion.html){: .btn }

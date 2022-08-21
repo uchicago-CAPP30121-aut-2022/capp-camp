@@ -25,3 +25,6 @@ parent: Git I
  4. Add your full name and CnetID to the top of `favorite-things.txt`. Add these changes to a new commit but **do not** commit and push them just yet. After staging this last change to a commit, you realize that you forgot to include an additional update to `favorite-things.txt`.
  
     Unstage `favorite-things.txt`, add one more favorite thing to the list in the file, and then commit and push your changes to the remote repository. Use `git status` to confirm that there are no pending changes in your repository. Check GitHub to make sure that `favorite-things.txt` includes all of your recent changes.
+
+{:style="text-align:center"}
+[Next Lab](../s3-git-ii/index.html){: .btn }

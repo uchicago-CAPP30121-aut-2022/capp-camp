@@ -95,3 +95,6 @@ Fast-forward
 > ```
 
 If you have multiple local repositories (e.g., one on a CS machine and one on your laptop), it is *very* important that you remember to run `git pull` before you start working, and that you `git push` any changes you make. Otherwise, your local repositories (and the repository on GitHub) may _diverge_ leading to a messy situation called a _merge conflict_ (we discuss conflicts in more detail below). This will be especially important once you start using Git for its intended purpose: to collaborate with multiple developers, where each developer will have their own local repository, and it will become easier for some developers’ code to diverge from others’.
+
+{:style="text-align:center"}
+[Previous](./index.html){: .btn } [Next](./2-commit-log.html){: .btn }

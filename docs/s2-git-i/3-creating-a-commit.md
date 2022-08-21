@@ -89,3 +89,6 @@ You can ignore most of those messages. The important thing is to not see any war
 You can verify that your commit was correctly pushed to GitHub by going to your repository on the GitHub website. The `README.md` file should now show the updated content (your name and CNetID).
 
 In general, if you’re concerned about whether the course staff are seeing the right version of your work, you can just go to GitHub. Whatever is shown on your repository’s page is what the course staff will see. If you wrote some code, and it doesn’t show up on GitHub, make sure you didn’t forget to add your files, create a commit, and push the most recent commit to the server.
+
+{:style="text-align:center"}
+[Previous](./2-first-repo.html){: .btn } [Next](./4-commits-revisited.html){: .btn }
