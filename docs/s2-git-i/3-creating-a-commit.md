@@ -18,7 +18,8 @@ If you make changes to your repository, the way to store those changes (and the 
 >
 > VSCode includes Git integrations which can be helpful for seeing what Git is doing without running Git commands from the terminal. While these integrations are convenient, **it is nonetheless important to understand how to use Git from the terminal**, as you will be a much stronger developer if you know how to work with Git without the aid of an Integrated Developer Environment (IDE).
 >
-> ![VSCode Source Control Icon](../assets/img/vscode-source-code-icon.png)
+> ![VSCode Source Control Icon](../assets/img/vscode-source-control.png)
+>
 > If you look at your VSCode window, you will see on the left-hand sidebar an icon for Source Control. It should have a blue notification next to it. This notification tells us that we have two pending changes in our Git repository, because we modified `README.md` and created `test.txt`. If you click on the icon, you will see those two files listed under a grouping called "Changes." The Source Control menu can be useful for seeing which files you have modified or created since your last "checkpoint" in your Git repository.
 
 ## `git add` and `git commit`
