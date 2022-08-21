@@ -11,18 +11,17 @@ Follow the instructions below to install Visual Studio Code (VS Code), Windows O
 
 ## VS Code
 
-{:start="1"}
 1. Go to Visual Studio Code's [home page](https://code.visualstudio.com/). You should see a blue button labeled "Download for Windows: Stable Build". Click this button to download.
 
 ![VS Code homepage screenshot - Windows](../assets/img/install-code-win-1.png)
 
-{:start="2"}
-2. Once it is downloaded, run the installer (VSCodeUserSetup-<version>.exe). After you accept the licence agreement, click "Next >". On the page titled "Select Additional Tasks," we recommend you check all the boxes (but it is up to you).
+{:style="counter-reset:none"}
+1. Once it is downloaded, run the installer (VSCodeUserSetup-<version>.exe). After you accept the licence agreement, click "Next >". On the page titled "Select Additional Tasks," we recommend you check all the boxes (but it is up to you).
 
 ![VS Code installer screenshot - Windows](../assets/img/install-code-win-2.png)
 
-{:start="3"}
-3. Click "Next >", then click "Install". When the progress bar fills, click "Finish".
+{:style="counter-reset:none"}
+1. Click "Next >", then click "Install". When the progress bar fills, click "Finish".
 
 ## OpenSSH
 
@@ -37,8 +36,8 @@ Are you using an older PC with Windows 7 or 8? If so, please reach out to the in
 
 ![About Your PC screenshot - Windows](../assets/img/install-ssh-win10-1.png)
 
-{:start="2"}
-2. Scroll down to the heading "Windows specifications". Next to Edition, you should see Windows 10 Home, Windows 10 Pro, Windows 11 Home, Windows 11 Pro, or similar. Below that you should see Version and a number like "2004". If you have Windows 10 and that number is less than 1803, then you need to perform an update.
+{:style="counter-reset:none"}
+1. Scroll down to the heading "Windows specifications". Next to Edition, you should see Windows 10 Home, Windows 10 Pro, Windows 11 Home, Windows 11 Pro, or similar. Below that you should see Version and a number like "2004". If you have Windows 10 and that number is less than 1803, then you need to perform an update.
 
 ![PC edition screenshot - Windows](../assets/img/install-ssh-win10-2.png)
 
@@ -48,13 +47,13 @@ Are you using an older PC with Windows 7 or 8? If so, please reach out to the in
 
 ![Check for updates screenshot - Windows](../assets/img/install-ssh-win10-3.png)
 
-{:start="2"}
-2. The window that opens should have the heading "Windows Update". It may tell you that you have updates available; otherwise, click the button that says "Check for updates".
+{:style="counter-reset:none"}
+1. The window that opens should have the heading "Windows Update". It may tell you that you have updates available; otherwise, click the button that says "Check for updates".
 
 ![Available updates screenshot - Windows](../assets/img/install-ssh-win10-4.png)
 
-{:start="3"}
-3. Follow the instructions to install the available updates. This may take a few minutes, and your computer may restart. When the update completes, check your version of Windows 10 again, and verify that it now reads as 1803 or greater.
+{:style="counter-reset:none"}
+1. Follow the instructions to install the available updates. This may take a few minutes, and your computer may restart. When the update completes, check your version of Windows 10 again, and verify that it now reads as 1803 or greater.
 
 
 ### Installing OpenSSH Client
@@ -63,28 +62,28 @@ Are you using an older PC with Windows 7 or 8? If so, please reach out to the in
 
 ![Manage optional features screenshot - Windows](../assets/img/install-ssh-win10-5.png)
 
-{:start="2"}
-2. You should see a window that looks like this, with the heading "Optional features".
+{:style="counter-reset:none"}
+1. You should see a window that looks like this, with the heading "Optional features".
 
 ![Optional features list screenshot - Windows](../assets/img/install-ssh-win10-6.png)
 
-{:start="3"}
-3. Scroll through the list of Installed features. If OpenSSH Client appears in the list, you are done with this step. Otherwise, click on "+ Add a feature" at the top of the page. You will get a pop-up window with the heading "Add an optional feature". Start typing "OpenSSH Client". When the option appears, click on the checkbox next to it.
+{:style="counter-reset:none"}
+1. Scroll through the list of Installed features. If OpenSSH Client appears in the list, you are done with this step. Otherwise, click on "+ Add a feature" at the top of the page. You will get a pop-up window with the heading "Add an optional feature". Start typing "OpenSSH Client". When the option appears, click on the checkbox next to it.
 
 ![Select OpenSSH screenshot - Windows](../assets/img/install-ssh-win10-7.png)
 
-{:start="4"}
-4. Then click on the button labeled "Install (1)". Wait for the progress bar to fill.
+{:style="counter-reset:none"}
+1. Then click on the button labeled "Install (1)". Wait for the progress bar to fill.
 
 ![OpenSSH installation progress screenshot - Windows](../assets/img/install-ssh-win10-8.png)
 
-{:start="5"}
-5. Confirm that the installation was successful by typing "Windows PowerShell" and clicking on the option that appears.
+{:style="counter-reset:none"}
+1. Confirm that the installation was successful by typing "Windows PowerShell" and clicking on the option that appears.
 
 ![Windows PowerShell launch screenshot - Windows](../assets/img/install-ssh-win10-9.png)
 
-{:start="6"}
-6. When the prompt opens, type `ssh` and confirm that a list of available options for the command is displayed:
+{:style="counter-reset:none"}
+1. When the prompt opens, type `ssh` and confirm that a list of available options for the command is displayed:
 
 ![SSH command check screenshot - Windows](../assets/img/install-ssh-win10-10.png)
 
@@ -94,8 +93,8 @@ Are you using an older PC with Windows 7 or 8? If so, please reach out to the in
 
 ![Click extensions icon screenshot](../assets/img/install-ext-1.png)
 
-{:start="2"}
-2. Search for and install the extensions "Python (Microsoft)" and "Remote - SSH (Microsoft)". To do this, click in the search bar ("Search Extensions in Marketplace") and start typing the name of the extension. When it appears, make sure the name and publisher matches exactly, and click "Install".
+{:style="counter-reset:none"}
+1. Search for and install the extensions "Python (Microsoft)" and "Remote - SSH (Microsoft)". To do this, click in the search bar ("Search Extensions in Marketplace") and start typing the name of the extension. When it appears, make sure the name and publisher matches exactly, and click "Install".
 
 ![Python extension selected screenshot](../assets/img/install-ext-2.png)
 

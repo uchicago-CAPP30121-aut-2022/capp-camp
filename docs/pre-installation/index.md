@@ -15,7 +15,7 @@ For the camp and computer applications intro sequence, we will be using Visual S
 
 ## Instructions
 
-Please follow the instructions linked below for your operating system to install (1) VS Code, (2) an SSH (Secure Shell) client, and (3) the "Remote-SSH" VS Code extension:
+Please follow the instructions linked below for your operating system to install (1) VS Code, (2) an SSH (Secure Shell) client, and (3) the "Remote-SSH" and Python VS Code extensions:
 
 - [Windows](./1-windows.md)
 - [MacOS](./2-mac.md)

@@ -27,7 +27,15 @@ Otherwise, if your distribution is RHEL, Fedora, or CentOS, run:
 sudo yum install openssh-clients
 ```
 
-After the step has completed, verify installation by typing `ssh` and pressing "Enter".  You should receive a list of available options for the command.
+{: .note}
+> To check your distribution, run the command `uname -a`:
+> 
+> ```
+> $ uname -a
+> Linux linux1 5.4.0-113-generic #127-Ubuntu SMP Wed May 18 14:30:56 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+> ```
+
+After the step has completed, verify installation by typing `ssh` and pressing "Enter". You should receive a list of available options for the command.
 
 ## Remote-SSH and Python Extensions
 
@@ -35,8 +43,8 @@ After the step has completed, verify installation by typing `ssh` and pressing "
 
 ![Click extensions icon screenshot](../assets/img/install-ext-1.png)
 
-{:start="2"}
-2. Search for and install the extensions "Python (Microsoft)" and "Remote - SSH (Microsoft)". To do this, click in the search bar ("Search Extensions in Marketplace") and start typing the name of the extension. When it appears, make sure the name and publisher matches exactly, and click "Install".
+{:style="counter-reset:none"}
+1. Search for and install the extensions "Python (Microsoft)" and "Remote - SSH (Microsoft)". To do this, click in the search bar ("Search Extensions in Marketplace") and start typing the name of the extension. When it appears, make sure the name and publisher matches exactly, and click "Install".
 
 ![Python extension selected screenshot](../assets/img/install-ext-2.png)
 
