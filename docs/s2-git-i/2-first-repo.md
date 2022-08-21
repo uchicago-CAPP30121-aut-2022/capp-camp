@@ -15,13 +15,11 @@ For this lab, use the [camp-1 URL](https://edstem.org/us/courses/24735/discussio
 
 1.  You will need to select your CnetID from a list. This step will allow us to know what student is associated with each GitHub account. This step is only done for the very first assignment invitation you accept.
 
-   {:class="small-img"}
    ![Screenshot of GitHub Classroom's Assignment Invitation Page](../assets/img/github-classroom-assignment-invitation.png)
 
 {:style="counter-reset:none"}
 1.  You must click “Accept this assignment” or your homework repository will not actually be created.
 
-   {:class="small-img"}
    ![Screenshot of GitHub Classroom's Assignment Acceptance Confirmation Page](../assets/img/github-classroom-assignment-confirmation.png)
 
 If you run into any issues, please ask for help.
@@ -32,7 +30,6 @@ You will start by initializing your repository. Your repository is hosted on Git
 
 Log into [GitHub](https://github.com/). Your homework repository, `uchicago-CAPP30121-aut-2022/camp-1-GITHUB_USERNAME` should appear under “Recent Repositories” on the left side of the page. (If you don’t see a list of repositories on the left side of the page, try clicking on the GitHub Cat logo.)
 
-{:class="small-img"}
 ![Screenshot of GitHub's home page](../assets/img/git-hub-recent-repos-image.png)
 
 Clicking on the repository's name will take you to a page where you can browse your repository through GitHub’s web interface. Since you haven’t initialized your repository yet, GitHub will provide you with instructions to initialize your repository. _You can ignore those instructions._ Instead, do the following:
