@@ -21,15 +21,33 @@ Before getting started, you should have the following tools installed, as detail
 
 Open Windows PowerShell or macOS Terminal and change your current working directory to the ".ssh" folder using `cd ~/.ssh`.
 
+_Windows_
+
 ![SSH directory screenshot - Windows](../assets/img/connect-remote-windows-1.png)
+
+_macOS_
+
+![SSH directory screenshot - Mac](../assets/img/cd-ssh-mac.png)
 
 Create a new key pair using the command `ssh-keygen`. When you do, you will be prompted for a file name and passcode. Simply press ENTER for both of these options until the key is created.
 
+_Windows_
+
 ![SSH keygen screenshot - Windows](../assets/img/connect-remote-windows-2.png)
+
+_macOS_
+
+![SSH keygen screenshot - Mac](../assets/img/ssh-keygen-mac.png)
 
 Confirm that two new files, "id_rsa" and "id_rsa.pub", are present by listing the contents of the directory with `ls`. (Note: Because I have other files in the `.ssh` directory unrelated to the camp, I've used a wildcard, denoted by "*",  to only show those that begin with "id_rsa".)
 
+_Windows_
+
 ![SSH key pair screenshot - Windows](../assets/img/connect-remote-windows-3.png)
+
+_macOS_
+
+![SSH key pair screenshot - Mac](../assets/img/ls-id-rsa-mac.png)
 
 If a file called `config` does not appear in the output, create it using `New-Item config -type file` (Windows) or `touch config` (macOS and Linux).
 
@@ -68,6 +86,8 @@ _macOS_
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa <cnetId>@<linuxServer>
 ```
+
+![Authorize SSH keys screenshot - Mac](../assets/img/ssh-copy-id-mac.png)
 
 ## Step 3. Configure Remote SSH Connection in VS Code
 
