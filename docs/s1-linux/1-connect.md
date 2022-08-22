@@ -80,7 +80,7 @@ However, VS Code works best when connected with a specific machine rather than t
 |P, Q, R, X, Y, Z|linux6.cs.uchicago.edu|
 |S, T, U, V, W|linux7.cs.uchicago.edu|
 
-Note your assigned server. Then run the following command in your open terminal and enter your UChicago password when prompted.
+Note your assigned server. Then run the following command in your open terminal and enter your UChicago password when prompted. Be sure to replace `<cnetId>` with your CnetID and `<linuxServer>` with your assigned Linux server name (see the table above).
 
 _Windows_
 

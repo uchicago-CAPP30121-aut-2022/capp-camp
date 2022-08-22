@@ -180,7 +180,7 @@ Make sure you want to remove everything in the named directory, including subdir
 
 Some useful terminology: the `-r` argument in `cp -r` or `rm -r` is known as a flag. Flags help determine the behavior of a program. In this case, the flag allows `cp` and `rm` to work with a directory tree, rather than just a single file.
 
-You can make a new directory with `mkdir < <directory name>`, where `<directory name>` is the desired name for the new directory.
+You can make a new directory with `mkdir <directory name>`, where `<directory name>` is the desired name for the new directory.
 
 ## Use Wildcards
 
@@ -218,7 +218,7 @@ Try the following tasks to practice and check your understanding of these termin
 
 6. Now that we have a copy of `test.txt` in the backups directory we no longer need `copy2.txt`. Remove the file `copy2.txt` in this directory.
 
-7. Navigate to your `camp_camp` directory. What do you see when you run `ls pa*`? What about `ls pa*/*`?
+7. Navigate to your `capp_camp` directory. What do you see when you run `ls pa*`? What about `ls pa*/*`?
 
 8. What do you expect to see when you run the command `ls ../pa*` from within your `camp_camp/lab1 directory`?
 
