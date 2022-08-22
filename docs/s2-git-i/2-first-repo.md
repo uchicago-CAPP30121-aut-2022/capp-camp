@@ -59,6 +59,8 @@ Clicking on the repository's name will take you to a page where you can browse y
     > ```
     > 
     > If you see this output when attempting to run `code README.md`, you are in the wrong terminal and need to switch to a terminal in the VSCode application.
+    >
+    > To open a new terminal in VSCode, select “Terminal > New Terminal” on the Menu Bar. The terminal that appears will use the default shell (i.e., bash for Linux). You can see the terminal listed according to its shell name on the righthand side of the terminal panel.
 
  - Run the commands below replacing `GITHUB_USERNAME` in the fifth command with your GitHub username. We encourage you to run these commands one at a time and to only move on to the next command when you are sure the first one succeeded.
 
