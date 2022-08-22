@@ -25,3 +25,7 @@ In this lab, you will learn how to use the terminal to perform some basic operat
 5. Learn to run a Python program from the command-line.
 
 6. Learn keyboard shortcuts to boost programming productivity.
+
+## Acknowledgments
+
+This lab was written by Professor Anne Rogers and collaborating faculty Tim Black, Hannah Morgan, and Borja Sotomayor. It was adapted by staff for this year's CAPP Camp.

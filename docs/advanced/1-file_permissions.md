@@ -13,7 +13,7 @@ Most file systems assign "File Permissions" (or just permissions) to specific us
 
 All directories and files are owned by a user. Each user can be a member of one or more groups. To see your groups, enter the command `groups` into the command line.
 
-### Scopes and Permissions
+## Scopes and Permissions
 
 File permissions in Unix systems are managed in three distinct scopes. Each scope has a distinct set of permissions.
 
@@ -118,7 +118,7 @@ chgrp <new group> <path to file>
 
 It is unlikely that you will need to use these two commands for this course.
 
-#### Exercises
+## Exercises
 
 1. Run `echo "Hello!" > testfile` to construct `testfile`. Look at the permissions using `ls -l`.
 
