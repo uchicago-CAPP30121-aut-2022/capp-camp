@@ -30,7 +30,6 @@ The terminal will start in your home directory, `/home/username/`, which is a sp
 
 Two very useful commands are `pwd` and `ls`:
 
-|   |   |
 |---|---|
 |`pwd`|Prints your current working directory - tells you where you are in your directory tree.| 
 |`ls`|Lists all of the files in the current directory.|
@@ -112,7 +111,7 @@ Notice that the current working directory is also shown in the prompt string.
 
 The tilde (`~`) directory is the same as your home directory: that is, `~` is shorthand for `/home/<username>`. Here’s another useful shorthand: a single dot (`.`) refers to the current directory.
 
-Usually when you use `cd`, you will specify what is called a _relative path_, that is, you are telling the computer to take you to a directory where the location of the directory is described relative to the current directory. The only reason that the computer knows that we can `cd` to `Desktop` is because `Desktop` is a folder within the `/home/` username directory. But, if we use a `/` at the beginning of our path, we are specifying an absolute path or one that is relative to the the “root” or top of the file system. For example:
+Usually when you use `cd`, you will specify what is called a _relative path_, that is, you are telling the computer to take you to a directory where the location of the directory is described relative to the current directory. The only reason that the computer knows that we can `cd` to `Desktop` is because `Desktop` is a folder within the `/home/` username directory. But, if we use a `/` at the beginning of our path, we are specifying an absolute path or one that is relative to the "root" or top of the file system. For example:
 
 ```bash
 username@computer:~$ pwd
@@ -125,7 +124,7 @@ username@computer:~$ pwd
 /home/username
 ```
 
-These commands achieve the same thing as the ones above: we `cd` into `Desktop`, a folder within our home directory, and then back to our home directory. Paths that start with a `/` are known as absolute paths because they always lead to the same place, regardless of your current working directory.
+These commands achieve the same thing as the ones above: we `cd` into `Desktop`, a folder within our home directory, and then back to our home directory. Paths that start with a `/` are known as _absolute paths_ because they always lead to the same place, regardless of your current working directory.
 
 Running `cd` without an argument will take you back to your home directory without regard to your current location in the file system. For example:
 

@@ -7,11 +7,13 @@ parent: Advanced
 
 # File Permissions
 
-Sometimes we want to restrict who can access certain resources on the file system.
+Sometimes we want to restrict who can access certain resources on the Linux file system.
 
-Most file systems assign "File Permissions" (or just permissions) to specific users and groups of users. Unix is no different. File permissions dictate who can read (view), write (create/edit), and execute (run) files on a file system.
+Most file systems assign "File Permissions" (or just permissions) to specific users and groups of users. Unix-type systems are no different. File permissions dictate who can read (view), write (create/edit), and execute (run) files on a file system.
 
 All directories and files are owned by a user. Each user can be a member of one or more groups. To see your groups, enter the command `groups` into the command line.
+
+### Scopes and Permissions
 
 File permissions in Unix systems are managed in three distinct scopes. Each scope has a distinct set of permissions.
 
@@ -30,6 +32,8 @@ Each scope has three specific permissions for each file or directory:
 **write** - The write permission allows a user to modify the contents of a file. When set for a directory, this permission allows a user to create, delete, or rename files. `w` is shorthand for write permissions.
 
 **execute** - The execute permission allows a user to execute a file (or program) using the operating system. When set for a directory, this permission allows a user to access file contents and other information about files within the directory (given that the user has the proper permissions to access the file). The execute permission does not allow the user to list the files inside the directory unless the read permission is also set. `x` is shorthand for execute permissions.
+
+## Viewing File Permissions
 
 To list information about a file, including its permissions, type:
 
@@ -50,21 +54,21 @@ $ ls -l /usr/bin/python3.8
 -rwxr-xr-x 1 root root 5486384 Jan 27  2021 /usr/bin/python3.8
 ```
 
-First thing we can notice is that the owner of the file is a user named `root`. (FYI, `root` is a name for an account that has access to all commands and files on a Linux system. Other accounts may also have "root" privileges.) The file’s group is also `root`.
+The first thing we can notice is that the owner of the file is a user named `root`. (FYI, `root` is a name for an account that has access to all commands and files on a Linux system. Other accounts may also have "root" privileges.) The file's group is also `root`.
 
 The permissions are `-rwxr-xr-x`. The initial dash (`-`) indicates that `/usr/bin/python3.8` is a file, not a directory. Directories have a `d` instead of a dash. Then the permissions are listed in `user`, `group`, and `others` order. In this example, the owner, `root`, can read (`r`), write (`w`), and execute (`x`) the file. Users in the `root` group and all other users can read and execute the files.
 
 By default, any files or directories that you create will have your username as both the user and the group. (If you run `groups`, you’ll notice that there is a group with the same name as your username. You are the only member of this group.) On our Linux machines, by default, new files are given read and write permissions to user and group and no permissions to other. New directories will be set to have read, write and execute permissions for user and group.
 
-#### Exercises
+### Checkpoint
 
-1. Verify this claim by running `ls -l backups/copy2.txt` and `ls -ld backups` in your `lab1` directory.
+Verify this claim by running `ls -l backups/copy2.txt` and `ls -ld backups` in your `capp_camp/lab1` directory from the first lab.
 
 The `-d` flag tells `ls` to list the directory, instead of its contents. Notice that the first letter in the permissions string for `backups` is a _d_, while it is a `-` for `backups/copy2.txt`.
 
 Once you have verified the claim, go ahead and remove the `backups` directory.
 
-### Changing Permissions, Owner, and Group
+## Changing Permissions, Owner, and Group
 
 |   |   |
 |---|---|
@@ -118,12 +122,8 @@ It is unlikely that you will need to use these two commands for this course.
 
 1. Run `echo "Hello!" > testfile` to construct `testfile`. Look at the permissions using `ls -l`.
 
-2. Change the permissions on `testfile` to allow and read access for others. Run `ls -l testfile` to check the new permissions.
+2. Change the permissions on `testfile` to allow "read" access for others. Run `ls -l testfile` to check the new permissions.
 
 3. Remove group write access from `testfile`. Check the corrected permissions.
 
 4. Remove `testfile`.
-
-## Final Notes
-
-Sometimes, a program will run indefinitely or misbehave. When this happens, you can type `Ctrl-C` to send an interrupt signal to the running program, which usually causes it to terminate. On occasion, you may need to type `Ctrl-C` a few times. As noted earlier, typing `Ctrl-D` sends an end of input signal, which tells the program that no more information is coming.

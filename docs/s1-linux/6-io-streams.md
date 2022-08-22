@@ -56,11 +56,11 @@ $ python3 my_echo.py < my-input.txt
 
 (Change back to your `lab1` directory before you try this command.)
 
-In general, all Linux processes can perform input/output operations through, at least, the keyboard and the screen. More specifically, there are three "input/output streams": standard input (or `stdin`), standard output (or `stdout`), and standard error (or `stderr`). The code in `my_echo.py` simply reads information from `stdin` and writes it back out to `stdout`. The redirection operators change the bindings of these streams from the keyboard and/or screen to files. We’ll discuss `stderr` later in the term.
+In general, all Linux processes can perform input/output operations through, at least, the keyboard and the screen. More specifically, there are three "input/output streams": standard input (or `stdin`), standard output (or `stdout`), and standard error (or `stderr`). The code in `my_echo.py` simply reads information from `stdin` and writes it back out to `stdout`. The redirection operators change the bindings of these streams from the keyboard and/or screen to files. You'll discuss `stderr` later in the CAPP 30121.
 
 ## Piping
 
-In addition to the ability to direct output to and receive input from files, Linux provides a very powerful capability called piping. Piping allows one program to receive as input the output of another program, like so:
+In addition to the ability to direct output to and receive input from files, Linux provides a very powerful capability called _piping_. Piping allows one program to receive as input the output of another program, like so:
 
 ```bash
 $ program1 | program2

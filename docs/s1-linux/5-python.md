@@ -36,7 +36,7 @@ Author: Firstname Lastname
 
 If the file is blank, close it and ensure that `test.txt` exists in your local directory (use `ls` to list the files in your local directory). If it does not, use `cd` to navigate to the `lab1` subdirectory inside the `lab1_linux_remote` directory.
 
-For now, we will use VS Code in a very basic way. You can navigate to a particular place in a file using the arrow keys (or your mouse) and then type typical characters and delete them as you would in a regular text editor. You can save your changes using the `save` option in the file menu or use the keyboard shortcut `Crtl-s`. To quit, you can use the file menu `quit` option or the keyboard shortcut `Ctrl-q`.
+For now, we will use VS Code in a very basic way. You can navigate to a particular place in a file using the arrow keys (or your mouse) and then type typical characters and delete them as you would in a regular text editor. You can save your changes using the `save` option in the file menu or use the keyboard shortcut `Crtl-s`.
 
 ### Checkpoint
 
@@ -60,11 +60,11 @@ Use `ls` to verify there is a file named `hello_world.py` in your `lab1` directo
 python3 hello_world.py
 ```
 
-This program is a very simple. It just prints “Hello, World!” to the screen.
+This program is very simple. It just prints “Hello, World!” to the screen.
 
 ## Exercises
 
-In this section you will modify and rerun the program in `hello_world.py`. This change is very simple but goes through all the mechanical steps needed to program.
+In this section you will modify and re-run the program in `hello_world.py`. This change is very simple but goes through all the mechanical steps needed to program.
 
 Open the file `hello_world.py` with the command:
 
@@ -84,7 +84,7 @@ Change this line so that it instead says "Hello, " and then your name. For examp
 print("Hello, Gustav!")
 ```
 
-Once you are finished with your edits, save the file and rerun the program using `python3`. Confirm that "Hello, " followed by your name and an explanation point are printed in the terminal.
+Once you are finished with your edits, save the file and rerun the program using `python3`. Confirm that "Hello, " followed by your name and an explanation point, are printed in the terminal.
 
 --
 

@@ -7,7 +7,7 @@ parent: Introduction to Linux
 
 # Terminal Shortcuts
 
-In this section, you will learn how to speed up terminal operations by chaining and auto-completing commands; iterating through previous commands; and erasing and jumping to different sections of command text.
+In this section, you will learn how to speed up terminal operations by chaining and auto-completing commands, iterating through previous commands, and erasing and jumping to different sections of command text.
 
 ## Chain Commands with `;`
 
@@ -30,7 +30,7 @@ Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
 
 First, `pwd` is executed and run to completion, and then `ls` is executed and run to completion. The two examples above are thus equivalent, but the ability to run multiple commands together is a small convenience that could save you some time if there is a group of commands that you want to execute sequentially.
 
-{: .node}
+{: .note}
 > The shell doesn’t care about white space, so it will run any of the following as well:
 > 
 > ```
@@ -67,11 +67,13 @@ As a caveat, Visual Studio Code's own preconfigured keyboard shortcuts frequentl
 1.  Navigate to "File > Preferences > Settings".
 
 ![VS Code settings menu screenshot](../assets/img/linux-shortcuts-1.png)
-          
+
+{:start="2"}   
 2.  Click on the "User" tab and then search for "allowChords". 
 
 ![VS Code user settings screenshot](../assets/img/linux-shortcuts-2.png)
-    
+
+{:start="3"}
 3.  Uncheck the box for the option when it appears.
 
 ![VS Code allowChords option screenshot](../assets/img/linux-shortcuts-3.png)

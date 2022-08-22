@@ -31,7 +31,7 @@ Safely close your remote connection by clicking the button in the bottom lefthan
 
 ## Next Steps
 
-Our next two labs will focus on Git, the most commmonly used software for tracking changes made to files (also known as _version control_). We'll dive into why Git is helpful for programmers, the commands you'll use to submit coding assignments for CAPP 30121, and the web platform we'll use to host code and view file changes over time (GitHub). See you then!
+Our next two labs will focus on Git, the most commonly used software for tracking changes made to files (also known as _version control_). We'll dive into why Git is helpful for programmers, the commands you'll use to submit coding assignments for CAPP 30121, and the web platform we'll use to host code and view file changes over time (GitHub). See you then!
 
 ## Additional Resources
 

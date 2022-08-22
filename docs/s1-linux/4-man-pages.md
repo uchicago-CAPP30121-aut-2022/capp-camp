@@ -15,6 +15,8 @@ To get the man page for a Linux command, you can type:
 man <command name>
 ```
 
+For example:
+
 ```bash
 man ls
 ```

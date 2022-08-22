@@ -11,6 +11,8 @@ Now that we've connected to the remote server, let's take a moment to familiariz
 
 ## Layout
 
+![VS Code default layout screenshot ](../assets/img/vs-code-layout-1.png)
+
 ### The Editor
 
 The _editor_ is the main section of the application, where files are edited. It defaults to a "Getting Started" file when you first launch the application if you haven't opened any files for editing yet.
@@ -21,7 +23,7 @@ The horizontal bar at the top of the application is known as the _menu bar_. Thi
 
 ### The Activity Bar
 
-The vertical bar on the lefthand side of the application is known as the _activity bar_. Each button will open a different menu:
+The vertical bar on the left-hand side of the application is known as the _activity bar_. Each button will open a different menu:
 
 1. Explorer - Represented by file stack icon. Allows you to view the files and folders of your selected workspace.
 
@@ -39,13 +41,15 @@ The vertical bar on the lefthand side of the application is known as the _activi
 
 ### The Status Bar
 
-The _status bar_, located at the very bottom of the application, shows the number of current code warnings and errors as well as the line number and file type of the file that is currently active in the Editor.
+The _status bar_, located at the very bottom of the application, shows the number of current code warnings and errors as well as the line number and file type of the file that is currently active in the Editor. The bottom left side of the status bar also includes the remote connection button as a way of quickly configuring, connecting to, and disconnecting from remote hosts. In general, installing a VS Code extension may result in a new button being added to the status or activity bar.
 
 ### Panels
 
 Additional panels like terminals can be displayed below or to the side of the Editor. By default, no panels are displayed for a new workspace that hasn't been previously saved. Let's now open a new terminal, which we will use for the remainder of this lab.
 
 ## Opening a New Terminal
+
+![VS Code default layout screenshot ](../assets/img/vs-code-layout-2.png)
 
 On your personal computer, you probably navigate your hard drive by double clicking on icons. While convenient for simple tasks, this approach is limited. For example, imagine that you want to delete all of the music files over 5 MB that you haven’t listened to in over a year. This task is very hard to do with the standard double-click interface but is relatively simple using the terminal.
 
