@@ -48,7 +48,6 @@ For now, we will use VS Code in a very basic way. You can navigate to a particul
 
 ## Run a Python Program
 
-|   |   |
 |---|---|
 |`python3 file.py`|Runs the Python program `file.py`.|
 

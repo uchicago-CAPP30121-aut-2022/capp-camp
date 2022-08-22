@@ -50,7 +50,6 @@ Notice that the directory path and list of files that you see if you open your h
 
 ### Change Directory
 
-|   |   |
 |---|---|
 |`cd <path-name>`|Change current directory to the given path.| 
 |`cd ..`|Move up/back one directory.|  
@@ -103,7 +102,6 @@ username@computer:~$ pwd
 
 Notice that the current working directory is also shown in the prompt string.
 
-|   |   |
 |---|---|
 |`~`|Shortcut for your home directory.| 
 |`.`|Shortcut for the current working directory.|  
@@ -154,7 +152,6 @@ This directory contains a subdirectory, `lab1`, that has some files for us to pl
 
 Syntax for the copy (`cp`), move (`mv`), remove (`rm`), and make directory (`mkdir`) commands is summarized below:
 
-|   |   |
 |---|---|
 |`cp <source> <destination>`|Copy the source file to the new destination.|
 |`mv <source> <destination>`|Move the source file to the new destination.|

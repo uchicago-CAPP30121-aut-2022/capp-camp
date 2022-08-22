@@ -68,12 +68,12 @@ As a caveat, Visual Studio Code's own preconfigured keyboard shortcuts frequentl
 
 ![VS Code settings menu screenshot](../assets/img/linux-shortcuts-1.png)
 
-{:start="2"}   
+{:style="counter-reset:none"}  
 2.  Click on the "User" tab and then search for "allowChords". 
 
 ![VS Code user settings screenshot](../assets/img/linux-shortcuts-2.png)
 
-{:start="3"}
+{:style="counter-reset:none"}
 3.  Uncheck the box for the option when it appears.
 
 ![VS Code allowChords option screenshot](../assets/img/linux-shortcuts-3.png)
