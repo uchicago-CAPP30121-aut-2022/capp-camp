@@ -40,7 +40,7 @@ The following is an example using these two commands in a terminal window:
 username@computer:~$ pwd
 /home/username/
 username@computer:~$ ls
-Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+cs  html
 username@computer:~$
 ```
 
@@ -55,31 +55,31 @@ Notice that the directory path and list of files that you see if you open your h
 |`cd ..`|Move up/back one directory.|  
 |`cd`| Move to your home directory.| 
 
-How can we move around in the file system? If we were using a graphical system, we would double click on folders and occasionally click the "back" arrow. In order to change directories in the terminal, we use `cd` (change directory) followed by the name of the destination directory. (A note about notation: we will use text inside angle brackets, such as `<path-name>` as a place holder. The text informally describes the type of value that should be supplied. In the case of `<path-name>`, the desired value is the path-name for a file. More about path-names later.) For example, if we want to change to the `Desktop` directory, we type the following in the terminal:
+How can we move around in the file system? If we were using a graphical system, we would double click on folders and occasionally click the "back" arrow. In order to change directories in the terminal, we use `cd` (change directory) followed by the name of the destination directory. (A note about notation: we will use text inside angle brackets, such as `<path-name>` as a place holder. The text informally describes the type of value that should be supplied. In the case of `<path-name>`, the desired value is the path-name for a file. More about path-names later.) For example, if we want to change to the `cs` directory, we type the following in the terminal:
 
 ```bash
-cd Desktop
+cd cs
 ```
 
-Here is an example of changing to the `Desktop` directory in the terminal. We use `pwd` and `ls` to verify where we are and where we can go:
+Here is an example of changing to the `cs` directory in the terminal. We use `pwd` and `ls` to verify where we are and where we can go:
 
 ```bash
 username@computer:~$ pwd
 /home/username/
 username@computer:~$ ls
-Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
-username@computer:~$ cd Desktop
-username@computer:~/Desktop$ pwd
-/home/username/Desktop/
-username@computer:~/Desktop$ ls
+cs  html
+username@computer:~$ cd cs
+username@computer:~/cs$ pwd
+/home/username/cs/
+username@computer:~/cs$ ls
 
-username@computer:~/Desktop$
+username@computer:~/cs$
 ```
 
-Notice that after we `cd` into the `Desktop` folder the command `pwd` now prints out:
+Notice that after we `cd` into the `cs` folder the command `pwd` now prints out:
 
 ```bash
-/home/username/Desktop/
+/home/username/cs/
 ```
 
 rather than:
@@ -88,14 +88,14 @@ rather than:
 /home/username/
 ```
 
-In the beginning, there are no files in the `Desktop` directory, which is why the output of `ls` in this directory is empty.
+Right now, there are no files in the `cs` directory, which is why the output of `ls` in this directory is empty.
 
-We can move up one step in the directory tree (e.g., from `/home/username/Desktop` to `/home/username` or from `/home/username` to `/home`) by typing `cd ..`. Here "up" is represented by `..` In this context, this command will move us up one level back to our home directory:
+We can move up one step in the directory tree (e.g., from `/home/username/cs` to `/home/username` or from `/home/username` to `/home`) by typing `cd ..`. Here "up" is represented by `..` In this context, this command will move us up one level back to our home directory:
 
 ```bash
-username@computer:~/Desktop$ pwd
-/home/username/Desktop/
-username@computer:~/Desktop$ cd ..
+username@computer:~/cs$ pwd
+/home/username/cs/
+username@computer:~/cs$ cd ..
 username@computer:~$ pwd
 /home/username/
 ```
@@ -109,25 +109,25 @@ Notice that the current working directory is also shown in the prompt string.
 
 The tilde (`~`) directory is the same as your home directory: that is, `~` is shorthand for `/home/<username>`. Here’s another useful shorthand: a single dot (`.`) refers to the current directory.
 
-Usually when you use `cd`, you will specify what is called a _relative path_, that is, you are telling the computer to take you to a directory where the location of the directory is described relative to the current directory. The only reason that the computer knows that we can `cd` to `Desktop` is because `Desktop` is a folder within the `/home/` username directory. But, if we use a `/` at the beginning of our path, we are specifying an absolute path or one that is relative to the "root" or top of the file system. For example:
+Usually when you use `cd`, you will specify what is called a _relative path_, that is, you are telling the computer to take you to a directory where the location of the directory is described relative to the current directory. The only reason that the computer knows that we can `cd` to `cs` is because `cs` is a folder within the `/home/` username directory. But, if we use a `/` at the beginning of our path, we are specifying an absolute path or one that is relative to the "root" or top of the file system. For example:
 
 ```bash
 username@computer:~$ pwd
 /home/username/
-username@computer:~$ cd /home/username/Desktop
-username@computer:~/Desktop$ pwd
-/home/username/Desktop
-username@computer:~/Desktop$ cd /home/username
+username@computer:~$ cd /home/username/cs
+username@computer:~/cs$ pwd
+/home/username/cs
+username@computer:~/cs$ cd /home/username
 username@computer:~$ pwd
 /home/username
 ```
 
-These commands achieve the same thing as the ones above: we `cd` into `Desktop`, a folder within our home directory, and then back to our home directory. Paths that start with a `/` are known as _absolute paths_ because they always lead to the same place, regardless of your current working directory.
+These commands achieve the same thing as the ones above: we `cd` into `cs`, a folder within our home directory, and then back to our home directory. Paths that start with a `/` are known as _absolute paths_ because they always lead to the same place, regardless of your current working directory.
 
 Running `cd` without an argument will take you back to your home directory without regard to your current location in the file system. For example:
 
 ```bash
-username@computer:~/Desktop$ cd
+username@computer:~/cs$ cd
 username@computer:~$ pwd
 /home/username
 ```
