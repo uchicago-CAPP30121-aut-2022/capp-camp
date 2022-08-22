@@ -32,3 +32,6 @@ parent: Git II
     ```
 
  3. Use `git log` to find the commit SHA of the _merge commit_ that you created to resolve the merge conflict from exercise 2. Use `git show` to view the changes in that commit. Pipe the output from `git show` into a new file called `changes.txt`. Commit the new file and push to GitHub.
+
+{:style="text-align:center"}
+[Next Lab](../s4-python/index.html){: .btn }

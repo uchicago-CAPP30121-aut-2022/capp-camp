@@ -112,3 +112,6 @@ If you are unable to set up your SSH key, please make sure to ask for help.
 
 {: .note}
 If you would like to set up SSH access from your personal computer at a later time, GitHub provides some pretty detailed documentation on how to do this in a number of different operating systems: [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh). Please note that we may not be able to assist you with SSH issues on your own computer.
+
+{:style="text-align:center"}
+[Previous](./index.html){: .btn } [Next](./2-first-repo.html){: .btn }

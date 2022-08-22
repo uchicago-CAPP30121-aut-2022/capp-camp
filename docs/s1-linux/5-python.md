@@ -99,3 +99,6 @@ Let’s recap the steps to programming in Python with the terminal:
 Forgetting to save the file (step 2) is a _very_ common mistake!
 
 In addition to the command-line version of Python, programmers often use Jupyter notebooks and other interactive versions of Python. You will be using `ipython3`, an interactive version of the Python interpreter, later in CAPP 30121.
+
+{:style="text-align:center"}
+[Previous](./4-man-pages.html){: .btn } [Next](./6-io-streams.html){: .btn }

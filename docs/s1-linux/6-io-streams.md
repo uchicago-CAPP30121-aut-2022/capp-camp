@@ -107,3 +107,6 @@ Nice.
 5. Use piping to chain together the `printenv` and `tail` commands to display the last 10 lines of output from `printenv`.
 
 6. Replicate the above functionality without using the `|` operator. (Hint: Use a temporary file.)
+
+{:style="text-align:center"}
+[Previous](./5-python.html){: .btn } [Next](./7-shortcuts.html){: .btn }

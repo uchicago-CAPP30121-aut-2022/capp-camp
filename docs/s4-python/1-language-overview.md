@@ -288,3 +288,6 @@ Copy and paste the function into the terminal. Press Enter (Return) until `ipyth
 ## Next Steps
 
 Even with this small sample of Python's available data types and control flow mechanisms, we can compose complex programs! You will learn more about how VS Code helps with Python programming and gain practice writing Python expressions in the next two sections.
+
+{:style="text-align:center"}
+[Previous](./index.html){: .btn } [Next](./2-vs-code-for-python.html){: .btn }

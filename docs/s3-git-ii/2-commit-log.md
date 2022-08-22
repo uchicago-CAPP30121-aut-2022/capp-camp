@@ -54,3 +54,6 @@ This will show you the changes that were included in that commit. The output of 
 > git show 9119c6f
 > ```
 > Git will only complain if there is more than one commit that starts with that same prefix.
+
+{:style="text-align:center"}
+[Previous](./1-working-from-multiple-locations.html){: .btn } [Next](./3-merge-conflicts.html){: .btn }

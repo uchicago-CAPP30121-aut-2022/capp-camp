@@ -53,3 +53,6 @@ If you are wondering, here is what these commands do (line-by-line):
 6.  `git push -u origin main`: Push the current commit to GitHub. The arguments `-u origin main` tell Git that you want to push from the local copy (`origin`) to the `main` branch on GitHub. Git will remember and reuse these parameters when you run `git push` from this copy of the repository in the future.
 
 From here on out, you can add, commit, pull, and push as usual to manage your repository. In the (hopefully) unlikely event that we need to fix a bug in the code that we provide, we’ll update the upstream repository and ask you to run `git pull upstream main`, to pull changes to the upstream code into your local copy.
+
+{:style="text-align:center"}
+[Previous](./3-merge-conflicts.html){: .btn } [Next](./5-exercises.html){: .btn }

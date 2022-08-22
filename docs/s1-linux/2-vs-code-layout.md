@@ -62,3 +62,6 @@ username@computer:~$
 where `username` has been replaced by your CNetID and `computer` is the name of the Linux server you happen to be using. This string is called the _prompt_. When you start typing, the characters you type will appear to the right of the `$`.
 
 The program that runs within a terminal window and processes the commands that you type is called a _shell_. We use _bash_, which is the default shell on most Linux distributions, but there are other popular shells, such as `ksh`, `tcsh`, etc.
+
+{:style="text-align:center"}
+[Previous](./1-connect.html){: .btn } [Next](./3-file-system.html){: .btn }

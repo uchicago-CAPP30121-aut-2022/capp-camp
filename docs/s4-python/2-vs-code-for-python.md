@@ -197,3 +197,6 @@ In the first lab, you learned about keyboard shortcuts for executing commands in
 ## Next Steps
 
 This completes our tour of VS Code!  We hope you've been able to configure your application and gain practice using some of its time-saving features. In the next section, we will discuss steps and strategies for completing programming assignments.
+
+{:style="text-align:center"}
+[Previous](./1-language-overview.html){: .btn } [Next](./3-coding-assignments.html){: .btn }

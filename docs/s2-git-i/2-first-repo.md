@@ -14,8 +14,13 @@ For each assignment in CAPP 30121, we will provide you with an _invitation URL_ 
 For this lab, use the [camp-1 URL](https://edstem.org/us/courses/24735/discussion/1679656) that we supplied on Ed. When you open the invitation URL in a browser tab, you will have to complete the following steps:
 
 1.  You will need to select your CnetID from a list. This step will allow us to know what student is associated with each GitHub account. This step is only done for the very first assignment invitation you accept.
-    
-2.  You must click “Accept this assignment” or your homework repository will not actually be created.
+
+   ![Screenshot of GitHub Classroom's Assignment Invitation Page](../assets/img/github-classroom-assignment-invitation.png)
+
+{:style="counter-reset:none"}
+1.  You must click “Accept this assignment” or your homework repository will not actually be created.
+
+   ![Screenshot of GitHub Classroom's Assignment Acceptance Confirmation Page](../assets/img/github-classroom-assignment-confirmation.png)
 
 If you run into any issues, please ask for help.
 
@@ -69,3 +74,6 @@ Clicking on the repository's name will take you to a page where you can browse y
     Don’t worry about what each individual command does; we will be seeing what most of these commands do in this lab. If you encounter any error messages, please do make sure to let us know.
 
 You can verify that your repository was correctly set up by going back to your repository’s page on GitHub, you should now see it contains a `README.md` file. If you click on it, you can see its contents.
+
+{:style="text-align:center"}
+[Previous](./1-getting-started.html){: .btn } [Next](./3-creating-a-commit.html){: .btn }

@@ -50,3 +50,6 @@ _Visual Studio Code_
 **"Introductory Videos."** _Visual Studio Code_. Microsoft. [[Link]()]
 
 This short video series walks through the basics of VS Code, including how to edit and run code, use keyboard shortcuts, download extensions, and more.  Some of these topics will be covered in future CAPP camp sessions.
+
+{:style="text-align:center"}
+[Next Lab](../s2-git-i/index.html){: .btn }

@@ -18,7 +18,8 @@ If you make changes to your repository, the way to store those changes (and the 
 >
 > VSCode includes Git integrations which can be helpful for seeing what Git is doing without running Git commands from the terminal. While these integrations are convenient, **it is nonetheless important to understand how to use Git from the terminal**, as you will be a much stronger developer if you know how to work with Git without the aid of an Integrated Developer Environment (IDE).
 >
-> ![VSCode Source Control Icon](../assets/img/vscode-source-code-icon.png)
+> ![VSCode Source Control Icon](../assets/img/vscode-source-control.png)
+>
 > If you look at your VSCode window, you will see on the left-hand sidebar an icon for Source Control. It should have a blue notification next to it. This notification tells us that we have two pending changes in our Git repository, because we modified `README.md` and created `test.txt`. If you click on the icon, you will see those two files listed under a grouping called "Changes." The Source Control menu can be useful for seeing which files you have modified or created since your last "checkpoint" in your Git repository.
 
 ## `git add` and `git commit`
@@ -89,3 +90,6 @@ You can ignore most of those messages. The important thing is to not see any war
 You can verify that your commit was correctly pushed to GitHub by going to your repository on the GitHub website. The `README.md` file should now show the updated content (your name and CNetID).
 
 In general, if you’re concerned about whether the course staff are seeing the right version of your work, you can just go to GitHub. Whatever is shown on your repository’s page is what the course staff will see. If you wrote some code, and it doesn’t show up on GitHub, make sure you didn’t forget to add your files, create a commit, and push the most recent commit to the server.
+
+{:style="text-align:center"}
+[Previous](./2-first-repo.html){: .btn } [Next](./4-commits-revisited.html){: .btn }
