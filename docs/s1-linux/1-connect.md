@@ -21,6 +21,15 @@ Before getting started, you should have the following tools installed, as detail
 
 Open Windows PowerShell or macOS Terminal and change your current working directory to the ".ssh" folder using `cd ~/.ssh`.
 
+{: .warning }
+> In some cases, you might need to create the .ssh directory before you can change to the directory. You can do this with the `mkdir` command.
+>
+> ```
+> cd
+> mkdir .ssh
+> cd .ssh
+> ```
+
 _Windows_
 
 ![SSH directory screenshot - Windows](../assets/img/connect-remote-windows-1.png)
