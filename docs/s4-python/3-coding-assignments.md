@@ -9,7 +9,7 @@ parent: Python Programming
 
 In CAPP 30121, you will complete individual and team-based assignments to practice algorithmic thinking and cement your understanding of Python's data structures and syntax. As current and former students of CAPP, we (Marc, Launa, and Ali) encourage you to focus on the bigger picture of skills, _not_ scores, and adopt a [growth mindset](https://jamesclear.com/fixed-mindset-vs-growth-mindset). Some assignments and topics may challenge you. View those as exciting opportunities to stretch yourself en route to becoming a stronger practitioner of data. You'll probably realize that you're having fun along the way!
 
-In this section, we provide general tips for assignments and then end with two mock assignments as exercises. Let's dive in!
+In this section, we provide general tips for assignments and then end the lab with two mock assignments as exercises. Let's dive in!
 
 ## Reading Code and Documentation
 

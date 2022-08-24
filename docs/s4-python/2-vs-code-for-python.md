@@ -7,7 +7,9 @@ parent: Python Programming
 
 # VS Code for Python
 
-Recall from the [first lab](../s1-linux/index.md) the main components of VS Code's graphical interface: 
+Recall from the [first lab](../s1-linux/index.md) the main components of VS Code's graphical interface:
+
+![VS Code default layout screenshot ](../assets/img/vs-code-layout-1.png)
 
 - **Editor**: The main section of the application, where files are edited. Defaults to a "Getting Started" file when you first launch the application if you haven't opened any files for editing yet.
 
@@ -37,15 +39,15 @@ In the future, you might want to use multiple terminals simultaneously, perhaps 
 
 VS Code also allows users to split one terminal into multiple views. To test this feature, right click one of the terminals you have created and select "Split Terminal". Now two terminals are open to the same directory, and their names have a connection line drawn between them.
 
-To remove terminals, simply hover over their name and click the trash can icon that appears.  When all terminals are gone, the terminal panel disappears so only the editor is displayed. To toggle the terminal panel open and closed, so it is displayed or  hidden, you can use the shortcut `Ctrl+\``.  If no terminals exist when the terminal panel is toggled open, a new terminal open to the default shell is created.
+To remove terminals, simply hover over their name and click the trash can icon that appears.  When all terminals are gone, the terminal panel disappears so only the editor is displayed. To toggle the terminal panel open and closed so it is displayed or  hidden, you can use the shortcut `Ctrl+```.  If no terminals exist when the terminal panel is toggled open, a new terminal open to the default shell is created.
 
 ### Editor Tabs
 
-As we discussed in the first lab, you can open a new file in VS Code's Editor by running the keyboard shortcut `code <filename>` in the terminal. You can also select a file manually through the Explorer Menu on the Activity Bar or by using `Ctrl-P` and searching for the file in the workspace.
+As we discussed in the first lab, you can open a new file in VS Code's Editor by running the keyboard shortcut `code <filename>` in the terminal. To use VS Code's interface to browse the contents of directories, open the workspace folder you'd like to see. You can then select a file manually through the Explorer Menu on the Activity Bar or by using `Ctrl-P` and searching for the file in the workspace.
 
 To view two files side by side, simply drag and drop the file tabs to a desired position in the Editor window. You'll see highlighted options available (i.e., right side, left side, top, bottom) as you move around.
 
-You can also view the _same file next to itself_ by right-clicking the file's Editor tab and then selecting one of the split options: `Split Up`, `Split Down`, `Split Right`, `Split Left`. This will generate a new view of the same file. Edits made to one will immediately appear in the other. If you close one, the other remains open. This functionality is highly useful for viewing assignment directions or a section of code being used as a reference on one side of the VS Code window and the code you're actively writing, on the other side.
+You can also view the _same file next to itself_ by right-clicking the file's Editor tab and then selecting one of the split options: `Split Up`, `Split Down`, `Split Right`, or `Split Left`. This will generate a new view of the same file. Edits made in one view will immediately appear in the other. If you close one, the other remains open. This functionality is very useful for viewing assignment directions or a section of code being used as a reference on one side of the VS Code window and the code you're actively writing, on the other side.
 
 To close a file, simply hover over its Editor tab and click the "x" button. You can also right-click its tab and select "Close".
 
@@ -55,7 +57,7 @@ To change the color theme, click on the Manage button in the Activity Bar (i.e.,
 
 ### Zoom Levels
 
-To increase font size across the application, you can zoom in using "View > Appearance > Zoom In" on the Menu Bar or simply use the keyboard shortcut `Ctrl+=`. The default zoom is 0, and each increase in zoom level results in a 20 perent increase.  You can similarly zoom out using "View > Appearance > Zoom Out" on the menu bar or `Ctrl+-`.  This zoom level is persisted in VS Code (through the `window.zoomLevel` setting) until it is changed again.
+To increase font size across the application, you can zoom in using "View > Appearance > Zoom In" on the Menu Bar or the keyboard shortcut `Ctrl+=`. The default level zoom is 0; every one-unit change in the level results in a 20 percent increase in the font size.  You can similarly zoom out using "View > Appearance > Zoom Out" on the menu bar or `Ctrl+-`.  This zoom level will stay the same in VS Code, even after you close the application, until it is changed again.
 
 
 ## Coding Style and Syntax

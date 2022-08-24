@@ -19,65 +19,61 @@ Your programming assignments will require you to edit Python files, which end in
 
 **Docstring**.  At the very top of the file, you will find a docstring that starts and ends with a series of three quotation marks. When you run your Python program, the contents of the docstring will be ignored. Docstrings are used for informational purposes, such as conveying the name of the program, its author, and a brief description.
 
+```
 '''
-\'''
 Epidemic modelling
 
 Launa Greer
 
-Functions for running a simple epidemiological simulation
-\'''
+Functions for running a simple epidemiological simulation.
 '''
+```
 
 **Imports**:  Below the doc string, you will often find a series of one-line statements beginning with the word `import`. The `import` keyword allows your Python program to access logic from another Python program. The Python language has a standard library of Python programs, called _modules_, that can be imported. For example, in the code snippet below, the `random` module is being imported so the "Epidemic modelling" program can call it to generate pseudo-random numbers.
 
+```
 '''
-\'''
 Epidemic modelling
 
 Launa Greer
 
-Functions for running a simple epidemiological simulation
-\'''
-
-
-import random
-
-import click
+Functions for running a simple epidemiological simulation.
 '''
 
-**Logic**:  After the `import` statements, the main logic of the program begins. You've already seen `print` commands in previous lessons. Printing "Hello, Gustav!" to the terminal is a simple example of program logic.
+import random
+import click
+```
+
+**Logic**:  After the `import` statements, the main logic of the program begins. You've already seen `print` commands in previous lessons. Printing "Hello, World!" to the terminal is a simple example of program logic.
 
 ## Example Data Types
 
-Below are two of Python's built-in data types that we'll reference as we practice writing code. You will learn about these data types and others in more detail during CAPP 30121:
+Below are three of Python's built-in data types that we'll reference as we practice writing code. You will learn about these data types and others in more detail during CAPP 30121:
 
-### Numerics: `int` (integer) and `float` (float)
+### `int` (integer)
 
-Integers are whole numbers that can be positive or negative. Examples could include `-10`, `0`, `3`, or `49999`.
+Integers are whole numbers that can be positive, negative, or zero. Examples include `-10`, `0`, `3`, and `49999`. In the current major release of Python ("Python 3"), there are no explicit restictions on how big integers can be. The amount of memory available on your machine is the practical limit.
 
-Integers can be added (`+`), subtracted (`-`), multipled (`*`), and raised to a power (`**`). They can be divided using either _true division_ (`/`) or _floor division_ (`//`). The latter only takes the whole number part and not the decimal part following a normal/true division operation. You can also calculate the modulo of two integers—i.e., their remainder following division—using `%`.
+Integers can be added (`+`), subtracted (`-`), multipled (`*`), and raised to a power (`**`). They can also be divided using either _true division_ (`/`) or _floor division_ (`//`). Floor division only takes the whole number part and not the decimal part following a normal/true division operation. For example, `5 / 2` would return `2.5` but `5 // 2` would return `2`. You can also calculate the _modulo_ of two integers—i.e., their remainder following true division—using `%`. `5 % 2` would return `1` because 5 divided by 2 equals 2 with a remainder of 1.
 
-When applying several operations in sequence, normal order of operations is followed. Mathematical expressions in parentheses are evaluated first, followed by exponents, multiplication and division from left to right, and finally, addition and subtraction from left to right.
-
-`float` represents floating-point numbers: numbers that have a decimal point. The same operations as integers apply. `3.45`, `-0.9`, and `2003.0` are all examples. The data type got its name from the fact that its decimal point can "float" to wherever it's needed based on how the data is stored in computer memory.
+When applying several operations in sequence, normal _order of operations_ is followed. Mathematical expressions in parentheses are evaluated first, followed by exponents, multiplication and division from left to right, and finally, addition and subtraction from left to right.
 
 #### Checkpoint
 
-In your terminal, type `ipython3` to launch an interactive Python shell where you can test Python commands.  Then run the following expressions to confirm their value. (Note: You don't need to type "In[1]" or "Out[1]"; those are examples of what you would see as output in the terminal.)
+In your terminal, type `ipython3` to launch an interactive Python shell where you can test Python commands. Then run the following expressions to confirm their value. (Note: You **don't** need to type "In[1]" or "Out[1]"; those are examples of what you would see as output in the terminal.)
 
-Order of Operations
+**Order of Operations**
 ```python
 In [1]: ((4 - 5) + 3)**2
 Out [1]: 4
 ```
 
-Normal/True Division
+**Normal/True Division**
 ```python
 In [2]: 4 / 5
 Out [2]: 0.8
 
-In [3]: 4 // 0 # Division by zero will cause Python to throw an error
+In [3]: 4 // 0
 Out [3]: ---------------------------------------------------------
 ZeroDivisionError       Traceback (most recent call last)
 Input In [12], in <module>
@@ -86,13 +82,13 @@ Input In [12], in <module>
 ZeroDivisionError: integer division or modulo by zero
 ```
 
-Floor Division
+**Floor Division**
 ```python
 In [4]: 4 // 5
 Out [4]: 0
 ```
 
-Modulo
+**Modulo**
 ```python
 In [5]: 4 % 5
 Out [5]: 4
@@ -104,7 +100,88 @@ In [7]: 5 % 4
 Out [7]: 1
 ```
 
-## Booleans: `bool`
+Try out a few more commands on your own to get a sense of how these operators are used!
+
+{: .note}
+When you attempted to divide by zero, Python raised an _exception_ called `ZeroDivisionError`. Whenever Python programs encounter an error, they immediately raise a exception and _terminate_ (i.e., stop running) unless the exception is "caught" and handled by the programmer. We won't cover how to catch exceptions in this camp, but that knowledge will be indispensible for future CS coursework. For now, you should observe that exceptions print helpful error messages to the terminal that help you understand what went wrong.  They also provide a _stack trace_ showing where in the program the error occurred.
+
+
+### `float` (floating point number)
+
+`float` represents numbers that have a decimal point. `3.45`, `-0.9`, and `2003.0` are all examples. The data type's name comes from the fact that its decimal point can "float" to wherever it's needed based on how the data is stored in computer memory. Unlike integers, floats have a maximum and minimum value defined by Python. There are also special values of positive or negative infinity that can be referenced using `float('inf')` and `float('-inf')`, respectively.
+
+Like `int` values, `float` values can be added (`+`), subtracted (`-`), multiplied (`*`), divided (`/`), and raised to a power (`**`). Here we should note that normal/true division always results in a `float`, regardless of whether the numbers you're dividing with are integers or floats. Test the following expressions in IPython3 to confirm. In this case, the function `type` returns the Python data type of the numerical expression after it is evaluated to a single number:
+
+```python
+In [8]: 2 / 2
+Out [8]: 1.0
+
+In [9]: type(2 / 2)
+Out [9]: float
+
+In [10]: type(2.0 / 2.0)
+Out [10]: float
+
+In [11]: type(2.0 / 2.0)
+Out [11]: float
+
+In [10]: type(2.0 / 2.0)
+Out [10]: float
+```
+
+In addition, if you do an arithmetic operation that mixes floats and ints, the answer will always come back as a `float` data type:
+
+```python
+In [10]: 5.0 + 2
+Out [10]: 7.0
+
+In [11]: type(5.0 + 2)
+Out [11]: float
+
+In [12]: 5 * 2.0
+Out [12]: 10.0
+
+In [13]: type(5 * 2.0)
+Out [13]: float
+```
+
+{: .warning}
+> **Important: beware of floating point rounding!**  
+> 
+> Computers store data within _bits_ of memory. Each bit can hold a value of 0 or 1. Therefore, we say that computers store numbers using a base-2, or _binary_, system because only two digits are available. By contrast, we write numbers in everyday life using a base-10 system in which 10 digits, 0 through 9, are used.
+>
+> Unfortunately, some numbers with decimals infinitely repeat when converted from base-10 to base-2. As a result, the computer has to truncate the number of digits to save memory, which leads to unexpected rounding errors. For example, try out the following expressions in IPython3:
+> 
+> ```
+> In [14]: 0.1 + 0.2
+> Out [14]: 0.30000000000000004
+>
+> In [15]: 0.1 + 0.1
+> Out [15]: 0.2
+>
+> In [16]: 0.1 * 2
+> Out [16]: 0.2
+>
+> In [17]: 0.1 * 3
+> Out[17]: 0.30000000000000004
+>
+> In [17]: 0.1 * 4
+> Out[17]: 0.4
+>
+> In [17]: 0.1 * 5
+> Out[17]: 0.5
+>
+> In [17]: 0.1 * 6
+> Out[17]: 0.6000000000000001
+>
+> In [18]: 0.1 * 7
+> Out [18]: 0.7000000000000001
+> ```
+>
+> Umm...what is going on here? The answer is: round-off errors. In the first example, `0.01` and `0.02` each become infinitely repeating binary fractions when converted from base 10 to base 2, so their sum does not exactly equal `0.3`.  Other results, like `0.1 + 0.1` are also infinitely repeating binary decimals, but Python displays them as terminating decimals due to quirks of its internal rounding algorithm.
+>
+
+### `bool` (boolean)
 
 Booleans are `True` and `False` values. You can use logical operators like `and`, `or`, and `not` to create boolean statements:
 
@@ -114,59 +191,79 @@ Booleans are `True` and `False` values. You can use logical operators like `and`
 
 - `or` requres that one of the conditions are true. `False or True` would therefore evaluate to `True`.
 
-You can also use comparison operators like equals (`==`), doesn't equal (`!==`), greater than (`>`), less than (`<`), greater than or equal to (`>=`), and less than or equal to (`<=`) to create booleans.  For example: `5 == 3` would output `False` and `(40 / 10) >= 10` would output `True`.
+You can also use comparison operators like equals (`==`), not equals (`!==`), greater than (`>`), less than (`<`), greater than or equal to (`>=`), and less than or equal to (`<=`) to create booleans.  For example: `5 == 3` would output `False` and `(40 / 10) >= 1` would output `True`.
 
 Like numeric types, parentheses will also dictate the order in which expressions are evaluated.
 
 
 #### Checkpoint
 
-In your terminal with `ipython3` running, test these additional commands:
+Run the following commands in IPython3 and then test more of your own:
+
+**`and`, `or`, and `not` Operators**
 
 ```python
-In [8]: not(not False)
-Out [8]: False
-```
-
-```python
-In [9]: not(False) or True
-Out [9]: True
-```
-```python
-In [10]: not(False or True)
-Out [10]: False
+In [19]: not(not False)
+Out [19]: False
 ```
 
 ```python
-In [11]: 100 == 100
-Out [11]: True
+In [20]: not(False) or True
+Out [20]: True
+```
+```python
+In [21]: not(False or True)
+Out [21]: False
+```
+
+**Comparison Operators**
+
+```python
+In [22]: 100 == 100
+Out [22]: True
 ```
 
 ```python
-In [11]: -10 < -9.99
-Out [11]: True
+In [23]: -10 < -9
+Out [23]: True
 ```
+
+{: .warning}
+> **Don't directly compare floating point numbers!**  
+> 
+> As we saw above, certain decimal numbers cannot be represented precisely as binary numbers. Therefore, you should avoid directly comparing floating point numbers, which represent decimals in binary. For example, the following expression does not evaluate to the expected result:
+> 
+> ```
+> In [24]: 0.1 + 0.2 == 0.3
+> Out [24]: False
+> ```
+>
+> Again, this occurs because `0.1 + 0.2` is close but not directly equal to 0.3.
+>
+
 
 ## Variables
 
-We have been generating Python expressions. The values aren't saved anywhere after Python has finished evaluating them. To save the result of an expression, we use variables.  You define the name for your variable, followed by an equal sign, and then the expression. For example:
+We have been generating Python expressions. The values aren't saved anywhere after Python has finished evaluating them. To save the result of an expression, we use _variables_.  You define the name for your variable, followed by an equal sign, and then the expression. For example:
 
 ```python
-is_chicago_summer = True
-summer_high_temp_f = 95 
-summer_low_temp_=f = 40
+pi = 3.14159
+radius = 2
+circle_area =  pi * radius ** 2
+circle_circumference = 2 * pi * r
 ```
+
 As shown above, Python has certain expectations and conventions for variable names. 
 
-- A variable name must start with a letter or underscore (`_`).
+- A variable name must start with a letter or an underscore (`_`).
 
 - A variable name can _only_ contain alphanumeric characters and underscores (`A-z`, `0-9`, and `_ `).
 
-- Variable names are case-sensitive.
+- Variable names are case-sensitive. `my_var` and `MY_VAR` would be considered two separate variables.
 
 - Variable names use **snake case**, where all letters are lowercase and spaces are represented by underscores.
 
-#### Checkpoint
+### Checkpoint
 
 In your terminal with `ipython3` running, practice creating a variable and printing its value using `print`. The variable will live in memory until the terminal is closed.
 
@@ -187,7 +284,7 @@ SyntaxError: invalid decimal literal
 
 ## Control Flow
 
-Now that we have expressions and variables, we can begin writing statements that affect Python program's control flow, or the order in which it executes statements. For now, we will do this using conditional blocks.
+Now that we have expressions and variables, we can begin writing statements that affect Python program's _control flow_, or the order in which it executes statements. For now, we will do this using conditional blocks.
 
 ### if-elif-else Blocks
 
@@ -220,7 +317,6 @@ The above example was contrived; what if we wanted to call the if-elif-else bloc
 
 For example, if we wanted to write a function for our conditional block, it would look something like this:
 
-
 ```python
 def assess_rider_height(rider_height):
     """
@@ -247,7 +343,7 @@ def assess_rider_height(rider_height):
         print("Sure, you can ride the roller coaster.")
 ```
 
-And then we would call it later in our Python script like this:
+And then we would call it later in our Python script like this, with some sample values:
 
 ```
 assess_rider_height(20)
@@ -282,12 +378,12 @@ The above function is declared again using the keyword `def` and given the name 
 
 #### Checkpoint
 
-Copy and paste the function into the terminal. Press Enter (Return) until `ipython3` recognizes that you are done entering input. Then try calling the function as shown above.
+Copy and paste the function into the terminal. Press Enter (Return) until `ipython3` recognizes that you are done entering input. Then try calling the function as shown above with different values.
 
 
 ## Next Steps
 
-Even with this small sample of Python's available data types and control flow mechanisms, we can compose complex programs! You will learn more about how VS Code helps with Python programming and gain practice writing Python expressions in the next two sections.
+Even with this small sample of Python's available data types and control flow mechanisms, we can compose complex programs! You will learn more about how VS Code helps with Python programming and gain practice writing Python expressions in the upcoming sections.
 
 {:style="text-align:center"}
 [Previous](./index.html){: .btn } [Next](./2-vs-code-for-python.html){: .btn }
