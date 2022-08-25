@@ -13,19 +13,19 @@ To gain practice with this process, follow the steps below. These steps are simi
 
  1. Using a browser, accept the invitation at the [CAMP-2 URL](https://edstem.org/us/courses/24735/discussion/1679656) that we supplied on Ed.
 
- 2. Navigate to your `/home/USER/capp30121` directory and creating a new directory named `camp-2-GITHUB-USERNAME` (where, as usual, GITHUB-USERNAME is replaced with your GITHUB-USERNAME).
+ 2. Navigate to your `/home/USER/capp30121` directory and creating a new directory named `camp-2-YOUR_GITHUB_USERNAME` (where, as usual, `YOUR_GITHUB_USERNAME` is replaced with your YOUR_GITHUB_USERNAME).
 
     ```    
     cd ~/capp30121
-    mkdir camp-2-GITHUB-USERNAME
-    cd camp-2-GITHUB-USERNAME
+    mkdir camp-2-YOUR_GITHUB_USERNAME
+    cd camp-2-YOUR_GITHUB_USERNAME
     ```
 
- 3. And then run the following commands using your GitHub username in place of `GITHUB_USERNAME` in the second command.
+ 3. And then run the following commands using your GitHub username in place of `YOUR_GITHUB_USERNAME` in the second command.
 
     ```        
     git init
-    git remote add origin git@github.com:uchicago-CAPP30121-aut-2022/camp-2-GITHUB_USERNAME.git
+    git remote add origin git@github.com:uchicago-CAPP30121-aut-2022/camp-2-YOUR_GITHUB_USERNAME.git
     git remote add upstream git@github.com:uchicago-CAPP30121-aut-2022/camp-2-initial-code.git
     git pull upstream main
     git branch -M main
@@ -44,7 +44,7 @@ If you are wondering, here is what these commands do (line-by-line):
     
 2.  `git remote add origin git@github.com:uchicago-CAPP30121-aut-2022/camp-2-GITHUB_USERNAME.git`: Connect the local repository to the repository that was created for you on GitHub when you accepted the assignment invitation.
     
-3.  `git remote add upstream git@github.com:uchicago-CAPP30121-aut-2022/camp-2-initial-code.git`: Connect your local repository to an upstream GitHub repository that we have seeded with code for this assignment.
+3.  `git remote add upstream git@github.com:uchicago-CAPP30121-aut-2022/camp-2-initial-code.git`: Connect your local repository to an upstream GitHub repository that we have created and seeded with code for this assignment.
     
 4.  `git pull upstream main`: Pull the seed code from the upstream repository into your local copy of the repository and package it into a commit. Notice that the pull command indicates that code should be pulled from the `main` branch of the _upstream_ repository.
     

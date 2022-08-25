@@ -33,4 +33,7 @@ To open a new terminal in VSCode, select “Terminal > New Terminal” on the Me
 
 ## Acknowledgments
 
-Many CS 121 instructors and TAs have worked on this lab over the years. Gustav Larsson (PhD ‘17) and Isha Mehrotra (SB’19) deserve special mention. Gustav wrote the original version of this lab and Isha wrote the original material on branches and merge conflicts.
+Many CS 121 instructors and TAs have worked on this lab over the years. Gustav Larsson (PhD ‘17) and Isha Mehrotra (SB’19) deserve special mention. Gustav wrote the original version of this lab and Isha wrote the original material on merge conflicts. This lab has been updated by Marc Richardson (MSCAPP '19) and Launa Greer (MSCAPP '19).
+
+{:style="text-align:center"}
+[Start the Lab](./1-getting-started.html){: .btn }

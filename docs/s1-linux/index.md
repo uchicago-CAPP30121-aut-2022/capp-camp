@@ -29,3 +29,6 @@ In this lab, you will learn how to use the terminal to perform some basic operat
 ## Acknowledgments
 
 This lab was written by Professor Anne Rogers and collaborating faculty Tim Black, Hannah Morgan, and Borja Sotomayor. It was adapted by staff for this year's CAPP Camp.
+
+{:style="text-align:center"}
+[Start the Lab](./1-connect.html){: .btn }

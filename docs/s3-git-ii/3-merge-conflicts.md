@@ -7,9 +7,9 @@ parent: Git II
 
 # Merge conflicts
 
-If you have multiple copies of the same repository, it is easy for them to get out of sync. In this section, we will purposely create a merge conflict using the home and temp repositories that you have created to allow you to see how to fix conflicts. As in the section on working from multiple locations, you’ll want to have two terminal windows open for this section: one where you’ll work with your home repository (that is, the copy of the repository in your home directory) and the other where you’ll work with your temp repository (the one in `/tmp`).
+If you have multiple copies of the same repository, it is easy for them to get out of sync. In this section, we will purposely create a merge conflict using the home and temp repositories that you have created to allow you to see how to fix conflicts. As in the section on working from multiple locations, you’ll want to have two terminal windows open for this section: one where you’ll work with your home repository (that is, the copy of the repository in your home directory) and the other where you’ll work with your temp repository (the one in `/tmp/$USER/capp30121/`).
 
-First, let’s add a file to your home repository. Use `pwd` to make sure you are in the right local copy the repository:
+First, let’s add a file to your home repository. Use `pwd` to make sure you are in the right local repository:
 
 ```
 $ pwd
@@ -18,7 +18,7 @@ $ pwd
 
 (USER will be your CNetID.) If the result of `pwd` starts with `/tmp` then you are in the wrong window and should switch to the correct one before proceeding.
 
-Open an editor and create a file named `balloons.py` (`code balloons.py`) that contains these four lines of Python code:
+Now, in your home repository, create a file named `balloons.py` (`code balloons.py`) that contains these four lines of Python code:
 
 ```
 print("Let's get started.")
@@ -27,9 +27,9 @@ print("99 red balloons!")
 print("All done.")
 ```
 
-Now commit and push this code to the server.
+Now commit and push this code to GitHub.
 
-Switch to the window open to the temp copy of your repository and run `ls`. Do see `balloons.py`? No. Why? Because the temp copy of the repository is out of sync with the server. Run:
+Switch to the window open to the temp copy of your repository and run `ls`. Do see `balloons.py`? No. Why? Because the temp copy of the repository is out of sync with GitHub. Run:
 
 ```
 git pull
@@ -54,12 +54,14 @@ print("All done.")
 > In VSCode, there is a simple keyboard shortcut that allows you to edit multiples lines of text simultaneously. This shortcut is useful when you need to make a repetitive change to multiples lines in a file, as we are doing here.
 > 
 > Highlight the text `red` in the file. Press `Ctrl+D` (PC) or `Cmd+D` (Mac). We now have two cursors from which we can modify text simultaneously. Type `green` and press the `esc` key to return to one cursor.
+>
+> ![Screenshot of multiple cursor selection in VS Code](../assets/img/vscode-multiple-cursors.png)
 > 
 > You can use this command to add as many selections as there are in the file and edit them all in one go. If we had three instances of `red` in our file, then pressing the command twice would create three cursors and edit all three instances at the same time.
 
-Now commit and push this code to GitHub.
+Now, in your temp repository, commit and push `balloons.py` to GitHub.
 
-Switch back to the home copy of your repository (`/home/USER/capp30121/camp-1-GITHUB-USERNAME`). The home copy is out of sync with the server and the temp copy, but do **not** pull from the server to sync them up just yet. Instead, change `red` to `blue` in `balloons.py`:
+Switch back to the home copy of your repository (`/home/USER/capp30121/camp-1_YOUR_GITHUB_USERNAME`). The home copy is out of sync with the server and the temp copy, but do **not** pull from the server to sync them up just yet. Instead, change `red` to `blue` in `balloons.py`:
 
 ```
 print("Let's get started.")
@@ -124,7 +126,9 @@ The long number `f4a73bedf23e07daf75baa048defbca0d9ae72cb` is the SHA for the co
 > 
 > The Git integration with VSCode will also show you visual information when there is a merge conflict with one of your files. If you look at `balloons.py` file in your home directory in your VSCode editor, you will see the same content that you see when you `cat` the file, along with some additional information that VSCode provides.
 > 
-> VSCode will highlight in green the "Current Change" in the file and highlight in blue the "Incoming Change" in the file. The other thing to notice is that VSCode signals quite clearly that the file contains a merge conflict. Notice that the name of the file in the file tab at the top of the editor is now red with an `!` next to the name. These visual indicators are another signal that the file has a merge conflict.
+> ![Screenshot of a merge conflict in VS Code](../assets/img/vscode-merge-conflict.png)
+>
+> VSCode will highlight in green the "Current Change" in the file and highlight in blue the "Incoming Change" in the file. The other thing to notice is that VSCode signals quite clearly that the file contains a merge conflict. Notice that the file tab at the top of the editor is now red with an `!` next to the file name. These visual indicators are another signal that the file has a merge conflict.
 
 You can obtain more information about the merge conflict that you just generated using `git status`.
 
@@ -249,7 +253,7 @@ Before continuing with the rest of the lab, make sure to `git push` your work. Y
 
 To sum up this section of the lab, let's reflect on what we did.
 
-We generated a merge conflict by editing `balloons.py` in the home and temp repositories to create a divergence in the file (changing the red balloons to green in temp and changing the red balloons to blue in the home repository). When we tried to snyc the changes from the temp repository with the changes from our home repository, Git tried and failed to merge these divergent changes automatically. It then prompted us to resolve the divergence manually by deciding which changes we wanted to keep (or remove them both and replace them with something different). We then fixed the divergence by editing the file, deciding how to resolve the conflict, and notifying Git of our decision by adding our fix to a new merge commit.
+We generated a merge conflict by editing `balloons.py` in the home and temp repositories to create a divergence in the file (changing the red balloons to green in temp and changing the red balloons to blue in the home repository). When we tried to sync the changes from the temp repository with the changes from our home repository, Git tried and failed to merge these divergent changes automatically. It then prompted us to resolve the divergence manually by deciding which changes we wanted to keep (or remove them both and replace them with something different). We then fixed the divergence by editing the file, deciding how to resolve the conflict, and notifying Git of our decision by adding our fix to a new merge commit.
 
 The main thing to take away from this exercise is that merge conflicts, while they can be confusing and messy, are not anything to fear. Although the output generated by a merge conflict can be daunting, all you need to do is make a decision about how to resolve divergent files in your repository. Nonetheless, it is important to understand how to resolve merge conflicts, because they will prevent you from further updating your work on the remote repository. With this knowledge in hand, you should be able to go forward and handle merge conflicts with confidence.
 
