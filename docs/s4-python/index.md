@@ -22,3 +22,6 @@ Let's get started!
 3. Configure your instance of VS Code for greater accessibilty and productivity.
 
 4. Review and practice the process of planning, writing, testing, and submitting code for programming assignments.
+
+{:style="text-align:center"}
+[Start the Lab](./1-language-overview.html){: .btn }
