@@ -178,7 +178,7 @@ Out [13]: float
 > Out [18]: 0.7000000000000001
 > ```
 >
-> Umm...what is going on here? The answer is: round-off errors. In the first example, `0.01` and `0.02` each become infinitely repeating binary fractions when converted from base 10 to base 2, so their sum does not exactly equal `0.3`.  Other results, like `0.1 + 0.1` are also infinitely repeating binary decimals, but Python displays them as terminating decimals due to quirks of its internal rounding algorithm.
+> Umm...what is going on here? The answer is: round-off errors. In the first example, `0.01` and `0.02` each become infinitely repeating binary fractions when converted from base 10 to base 2, so their sum does not exactly equal `0.3`.  Other results, like `0.1 + 0.1` are also infinitely repeating binary decimals, but Python displays them as terminating decimals due to how its internal rounding algorithm is implemented.
 >
 
 ### `bool` (boolean)

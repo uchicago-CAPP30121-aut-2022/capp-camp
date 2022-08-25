@@ -94,14 +94,14 @@ For automated testing, CAPP 30121 will use the `pytest` framework. (Pytest is av
 For example, to run all the tests for `add_one_and_multiply`, you can run the following command from the Linux command-line:
 
 ```bash
-$ py.test -v -x -k add_one_and_multiply test_sel1.py
+$ pytest -v -x -k add_one_and_multiply test_sel1.py
 ```
 
 (Recall that the `$` represents the prompt and is not included in the command.)
 
 Here is what each part of this command means:
 
-- `py.test` indicates that we want to run pytest.
+- `pytest` indicates that we want to run pytest.
 
 - `test_sel1.py` is the name of the file that contains the testing code. (If you look at this file, you may find some of the syntax unfamiliar; this is okay for now.)
 
@@ -113,10 +113,10 @@ In between these, we specify three options:
 
 - The option `-k` add_one_and_multiply restricts pytest to only running the tests for add_one_and_multiply. The way the `-k` option works is actually a bit more elaborate but, for now, you can assume that providing the name of the function you’re testing will run only the tests for that function.
 
-Here is (slightly-modified) output from using this command to test our reference implementation of add_one_and_multiply:
+Here is (slightly-modified) output from using this command to test our reference implementation of `add_one_and_multiply`:
 
 ```bash
-$ py.test -v -x -k add_one_and_multiply test_sel1.py
+$ pytest -v -x -k add_one_and_multiply test_sel1.py
 ====================================== test session starts =======================================
 platform linux -- Python 3.8.5, pytest-3.9.1, py-1.10.0, pluggy-0.13.1 -- /bin/python3
 cachedir: .pytest_cache
@@ -149,7 +149,7 @@ a + 1 * x
 This would pass the first test, but would fail the second one:
 
 ```bash
-$ py.test -v -x -k add_one_and_multiply test_se1.py
+$ pytest -v -x -k add_one_and_multiply test_se1.py
 ====================================== test session starts =======================================
 platform linux -- Python 3.8.5, pytest-3.9.1, py-1.10.0, pluggy-0.13.1 -- /bin/python3
 cachedir: .pytest_cache
@@ -204,7 +204,7 @@ E           se1.add_one_and_multiply(5, 2)
 
 This information can help you narrow down the issue with your code. This error message, in particular, tells you that, like the manual testing example we saw earlier, the test code expected a return value of 12, but got a return value of 7. It also shows you how to run this test in ipython3. At this point, you should switch back to testing your function in ipython3 until you have fixed the problem.
 
-A few more notes on the `py.test` command and its options:
+A few more notes on the `pytest` command and its options:
 
 By default, if you do not supply the name of a specific test file (such as `test_se1.py`), pytest will look in the current directory tree for Python files that have names that start with `test_`.
 
@@ -217,7 +217,7 @@ Pytest has many other options that we did not use here. You can see the rest of 
 In general, we will leave out the name of the file with the test code (`test_se1.py`), use short substrings to describe the desired tests, and combine the option flags (`-v`, `-x`, and `-k`) into a single string (`-xvk`). For example, the tests for `add_one_and_multiply` can also be run with the following command:
 
 ```bash
-$ py.test -xvk add
+$ pytest -xvk add
 ```
 
 ## Obtaining Your Test Score
@@ -225,14 +225,14 @@ $ py.test -xvk add
 Your programming assignments will use several criteria for grading, one of which is your score from the automated tests. To retrieve this score, simply run the following from the Linux command-line. (Remember to leave out the `$` prompt when you type the command.)
 
 ```bash
-$ py.test
+$ pytest
 $ ./grader.py
 ```
 
 Notice that we’re running py.test without the `-k` or `-x` options: we want it to run all the tests. If you’re still failing some tests, and don’t want to see the output from all the failed tests, you can add the `--tb=no` option when running py.test:
 
 ```bash
-$ py.test --tb=no
+$ pytest --tb=no
 ```
 
 Take into account that the `grader.py` program will look at the results of the last time you ran `py.test` so, if you make any changes to your code, you need to make sure to re-run `py.test`.
@@ -240,7 +240,7 @@ Take into account that the `grader.py` program will look at the results of the l
 You can also just run `py.test` followed by the grader on one line by running this:
 
 ```bash
-$ py.test --tb=no; ../common/grader.py
+$ pytest --tb=no; ../common/grader.py
 ```
 
 If you run this inside the `se1` directory, you should see something like this (of course, your actual scores may be different!):
