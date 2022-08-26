@@ -35,3 +35,16 @@ The wonderful thing about Git being so popular is that you can find loads of doc
 
 - [A Successful Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/) - Best practices for developing a Git repository within a team and utilizing Git's powerful branching features.
 
+## Python
+
+In addition to your course textbook, the following resources are helpful for deepening your understanding of Python and practicing coding problems:
+
+- [Learn X in Y Minutes Where X = Python](https://learnxinyminutes.com/docs/python/) - An article providing a quick overview of Python's features.
+
+- [Python for Everybody](https://runestone.academy/ns/books/published/py4e-int/index.html) - An interactive textbook allowing you to run code in the browser.
+
+- [Introduction to Computer Science](https://auth.udacity.com/sign-in?next=https%3A%2F%2Fclassroom.udacity.com%2Fauthenticated) - A free, interactive course on Udacity taught by David Evans of the University of Virginia. User sign-up required.
+
+- [Checkio](https://py.checkio.org/) - Python practice problems that can be run and tested in the browser. Unlock new levels along the way.
+
+- [CodeWars](https://www.codewars.com/) - Python practice problems that can be run and tested in the browser. Earn points for completing katas of different difficulty levels.

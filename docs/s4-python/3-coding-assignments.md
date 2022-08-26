@@ -7,15 +7,15 @@ parent: Python Programming
 
 # Coding Assignments
 
-In CAPP 30121, you will complete individual and team-based assignments to practice algorithmic thinking and cement your understanding of Python's data structures and syntax. As current and former students of CAPP, we (Marc, Launa, and Ali) encourage you to focus on the bigger picture of skills, _not_ scores, and adopt a [growth mindset](https://jamesclear.com/fixed-mindset-vs-growth-mindset). Some assignments and topics may challenge you. View those as exciting opportunities to stretch yourself en route to becoming a stronger practitioner of data. You'll probably realize that you're having fun along the way!
+In CAPP 30121, you will complete individual and team-based assignments to practice algorithmic thinking and cement your understanding of Python's data structures and syntax. As current and former students of CAPP, we (Marc, Launa, and Ali) encourage you to focus on the bigger picture of skills, _not_ scores, and adopt a [growth mindset](https://jamesclear.com/fixed-mindset-vs-growth-mindset). Some assignments and topics may challenge you. View those as exciting opportunities to stretch yourself _en route_ to becoming a stronger practitioner of data. You'll probably realize that you're having fun along the way!
 
-In this section, we provide general tips for assignments and then end the lab with two mock assignments as exercises. Let's dive in!
+In this section, we provide general tips for assignments and then end the lab with a mock homework assignment as an exercise. Let's dive in!
 
 ## Reading Code and Documentation
 
 When you first receive an assignment, carefully read the instructions and skim the functions that have been scaffolded out for you. Then step through the code line-by-line to understand how data is being transformed from the input to the returned output.
 
-Your course textbook will be an excellent resource for understanding new Python commands. You can also clarify what Python commands are doing by using VS Code's IntelliSense aand referencing official documentation websites. For example, the Python Software Foundation provides [detailed summaries](https://docs.python.org/3/library/index.html) of the Python standard library's data types and the operations that can be performed on those types. [pandas](https://pandas.pydata.org/docs/index.html), a popular Python library used for data analysis, offers an _API reference_ that describes the expected inputs, outputs, and behavior of its functions, as well as "Getting started" and "User Guide" sections that show common usage of the library.
+Your course textbook will be an excellent resource for understanding new Python commands. You can also clarify what Python commands are doing by using VS Code's IntelliSense and referencing official documentation websites. For example, the Python Software Foundation provides [detailed summaries](https://docs.python.org/3/library/index.html) of the Python standard library's data types and the operations that can be performed on those types. [pandas](https://pandas.pydata.org/docs/index.html), a popular Python library used for data analysis, offers an _API reference_ that describes the expected inputs, outputs, and behavior of its functions, as well as "Getting started" and "User Guide" sections that show common usage of the library.
 
 ## Planning Your Approach
 
@@ -30,21 +30,21 @@ else:
     print "fizzbuzz"
 ```
 
-There are no hard and fast rules about how pseudocode should look. You make the rules; it only matters that you have anticipated how your program will handle different types of input.
+There are no hard and fast rules about how pseudocode should look. You make the rules; it only matters that you have anticipated how your program will handle different input values.
 
 ## Testing Your Code
 
-After planning your code, you will re-write your informal algorithm as formal Python code and then test your program to see that it is working. There are broadly two ways of doing this:
+After planning your code, you will re-write your informal algorithm in Python's formal syntax and then test your program to see that it is working. There are broadly two ways of doing this:
 
 - **Manual testing:** This involves running the code you wrote with some sample values to check whether it behaves as expected. For example, if you were writing an expression to compute whether a year is a leap year, you may try running your code with IPython3 for a few leap years and a few non-leap years, to see whether your code correctly identifies the leap years.
 
-- **Automated testing:** There are automated testing frameworks that allow you to specify a series of tests you want to run on your code, and which make it easy to automatically re-run all those tests. For example, following the leap year example, you wouldn’t have to manually test each year value one by one; instead, the testing framework would test all these year values for you, and would report back how many produced the expected result.
+- **Automated testing:** There are automated testing frameworks that allow you to specify a series of tests you want to run on your code, and which make it easy to automatically re-run all those tests. For example, following the leap year example, you wouldn't have to manually test each year value one by one; instead, the testing framework would test all these year values for you and report back how many produced the expected result.
 
 In CAPP 30121, all the exercises and programming assignments include a suite of automated tests that you can use to check whether your code is working correctly, Furthermore, these tests also factor into your score for an exercise or programming assignment.
 
 Because the automated tests are easy to run (and affect your score for the assignment), you may be tempted to do the following: write some code, immediately try running the automated tests to find a test that fails, make a guess as to how to modify your code, and then repeat the process until all of the tests pass.
 
-This is not a good way to test your code. Instead, you should start by doing some manual testing to get a sense of whether it is working before you try the automated tests.
+This is **not** a good way to test your code. Instead, you should start by doing some manual testing to get a sense of whether it is working before you try the automated tests.
 
 ### Manual Tests
 
@@ -83,13 +83,14 @@ If you get the wrong answer for some sample input, stop to reason why your code 
 
 In short exercises like the one above, it is sometimes enough to look at the code and figure out why it is not working. However, for more complex code, you will want to follow a more rigorous approach. You should make a hypothesis about what might be wrong and use **print statements** to print out key values to help you verify or disprove your hypothesis. Output from the VS Code Python **linter**, found in the "Problems" section of a terminal window, can sometimes reveal errors in logic and style.
 
-Finally, you can find a lot of tips on how to debug your code in the CS Department's [Debugging Guide](https://uchicago-cs.github.io/debugging-guide/). A detailed explanation of how to use **VS Code's built-in debugger** may be found in the [Advanced Section](../advanced/index.md) of the lab.
+Finally, you can find a lot of tips on how to debug your code in the CS Department's [Debugging Guide](https://uchicago-cs.github.io/debugging-guide/).
+
 
 ### Automated Tests
 
-After you've done some manual testing, and get the sense that your function seems to be working for, at least, a few simple inputs, you should try running the automated tests. The tests could reveal that there are still issues with your function and, at that point, you could repeat the same process we described above. The important thing is that you always have an idea in your head about how your code works, and don't make random changes that you don't fully understand.
+After you've done some manual testing, and get the sense that your function seems to be working for at least a few simple inputs, you should try running the automated tests. The tests could reveal that there are still issues with your function and, at that point, you could repeat the same process we described above. The important thing is that you always have an idea in your head about how your code works, and don't make random changes that you don't fully understand.
 
-For automated testing, CAPP 30121 will use the `pytest` framework. (Pytest is available on the remote Linux servers.) To run our automated tests, you will use the `py.test` command from the Linux command line (not from within `ipython3`). We recommend opening a second terminal in VS Code for running this command, which will allow you to go back and forth easily between testing code by hand in `ipython3` in one terminal window and running the test suite using `py.test` in the other. (When we work on assignments, we usually have three windows open: the file we're editing, a terminal for experimenting in ipython3, and another terminal for running the automated tests.)
+For automated testing, CAPP 30121 will use the `pytest` framework. (Pytest is available on the remote Linux servers.) To run our automated tests, you will use the `pytest` command from the Linux command line (not from within `ipython3`). We recommend opening a second terminal in VS Code for running this command, which will allow you to go back and forth easily between testing code by hand in `ipython3` in one terminal window and running the test suite using `py.test` in the other. (When we work on assignments, we usually have three windows open: the file we're editing, a terminal for experimenting in ipython3, and another terminal for running the automated tests.)
 
 For example, to run all the tests for `add_one_and_multiply`, you can run the following command from the Linux command-line:
 
@@ -259,9 +260,15 @@ Exercise 6                                           4      / 4           20.00 
 ==========================================================================================
 ```
 
+## Submitting Assignments to Gradescope
+
+After testing and scoring your code locally, you will submit your assignment to your instructors through a web platform called Gradescope. Gradescope will accept your repository name and branch (e.g., "main"), download the code from that location, and then run a series of automated tests to produce a final score. These tests may differ from the automated tests that were provided for you in the repo. In addition, while the names and logs of most tests are displayed on the webpage, some tests are intentionally hidden to encourage you not to write code that narrowly passes tests but cannot be generalized further.
+
+If you fail any tests, you can fix and re-submit your code as many times as you would like, up to the assignment deadline. Your CAPP 30121 instructors will describe this process in more detail, as well as how late assignments are handled.
+
 ## Asking for Help
 
-Again, you may find some programming assignments challenging. This is completely normal and nothing to be ashamed of! One of the advantages of studying a subject within a university environment is having access to a large learning community of faculty instructors, staff, teaching assistants, peers, and technical support. Sometimes, you will be the one explaining concepts others, and in some cases you will need to ask for help.
+Again, you may find some programming assignments challenging. This is completely normal and nothing to be ashamed of! One of the advantages of studying a subject within a university environment is having access to a large learning community of faculty instructors, staff, teaching assistants, peers, and technical support. Sometimes, you will be the one explaining concepts to others, and in some cases you will need to ask for help.
 
 For CAPP 30121, you will ask questions on the Ed platform. We encourage you to carefully read through the [explanation](https://edstem.org/us/courses/24735/discussion/1675332) of how to properly ask questions there. To reiterate, when making a post, you should:
 

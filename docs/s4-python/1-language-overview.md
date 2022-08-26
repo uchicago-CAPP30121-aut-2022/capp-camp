@@ -11,7 +11,7 @@ Python, named after the 1970s BBC comedy show "Monty Python's Flying Circus", ha
 
 Your instructors for CAPP 30121 have chosen to use Python rather than another common language like Java, C, or C++ because it offers several advantages, such as greater readability. In addition, it is free, open-source, and general purpose; offers a rich and growing collection of libraries for data science and machine learning; and is currently used extensively within both academia and industry.
 
-In this section, we will not attempt to teach Python. Rather, we will introduce some of its basic symbols and syntax to (a) give you a better understanding of the Python-specific features offered by VS Code and (b) allow you to practice writing Python expressions in the final exercise. Let's get started!
+In this section, we will not attempt to teach Python. Rather, we will introduce some of its basic symbols and syntax to (a) give you a better understanding of the Python-specific features offered by VS Code and (b) allow you to practice writing Python expressions in the final exercise.
 
 ## Anatomy of a Python File
 
@@ -46,6 +46,9 @@ import click
 
 **Logic**:  After the `import` statements, the main logic of the program begins. You've already seen `print` commands in previous lessons. Printing "Hello, World!" to the terminal is a simple example of program logic.
 
+**Comments**: You will typically find single- and multi-line comments interspersed throughout Python files. A comment starts with the pound/hash symbol (`#`) and is followed by text that explains what an adjacent line of code is doing or why a design decision was made. The comment should add value--i.e., it should inform the reader of something that wasn't obvious from just looking at the code.
+
+
 ## Example Data Types
 
 Below are three of Python's built-in data types that we'll reference as we practice writing code. You will learn about these data types and others in more detail during CAPP 30121:
@@ -60,7 +63,7 @@ When applying several operations in sequence, normal _order of operations_ is fo
 
 #### Checkpoint
 
-In your terminal, type `ipython3` to launch an interactive Python shell where you can test Python commands. Then run the following expressions to confirm their value. (Note: You **don't** need to type "In[1]" or "Out[1]"; those are examples of what you would see as output in the terminal.)
+In your terminal, type `ipython3` to launch an interactive Python shell where you can test Python commands. Then run the following expressions to confirm their value. (NOTE: You **don't** need to type "In[1]" or "Out[1]"; those are examples of what you would see as output in the terminal.)
 
 **Order of Operations**
 ```python
@@ -309,6 +312,26 @@ If the first condition evaluated at `if` is `False`, Python will move to evaluat
 
 If all of the previous conditionals evaluate to `False`, then the `else` statement is executed.  Therefore, if you are greater than 36 inches and shorter than 84 inches, the program would print `Sure, you can ride the roller coaster.`.
 
+You can use conditional blocks in other ways besides `if-elif-else`. You could have a simple `if` statement instead:
+
+```python
+a = 1
+b = 2
+if a != b:
+    print("a does not equal b")
+```
+
+Or you could use `if-else`:
+
+```python
+a = 1
+b = 2
+if a != b:
+    print("a does not equal b")
+else:
+    print("a equals b")
+```
+
 It is important to emphasize here what the conditional block looks like. Each `if`, `elif`, and `else` statement ends with a colon (`:`) and the code underneath it is indented.  Python uses _indentation_ to indicate a block of code. Python permits you to use one or more spaces for indentation. The only requirement is that you use indentation consistently across your Python file.  In CAPP 30121, you will use four spaces to indent.
 
 ### Functions
@@ -351,9 +374,11 @@ assess_rider_height(68)
 assess_rider_height(90)
 ```
 
-A function starts with the keyword `def` followed by the function name (here, `assess_rider_height`) and a pair of parentheses.  Inside the parentheses, you can define what inputs are accepted. Here, `rider_height` is accepted. When you call function farther down the script with `assess_rider_height(20)`, the value `20` is passed in for the `rider_height`. Then the rest of the statements are evaluated and the correct `print` command is made.  In this case, the function doesn't explicitly return any value using the `return` keyword, so the `return` value is understood to be the Python value `None`.
+A function starts with the keyword `def` followed by the function name (here, `assess_rider_height`) and a pair of parentheses.  Inside the parentheses, you can define what inputs are accepted. Here, `rider_height` is accepted. When you call function farther down the script with `assess_rider_height(20)`, the value `20` is passed in for the `rider_height`. Then the rest of the statements are evaluated and the correct `print` command is made.
 
-Note also the presence of a function docstring, defined by two sets of triple quotation marks (`"""`). Like a file docstring, function doc strings provide helpful information to other programmers. Function doc strings commonly summarize what the function does, what inputs are accepted, and what value (or values) will be returned.
+**Functions normally return a value using the `return` keyword.** In this case, the function doesn't explicitly return any value using the `return` keyword, so the `return` value is understood to be the special Python value `None`.
+
+Note also the presence of a function docstring, defined by two sets of triple quotation marks (`"""` or `'''`). Like a file docstring, function doc strings provide helpful information to other programmers. Function doc strings commonly summarize what the function does, what inputs are accepted, and what value (or values) will be returned.
 
 To provide a simple, second example:
 
@@ -374,11 +399,11 @@ print(square(3)) # Will print 9
 print(square(-4)) # Will print 16
 ```
 
-The above function is declared again using the keyword `def` and given the name `square`. Square takes an integer `n` as input and then returns that integer raised to the second power. Here we see an explicit `return` statement that will return the integer result.
+The above function is declared again using the keyword `def` and given the name `square`. ACcording to its docstring, `square` takes an integer `n` as input and then returns that integer raised to the second power. Here we see an explicit `return` statement that will return the integer result.
 
 #### Checkpoint
 
-Copy and paste the function into the terminal. Press Enter (Return) until `ipython3` recognizes that you are done entering input. Then try calling the function as shown above with different values.
+Copy and paste the function into the terminal. Press `enter` (or `return`) until `ipython3` recognizes that you are done entering input. Then try calling the function as shown above with different values.
 
 
 ## Next Steps
