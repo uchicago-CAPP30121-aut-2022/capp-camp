@@ -37,7 +37,11 @@ To open a new terminal, select "Terminal > New Terminal" on the Menu Bar.  The t
 
 In the future, you might want to use multiple terminals simultaneously, perhaps even of different shells. Try out this feature by clicking the "+" button on the righthand side of the terminal to open another terminal with the default shell type. Then click the dropdown arrow next to the "+" button to open a new terminal with a specific shell type. As you add new terminals, their names also appear in the righthand panel.
 
+![VS Code select terminal](../assets/img/python-select-terminal.png)
+
 VS Code also allows users to split one terminal into multiple views. To test this feature, right click one of the terminals you have created and select "Split Terminal". Now two terminals are open to the same directory, and their names have a connection line drawn between them.
+
+![VS Code split terminal](../assets/img/python-split-terminal.png)
 
 To remove terminals, simply hover over their name and click the trash can icon that appears.  When all terminals are gone, the terminal panel disappears so only the editor is displayed. To toggle the terminal panel open and closed so it is displayed or  hidden, you can use the shortcut `Ctrl+```.  If no terminals exist when the terminal panel is toggled open, a new terminal open to the default shell is created.
 
@@ -47,13 +51,20 @@ As we discussed in the first lab, you can open a new file in VS Code's Editor by
 
 To view two files side by side, simply drag and drop the file tabs to a desired position in the Editor window. You'll see highlighted options available (i.e., right side, left side, top, bottom) as you move around.
 
+![VS Code move editor window](../assets/img/python-move-editor-tab.png)
+
 You can also view the _same file next to itself_ by right-clicking the file's Editor tab and then selecting one of the split options: `Split Up`, `Split Down`, `Split Right`, or `Split Left`. This will generate a new view of the same file. Edits made in one view will immediately appear in the other. If you close one, the other remains open. This functionality is very useful for viewing assignment directions or a section of code being used as a reference on one side of the VS Code window and the code you're actively writing, on the other side.
+
+![VS Code select editor window split option](../assets/img/python-editor-split-options.png)
+
+![VS Code move editor window](../assets/img/python-editor-split-view.png)
 
 To close a file, simply hover over its Editor tab and click the "x" button. You can also right-click its tab and select "Close".
 
 ### Color Themes
 
-To change the color theme, click on the Manage button in the Activity Bar (i.e., the gear at the bottom) and then select "Color Theme".  The application defaults to "Dark+", but you can choose from among other built-in light, dark, and high-contrast options. You can also select "+ Browse Additional Color Themes" to search the VS Code marketplace for themes submitted by community members. Those with color vision deficiency can search the marketplace for color blind options. Microsoft  recommends "GitHub", "Gotthard", "Blinds", or "Greative" as choices.
+To change the color theme, click on the Manage button in the Activity Bar (i.e., the gear icon at the bottom lefthand corner of the screen) and then select "Color Theme".  The application defaults to "Dark+", but you can choose from among other built-in light, dark, and high-contrast options. You can also select "+ Browse Additional Color Themes" to search the VS Code marketplace for themes submitted by community members. Those with color vision deficiency can search the marketplace for color blind options. Microsoft  recommends "GitHub", "Gotthard", "Blinds", or "Greative" as choices.
+
 
 ### Zoom Levels
 
@@ -80,17 +91,17 @@ In the file "settings.json", find the text:
     ],
 ```
 
-and right below it, paste:
+and right **below it on a new line**, copy and paste the following:
 
 ```json
 "[python]": {
         "editor.rulers": [
             79
-        ]
+        ],
     }
 ```
 
-where 79 represents the character position where a ruler should be drawn. We configure this setting for Python files only (using the JSON "key" `"[python]"`) because other programming languages have different conventions.  To confirm that your ruler is working, use the terminal to navigate to the `capp_camp` folder from Lab 1 and open a Python file.  Your ruler should display at 79 characters.  Then open a `.txt` file to confirm the ruler doesn't appear at all.
+where 79 represents the character position where a ruler should be drawn. We configure this setting for Python files only (using the JSON "key" `"[python]"`) because other programming languages have different conventions.  To confirm that your ruler is working, use the terminal to open a Python file from one of your previous lab.  Your ruler should display at 79 characters.  Then open a `.txt` file to confirm the ruler doesn't appear at all.
 
 {: .tip}
 > To use a ruler color different from the default, swap out the number for an object that looks like this:
@@ -130,9 +141,13 @@ print(square_root(-4)) # Will return an error
 
 By convention, Python developers indent using four spaces. However, either spaces or tabs are permitted. The only rule is that you use at least one space, and indent consistently everywhere in your Python file. For example, you can't mix tabs and spaces, or indent by two tabs in one file location and one tab in another.
 
-VS Code allows you to configure how many spaces or tabs are being used for indentation. To try this feature, open another Python file from your `capp_camp` directory. Then click on "Spaces" in the Status Bar at the bottom of the application. The Command Palette will open in the middle of the screen, giving you the option to indent using spaces, indent using tabs, or convert spaces to tabs and vice versa. Click on "Indent Using Spaces" and then select `2`. You should see the status bar change to "Spaces: 2". Any new lines that you create using `enter` (`return`) followed by `tab` will add two spaces for an indent. Change the setting back to "Spaces: 4" when you're done.
+VS Code allows you to configure how many spaces or tabs are being used for indentation. To try this feature, open another Python file from a previous assignment. Then click on "Spaces" in the Status Bar at the bottom of the application. The number next to "Spaces" shows what is currently configured for indentation.
 
-To permanently change the default number of spaces for Python files, you will have to modify the `settings.json` file for users again. To do this, open the Command Palette using `Ctrl+Shift+P` or by going to "View > Command Palette". Search for "Preferences: Open User Settings (JSON)" and then click on the option that relates to users. When the JSON file opens, add a value for the "editor.insertSpaces" and "editor.tabSize" settings to the `"[python]"` object that it resembles something like this:
+![VS Code spaces option on status bar](../assets/img/python-spaces-option.png)
+
+The Command Palette will open in the middle of the screen, giving you the option to indent using spaces, indent using tabs, or convert spaces to tabs and vice versa. Click on "Indent Using Spaces" and then select `4`. You should see the status bar change to "Spaces: 4" if it wasn't at that value already. Any new lines that you create using `enter` (or `return`) followed by `tab` will add four spaces for an indent.
+
+To permanently change the default number of spaces for Python files, you will have to modify the `settings.json` file for users again. To do this, open the Command Palette using `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (macOS). You can also go to "View > Command Palette". Search for "Preferences: Open User Settings (JSON)" and then click on the option that relates to users. When the JSON file opens, add a value for the "editor.insertSpaces" and "editor.tabSize" settings to the `"[python]"` object so it resembles something like this:
 
 ```
  "[python]": {
@@ -148,7 +163,9 @@ The CS Department has released its own [style guide](https://uchicago-cs.github.
 
 ### Linters
 
-The Python extension you installed before camp comes with a default _linter_, a type of program that checks for style errors as well as syntatic errors like missing parentheses, references to variables and functions that haven't been created yet, and so on. These syntatic errors would cause your program to fail when executed. For example, the code below shows use of an undefined variable. The linter would catch this error and then display an error message under the "Problems" panel below the VS Code Editor—_before_ the code is even run.
+The Python extension you installed before camp comes with a default _linter_, a type of program that checks for style errors as well as syntatic errors like missing parentheses, references to variables and functions that haven't been created yet, and so on. These syntatic errors would cause your program to fail when executed.
+
+For example, the code below shows use of an undefined variable. The linter (by default, `pylint`) would catch this error and then display an error message under the "Problems" panel below the VS Code Editor _before_ the code is even run.
 
 ```python
 a = 1
@@ -156,7 +173,7 @@ b = 2
 print(a + b + c) # Oops, we haven't defined the variable c yet!
 ```
 
-There are many different linters available in Python. Your instructors will explain how to run Pylint before turning in assignments to compute a score indicating how closely you're following style conventions. A score of 10/10 suggests perfect conformity.
+There are many different linters available in Python. In CAPP 30121, your instructors will configure a separate, customized version of `pylint` that you can run on assignments to generate a score indicating how closely you're following style conventions. A score of 10/10 suggests perfect conformity.
 
 
 ## Auto-Features and Shortcuts
@@ -180,19 +197,24 @@ To alter the Auto Save settings, click on the Manage button and then select "Set
 
 ### IntelliSense
 
-The Python extension you installed before the first lab provides IntelliSense, a code-completion aid. If IntelliSense is enabled while you type, you will receive suggestions for how to complete a line of code given the variables in your environment and other Python programs you have imported. This functionality is similar to how a search engine like Google might suggest search phrases as you begin typing a query in a web browser. To accept a suggestion, just press `Tab` or `Enter`.
+The Python extension you installed before the first lab provides IntelliSense, a code-completion aid, out-of-the-box. If IntelliSense is enabled while you type, you will receive suggestions for how to complete a line of code given the variables in your environment and other Python programs you have imported. This functionality is similar to how a search engine like Google might suggest search phrases as you begin typing a query in a web browser. To accept a suggestion, just press `Tab` or `Enter`.
 
 Another helpful feature offered by IntelliSense is showing documentation for functions, variables, and other Python structures while hovering over code. This feature is useful when you're working with a new Python program and don't know what functions are available.
 
+{: .tip}
+If IntelliSense doesn't seem to be working, double check that the Python extension for VS Code is currently installed in your environment by clicking the "Extensions" button (resembling building blocks) on the Activity Bar on the left side of the screen.
+
 ### Keyboard Shortcuts
 
-In the first lab, you learned about keyboard shortcuts for executing commands in a Linux terminal with a bash shell. Some of these commands couldn't be run immediately due to conflicts with VS Code's own keyboard shortcuts. Indeed, VS Code offers 100+ different shortcuts, some of which are highlighted here for [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf), [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf), and [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) installations. Here we'll highlight a few:
+In the first lab, you learned about keyboard shortcuts for executing commands in a Linux terminal with a bash shell. Some of these commands couldn't be run immediately due to conflicts with VS Code's own keyboard shortcuts. Indeed, VS Code offers 100+ different shortcuts, some of which are highlighted here for [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf), [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf), and [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) installations. Let's discuss a few:
 
 **Toggle Comment.**: To temporarily comment out a section of code with `#` so Python does not run it, you can select the code and then enter `Ctrl+/` (i.e., control followed by forward slash). You can also remove the comments by running the same command.
 
-**Rename Variable.**: Sometimes you realize that a variable name isn't appropriate and would like to change it. Rather than copying and pasting the new value over the old one all over the file, which is prone to errors, you can rename the variable by clicking on its name and then entering `F12`. (If that key doesn't work for you, try right-clicking the selected variable name and then clicking on "Rename Symbol"). A dialog will open allowing you to type the new name and then hit `enter` (`return`).
+**Rename Variable.**: Sometimes you realize that a variable name isn't appropriate and would like to change it. Rather than copying and pasting the new value over the old one all over the file, which is prone to errors, you can rename the variable by clicking on its name and then entering `F12`. (If that key doesn't work for you, try right-clicking the selected variable name and then clicking on "Rename Symbol"). A dialog will open allowing you to type the new name and then hit `enter` (or `return`).
 
-**Find and Replace.**: You can search for and replace general text in a file using the `Crl-F` and `Ctrl-R` commands, respectively. (These commands can be manually accessed by navigating to "Edit > Find" or "Edit > Replace" on the Menu Bar.) Additional options exist for searching for text that matches all of search term versus a part and matching while being case sensitive or insensitive.
+This shortcut is also preferable to finding and replacing text because it properly handles variable _scope_--the section of a program where the variable is available. Some variables can be used anywhere in a program file and are called _global variables_. Others, like those initialized in functions, can only be used in certain parts of the program and are called _local variables_.  For example, if you define a variable `bob` within a function, `bob` cannot be called/referenced from outside the function. If you define a different variable with the same name, `bob`, outside the function, you should be able to rename those instances of `bob` only without changing any `bob`s inside the function.
+
+**Find and Replace.**: You can search for and replace general text in a file using the `Ctrl+F` and `Ctrl+R` commands, respectively. (These commands can be manually accessed by navigating to "Edit > Find" or "Edit > Replace" on the Menu Bar.) Additional options exist for searching for text that matches all versus part of a search term and matching while being case sensitive or insensitive. You can also find and replace all occurrences of a word in text by clicking on that word and then typing `Ctrl+Shift+L`. New blinking cursors will open at each instance of the word, and you can rename them all at once.
 
 **Reformat.** You can reformat code according to your current configured settings by entering the keyboard shortcut `Shift+Alt+F` on Windows or `Shift+Option+F` on macOS. To test this feature, alter one of the indentations in your open Python file by adding a few additional spaces and then run the command to see the code automatically corrected. (Note: If VS Code prompts you to install a package like `autopep8`, please select "yes".)
 
