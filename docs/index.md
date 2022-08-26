@@ -11,6 +11,7 @@ This website hosts the labs that will be used during each CAPP Camp session:
 
 - **August 22**: [Introduction to Linux](./s1-linux)
 - **August 23**: [Git I](./s2-git-i)
+- **August 24**: [Linear Algebra](./assets/pdf/CAPP Camp - Linear Algebra Notes.pdf)
 - **August 25**: [Git II](./s3-git-ii)
 - **August 26**: [Python Programming](./s4-python)
 
